@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					width="100%"
+					height="100%"
+					horizontalAlign="center"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*">
+
+	<mx:Style>
+		
+		.optionTitle{
+			
+			paddingTop: 10;
+			color: #888888;
+		}
+		
+		.optionBox{
+			
+			paddingLeft: 10;
+			verticalGap: 0;
+		}
+		
+	</mx:Style>
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper>
+
+		<controls1:PageTitle label="Priprema za učenje"/>
+
+		<mx:VBox fontSize="12"
+				 verticalGap="2">
+
+			<mx:Label text="Koju kategoriju pitanja želiš da učiš?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+				<mx:ComboBox id="cmbQuestionCategory"
+							 dataProvider="{PresenterProvider.mainPresenter.model.questionCategoriesIncludingAll}"
+							 labelField="name"
+							 width="300"
+							 rowCount="10"/>
+			</mx:HBox>
+
+			<mx:Label text="Da li da se prikazuju pitanja koja si već učio?"
+					  styleName="optionTitle"/>
+			<mx:VBox styleName="optionBox">
+
+				<mx:RadioButtonGroup id="chbOnlyNonLearntQuestions"
+									 selectedValue="1"/>
+
+				<mx:RadioButton label="samo pitanja koja nisam učio uopšte"
+								value="1"
+								group="{chbOnlyNonLearntQuestions}"/>
+
+				<mx:HBox>
+					<mx:RadioButton label="pitanja koja nisam učio uopšte plus pitanja koja sam učio najviše"
+									value="2"
+									group="{chbOnlyNonLearntQuestions}"/>
+					<mx:NumericStepper value="1"
+									   id="nsLearningCount"/>
+					<mx:Label text="puta"/>
+				</mx:HBox>
+
+				<mx:RadioButton label="sva pitanja bez obzira da li sam ih učio"
+								value="3"
+								group="{chbOnlyNonLearntQuestions}"/>
+
+			</mx:VBox>
+
+			<mx:Label text="Da li da pitanja budu nasumično raspoređena?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+
+				<mx:RadioButton value="{false}"
+								label="Ne"
+								group="{chbRandomizeQuestions}"/>
+				<mx:RadioButton value="{true}"
+								label="Da"
+								group="{chbRandomizeQuestions}"/>
+				<mx:RadioButtonGroup id="chbRandomizeQuestions"
+									 selectedValue="{false}"/>
+
+			</mx:HBox>
+
+			<mx:Label text="Napomena"
+					  styleName="optionTitle"/>
+			<mx:Box styleName="optionBox">
+
+				<mx:Text width="600"
+						 text="Sa pitanja na pitanje možeš prelaziti korišćenjem strelica (gore i dole) na tastaturi a na sledeću odnosno prethodnu stranicu pitanja možeš prelaziti korišćenjem strelica desno odnosno levo."/>
+			</mx:Box>
+
+			<mx:Spacer height="20"/>
+
+			<controls1:BoxButton label="Kreni sa učenjem"
+								 icon="@Embed(source='/data/images/next.png')"
+								 click="onStartLearning(event)"/>
+
+		</mx:VBox>
+
+		<pages:PageFooter/>
+
+	</pages:PageContentWrapper>
+
+	<util:EvolaHttpService id="serviceGetIds"
+						   restUrl="question/getLearntQuestionsIds"
+						   result="onGetIdsResult(event)"/>
+
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.spinner.SpinnerUtil;
+			import com.evola.driving.model.DrivingCategory;
+			import com.evola.driving.model.QuestionCategory;
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.ResultEvent;
+
+			private var learnedQuestionsIds:ArrayCollection;
+
+			override protected function displayPage():void
+			{
+
+				learnedQuestionsIds=new ArrayCollection();
+			}
+
+			protected function onStartLearning(event:MouseEvent):void
+			{
+
+				if (chbOnlyNonLearntQuestions.selectedValue != "3")
+				{
+					var numOfLearnedQuestionsLimit:int=0;
+
+					if (chbOnlyNonLearntQuestions.selectedValue == "2")
+						numOfLearnedQuestionsLimit=nsLearningCount.value;
+
+					SpinnerUtil.showSpinner(this);
+
+					serviceGetIds.send({numOfLearnedQuestionsLimit: numOfLearnedQuestionsLimit});
+				}
+				else
+				{
+
+					startLearning();
+				}
+			}
+
+			protected function onGetIdsResult(event:ResultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+
+				var result:XML=XML(event.result);
+
+				learnedQuestionsIds=new ArrayCollection();
+
+				for each (var idXML:XML in result.child("learnt-question-id"))
+				{
+
+					var id:String=idXML.text();
+
+					learnedQuestionsIds.addItem(id);
+				}
+
+				startLearning();
+			}
+
+			private function startLearning():void
+			{
+
+				currentState=null;
+
+				var dc:DrivingCategory=Settings.user.drivingCategory ? Settings.user.drivingCategory : DrivingCategory.CATEGORY_ALL;
+				var qc:QuestionCategory=cmbQuestionCategory.selectedItem as QuestionCategory;
+				var randomizeQuestions:Boolean=chbRandomizeQuestions.selectedValue;
+				var onlyNonLearntQuestions:Boolean=chbOnlyNonLearntQuestions.selectedValue != "3";
+				var learnedQuestionsLimit:int=nsLearningCount.value;
+
+				PresenterProvider.mainPresenter.startLearning(dc, qc, randomizeQuestions, onlyNonLearntQuestions, learnedQuestionsIds);
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

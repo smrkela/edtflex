@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 horizontalAlign="right">
+
+	<mx:Repeater id="rpt"
+				 dataProvider="{DrivingUtils.createPagingDataProvider(totalPages)}">
+
+		<mx:HBox verticalAlign="middle"
+				 backgroundColor="{ThemeColors.GREEN}"
+				 backgroundAlpha="{rpt.currentItem == currentPageIndex ? 1 : 0}"
+				 borderStyle="solid"
+				 borderColor="{ThemeColors.GREEN}"
+				 cornerRadius="2"
+				 click="pageChangeClicked(event)"
+				 fontSize="11">
+
+			<controls:LinkLabel text="{rpt.currentItem + 1}"
+								color="{rpt.currentItem == currentPageIndex ? 0xFFFFFF : ThemeColors.GREEN}"
+								textAlign="center"/>
+
+		</mx:HBox>
+
+
+	</mx:Repeater>
+
+	<mx:Metadata>
+		
+		[Event(name="pageClick", type="com.evola.driving.views.pages.discussions.controls.PageEvent")]
+		
+	</mx:Metadata>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DrivingUtils;
+			import com.evola.driving.util.ThemeColors;
+
+			[Bindable]
+			public var totalPages:int;
+
+			[Bindable]
+			public var currentPageIndex:int;
+
+			protected function pageChangeClicked(event:MouseEvent):void
+			{
+
+				dispatchEvent(new PageEvent(PageEvent.PAGE_CLICK, event.target.repeaterIndex));
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

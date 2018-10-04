@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 xmlns:controls="com.evola.driving.controls.*">
+
+	<mx:Label text="{labelString}"/>
+
+	<controls:BoxProgressBar progress="{count / totalCount}"
+							 width="100%"
+							 progressColor="0xFFC40D"/>
+
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			private var totalCount:int;
+
+			[Bindable]
+			private var count:int;
+
+			[Bindable]
+			private var labelString:String;
+
+			public function set progressXML(value:XML):void
+			{
+
+				totalCount=int(value.attribute('total-count'));
+				count=int(value.attribute('count'));
+
+				var catName:String=value.child('question-category')[0].attribute('name') + "";
+
+				labelString=catName + " (" + count + " od " + totalCount + ")";
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

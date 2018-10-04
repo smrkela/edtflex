@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 xmlns:pages="com.evola.driving.views.pages.*"
+		 styleName="footer"
+		 width="100%"
+		 xmlns:controls="com.evola.driving.controls.*">
+
+	<mx:HBox width="100%">
+
+		<mx:Label text="2013, Vozači Srbije © Evola Software"/>
+
+		<mx:Spacer width="100%"/>
+
+		<controls:LinkLabel color="#FFFFFF"
+							text="{'klikni ovde da se vratiš na sajt  '+Settings.SITE}"
+							click="onBackToMainSiteClick(event)"/>
+
+	</mx:HBox>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PageManager;
+
+			protected function onBackToMainSiteClick(event:MouseEvent):void
+			{
+
+				navigateToURL(new URLRequest(Settings.SERVER_URL), "_blank");
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

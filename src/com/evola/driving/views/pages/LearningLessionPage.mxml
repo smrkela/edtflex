@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.controls.*"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:controls1="com.evola.driving.views.controls.*"
+					xmlns:util="com.evola.driving.util.*"
+					xmlns:containers="flexlib.containers.*"
+					xmlns:components="com.evola.driving.views.pages.components.*">
+
+	<controls1:UserHeaderControl/>
+
+	<pages:PageContentWrapper direction="horizontal">
+
+		<mx:VBox width="100%"
+				 styleName="contentWrapper">
+
+			<mx:HBox width="100%">
+
+				<mx:HBox width="100%"
+						 verticalAlign="bottom">
+
+					<mx:Label fontSize="16"
+							  fontWeight="bold"
+							  text="{getTitle(groupName, lessonName, type, isLoading)}"/>
+
+					<mx:Spacer width="100%"/>
+
+					<controls1:QuestionsListIndicators questions="{questions}"
+													   selectedIndex="{selectedIndex}"
+													   groupId="{groupId}"/>
+
+				</mx:HBox>
+
+			</mx:HBox>
+
+			<mx:HRule id="vs"
+					  width="100%"
+					  styleName="pageTitleHrule"/>
+
+			<controls:NotificationControl visible="{isPartialLesson}"
+										  includeInLayout="{isPartialLesson}"
+										  notificationText="{getPartialLessonMessage(type, partialLessonRepeatCount, removedQuestionsCount, isFavoriteQuestions)}"/>
+
+			<mx:ViewStack width="100%"
+						  height="100%"
+						  selectedIndex="{selectedIndex}"
+						  resizeToContent="true">
+
+				<mx:Repeater id="rpt"
+							 dataProvider="{questions}"
+							 width="100%">
+
+					<controls:QuestionControl minHeight="400"
+											  label="{rpt.currentIndex + 1}"
+											  question="{rpt.currentItem as Question}"/>
+
+				</mx:Repeater>
+
+			</mx:ViewStack>
+
+		</mx:VBox>
+
+		<mx:VBox width="300"
+				 styleName="contentWrapper"
+				 fontSize="14"
+				 verticalGap="2"
+				 visible="{!isLoading}">
+
+			<controls:PageTitle label="Trenutni napredak"/>
+
+			<controls:LinkLabel text="Vrati se na sve lekcije"
+								click="onBackToGroup(event)"/>
+			<mx:Text width="100%"
+					 color="#555555"
+					 text="(pređena pitanja će biti zapamćena)"
+					 fontSize="11"/>
+
+			<mx:Spacer height="20"/>
+
+			<mx:HBox horizontalGap="0"
+					 fontSize="18"
+					 verticalAlign="bottom">
+
+				<mx:Label text="{selectedIndex + 1}."
+						  fontWeight="bold"/>
+				<mx:Label text="{'pitanje od '+questions.length}"
+						  color="#777777"
+						  fontSize="14"/>
+
+			</mx:HBox>
+
+			<mx:Spacer height="20"/>
+
+			<mx:VBox width="100%"
+					 visible="{!PresenterProvider.mainPresenter.model.isTestingMode}"
+					 includeInLayout="{!PresenterProvider.mainPresenter.model.isTestingMode}">
+
+				<controls:LinkLabel text="Prethodno pitanje"
+									visible="{selectedIndex != 0}"
+									click="onPreviousClick(event)"/>
+
+				<controls:BoxButton label="Sledeće pitanje"
+									primaryColor="0x00A300"
+									secondaryColor="0xFFC40D"
+									icon="@Embed(source='/data/images/next.png')"
+									visible="{selectedIndex != questions.length - 1}"
+									includeInLayout="{selectedIndex != questions.length - 1}"
+									click="onNextClick(event)"/>
+
+				<controls:BoxButton label="Završi učenje lekcije"
+									primaryColor="0x00A300"
+									secondaryColor="0xFFC40D"
+									icon="@Embed(source='/data/images/flag.png')"
+									visible="{selectedIndex == questions.length - 1}"
+									click="onFinishLearning(event)"/>
+
+			</mx:VBox>
+
+			<mx:VBox width="100%"
+					 visible="{PresenterProvider.mainPresenter.model.isTestingMode}"
+					 includeInLayout="{PresenterProvider.mainPresenter.model.isTestingMode}">
+
+				<controls:BoxButton label="Potvrdi odgovor"
+									primaryColor="0x00A300"
+									secondaryColor="0xFFC40D"
+									icon="@Embed(source='/data/images/next.png')"
+									visible="{PresenterProvider.mainPresenter.model.isUnconfirmed}"
+									includeInLayout="{PresenterProvider.mainPresenter.model.isUnconfirmed}"
+									isEnabled="{currentQuestion.isAnswered}"
+									click="onConfirmQuestion(event)"/>
+
+				<controls:BoxButton label="Sledeće pitanje"
+									primaryColor="0x00A300"
+									secondaryColor="0xFFC40D"
+									icon="@Embed(source='/data/images/next.png')"
+									visible="{!PresenterProvider.mainPresenter.model.isUnconfirmed &amp;&amp; selectedIndex != questions.length - 1}"
+									includeInLayout="{!PresenterProvider.mainPresenter.model.isUnconfirmed &amp;&amp; selectedIndex != questions.length - 1}"
+									click="onNextClick(event)"/>
+
+				<controls:BoxButton label="Završi proveru"
+									primaryColor="0x00A300"
+									secondaryColor="0xFFC40D"
+									icon="@Embed(source='/data/images/flag.png')"
+									visible="{!PresenterProvider.mainPresenter.model.isUnconfirmed &amp;&amp;  selectedIndex == questions.length - 1}"
+									includeInLayout="{!PresenterProvider.mainPresenter.model.isUnconfirmed &amp;&amp; selectedIndex == questions.length - 1}"
+									click="onFinishTest(event)"/>
+
+				<controls:LinkLabel text="Preskoči pitanje"
+									color="#555555"
+									visible="{PresenterProvider.mainPresenter.model.isUnconfirmed &amp;&amp; PresenterProvider.mainPresenter.model.isTestingMode}"
+									click="onSkipQuestionClick(event)"/>
+
+			</mx:VBox>
+
+			<mx:Spacer height="30"/>
+
+			<components:FavoriteQuestionBox question="{currentQuestion}"/>
+
+			<mx:Spacer height="30"/>
+
+			<mx:VBox width="100%"
+					 fontSize="11"
+					 color="#555555"
+					 verticalGap="2">
+
+				<mx:Label text="Broj prethodnih učenja i provera ovog pitanja"/>
+
+				<mx:Form width="100%"
+						 borderStyle="solid"
+						 borderSides="top"
+						 verticalGap="2"
+						 paddingTop="6">
+
+					<mx:FormItem label="Učenja:">
+						<mx:Label text="{currentQuestion.learnsCount}"/>
+					</mx:FormItem>
+
+					<mx:FormItem label="Tačnih provera:">
+						<mx:Label text="{currentQuestion.testedCorrectsCount}"/>
+					</mx:FormItem>
+
+					<mx:FormItem label="Netačnih provera:">
+						<mx:Label text="{currentQuestion.testedIncorrectCount}"/>
+					</mx:FormItem>
+
+				</mx:Form>
+
+			</mx:VBox>
+
+		</mx:VBox>
+
+	</pages:PageContentWrapper>
+
+	<pages:PageFooter/>
+
+	<mx:WipeLeft id="showEffect"
+				 duration="300"/>
+	<mx:WipeRight id="hideEffect"
+				  duration="300"/>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="question/getLessonQuestions"
+						   result="onQuestionsLoaded(event)"
+						   faultFunction="onFault"/>
+
+	<util:EvolaHttpService id="servicePartial"
+						   restUrl="question/getRemainingLessonQuestions"
+						   result="onQuestionsLoaded(event)"
+						   faultFunction="onFault"/>
+
+	<util:EvolaHttpService id="servicePartialFavorite"
+						   restUrl="question/getFavoriteLessonQuestions"
+						   result="onQuestionsLoaded(event)"
+						   faultFunction="onFault"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.EDTAlert;
+			import com.evola.driving.controls.TestResultsControl;
+			import com.evola.driving.model.Question;
+			import com.evola.driving.util.ModelParser;
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.util.PresenterProvider;
+			import com.evola.driving.util.QuestionsParser;
+			
+			import mx.collections.ArrayCollection;
+			import mx.collections.ListCollectionView;
+			import mx.managers.PopUpManager;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+
+			[Bindable]
+			private var questions:ListCollectionView;
+
+			[Bindable]
+			private var selectedIndex:int=0;
+
+			[Bindable]
+			private var type:String; //learn|test
+
+			[Bindable]
+			private var groupId:String;
+
+			[Bindable]
+			private var groupName:String;
+
+			private var lessonId:String;
+
+			[Bindable]
+			private var lessonName:String;
+
+			[Bindable]
+			private var isLoading:Boolean;
+
+			[Bindable]
+			private var currentQuestion:Question;
+
+			[Bindable]
+			private var isPartialLesson:Boolean;
+
+			[Bindable]
+			private var isFavoriteQuestions:Boolean;
+
+			[Bindable]
+			private var partialLessonRepeatCount:int=0;
+
+			[Bindable]
+			private var removedQuestionsCount:int=0;
+
+			override protected function displayPage():void
+			{
+
+				type=params.type;
+
+				isPartialLesson=params.hasOwnProperty("isPartialLesson") ? params.isPartialLesson : false;
+				isFavoriteQuestions=params.hasOwnProperty("isFavorite") ? params.isFavorite : false;
+				partialLessonRepeatCount=params.hasOwnProperty("repeatCount") ? params.repeatCount : 0;
+
+				removedQuestionsCount=0;
+
+				PresenterProvider.mainPresenter.model.isUnconfirmed=true;
+				currentQuestion=null;
+
+				if (type == 'learn')
+					PresenterProvider.mainPresenter.startLearningSimple();
+				else
+					PresenterProvider.mainPresenter.startTestingSimple();
+
+				selectedIndex=-1;
+				questions=new ArrayCollection();
+
+				var groupId:Object=params.groupId;
+				var lessonId:Object=params.lessonId;
+
+				isLoading=true;
+
+				//mozda je parcijalna lekcija
+				if (isPartialLesson && isFavoriteQuestions)
+				{
+					servicePartialFavorite.send({groupId: groupId, lessonId: lessonId});
+
+				}
+				else if (isPartialLesson && !isFavoriteQuestions)
+				{
+
+					var isTesting:Boolean=type != "learn";
+					servicePartial.send({groupId: groupId, lessonId: lessonId, isTesting: isTesting, repeatCount: partialLessonRepeatCount});
+				}
+				else
+				{
+					service.send({groupId: groupId, lessonId: lessonId});
+				}
+			}
+
+			protected function onQuestionsLoaded(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				groupId=result.attribute("group-id");
+				groupName=result.attribute("group-name");
+				lessonId=result.attribute("lesson-id");
+				lessonName=result.attribute("lesson-name");
+				removedQuestionsCount=result.attribute("removed-questions-count");
+
+				questions=ModelParser.parseQuestions(result, PresenterProvider.mainPresenter.model);
+				QuestionsParser.assignNumberOfCorrectAnswers(questions);
+
+				if (questions.length > 0)
+				{
+					selectedIndex=0;
+					currentQuestion=questions.getItemAt(selectedIndex) as Question;
+
+					saveLearning();
+				}
+
+				isLoading=false;
+			}
+
+			protected function onPreviousClick(event:MouseEvent):void
+			{
+
+				selectedIndex--;
+				currentQuestion=questions.getItemAt(selectedIndex) as Question;
+			}
+
+			protected function onNextClick(event:MouseEvent):void
+			{
+
+				PresenterProvider.mainPresenter.model.isUnconfirmed=true;
+				selectedIndex++;
+				currentQuestion=questions.getItemAt(selectedIndex) as Question;
+
+				saveLearning();
+			}
+
+			protected function onFinishLearning(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("GroupSessions", {id: groupId});
+			}
+
+			protected function onBackToGroup(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("GroupSessions", {id: groupId});
+			}
+
+			private function saveLearning():void
+			{
+				PresenterProvider.mainPresenter.selectQuestion(questions.getItemAt(selectedIndex) as Question);
+			}
+
+			protected function onFinishTest(event:MouseEvent):void
+			{
+
+				//belezimo rezultate testa
+				var answeredQuestions:int=0;
+				var correctlyAnswered:int=0;
+				var incorrectlyAnswered:int=0;
+				var unansweredQuestions:Array=[]; //of questions
+
+				for each (var question:Question in questions)
+				{
+
+					if (question.isAnswered)
+					{
+
+						answeredQuestions++;
+
+						if (question.isCorrectlyAnswered())
+							correctlyAnswered++;
+						else
+							incorrectlyAnswered++;
+					}
+					else
+					{
+
+						unansweredQuestions.push(question);
+					}
+				}
+
+				var popup:TestResultsControl=new TestResultsControl();
+				popup.closeHandler=resultsCloseHandler;
+
+				PopUpManager.addPopUp(popup, this, true);
+				PopUpManager.centerPopUp(popup);
+
+				popup.setData(questions.length, answeredQuestions, correctlyAnswered, incorrectlyAnswered);
+			}
+
+			private function onFault(event:FaultEvent):void
+			{
+
+				isLoading=false;
+
+				EDTAlert.show("Greška :(. Pokušaj ponovo ili osveži stranicu u svom pregledaču.", event.toString());
+			}
+
+			private function getTitle(groupName:String, lessonName:String, type:String, isLoading:Boolean):String
+			{
+
+				if (isLoading)
+					return "momenat...";
+
+				var text:String=groupName + ' - ' + lessonName;
+
+				if (type == 'learn')
+					text+=" - učenje";
+				else
+					text+=" - provera";
+
+				return text;
+			}
+
+			protected function onConfirmQuestion(event:MouseEvent):void
+			{
+
+				var boxButton:BoxButton=event.target as BoxButton;
+
+				if (boxButton.isEnabled)
+					PresenterProvider.mainPresenter.model.isUnconfirmed=false;
+			}
+
+			protected function onSkipQuestionClick(event:MouseEvent):void
+			{
+
+				//ako preskacemo poslednje pitanje onda zavrsavamo test
+				if (selectedIndex == questions.length - 1)
+				{
+
+					onFinishTest(event);
+				}
+				else
+				{
+
+					PresenterProvider.mainPresenter.model.isUnconfirmed=true;
+					selectedIndex++;
+					currentQuestion=questions.getItemAt(selectedIndex) as Question;
+				}
+			}
+
+			private function resultsCloseHandler():void
+			{
+
+				PageManager.selectPage("GroupSessions", {id: groupId});
+			}
+
+			private function getPartialLessonMessage(type:String, repeatCount:int, removedQuestionsCount:int, isFavoriteQuestions:Boolean):String
+			{
+
+
+				var message:String="";
+
+				if (isFavoriteQuestions)
+				{
+
+					message="Prikazuju se samo pitanja označena kao omiljena.";
+				}
+				else
+				{
+
+					var typeMessagePart:String=type == 'learn' ? 'učena' : 'proveravana';
+
+					if (repeatCount == 1)
+						message="Prikazuju se samo pitanja ove lekcije koja nisu " + typeMessagePart + " nikako.";
+					else if (repeatCount == 2)
+						message="Prikazuju se samo pitanja ove lekcije koja nisu " + typeMessagePart + " dva puta.";
+					else if (repeatCount == 3)
+						message="Prikazuju se samo pitanja ove lekcije koja nisu " + typeMessagePart + " tri puta.";
+					else
+						message="Prikazuju se samo pitanja ove lekcije koja nisu " + typeMessagePart + " " + repeatCount + " puta.";
+				}
+
+				if (removedQuestionsCount == 1)
+					message+=" Jedno pitanje ove lekcije neće biti prikazano.";
+				else
+					message+=" " + removedQuestionsCount + " pitanja ove lekcije neće biti prikazana.";
+
+				return message;
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

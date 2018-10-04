@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*"
+					xmlns:components="com.evola.driving.views.pages.components.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper height="100%"
+							  styleName="contentWrapper">
+
+		<controls1:PageTitle label="Sve moje provere znanja"
+							 note="(klikni na određenu proveru za detalje)"
+							 baseline="10"/>
+
+		<mx:DataGrid id="grid"
+					 height="100%"
+					 width="100%"
+					 itemClick="onItemSelected(event)">
+			<mx:columns>
+				<mx:DataGridColumn headerText="Vreme testiranja"
+								   labelFunction="timeLabelFunction"
+								   width="300"/>
+				<mx:DataGridColumn headerText="Broj testiranih pitanja">
+					<mx:itemRenderer>
+						<mx:Component>
+							<components:QuestionStatValueRenderer selected="{outerDocument.grid.selectedItem == data}"/>
+						</mx:Component>
+					</mx:itemRenderer>
+				</mx:DataGridColumn>
+			</mx:columns>
+		</mx:DataGrid>
+
+		<mx:HRule width="100%"/>
+
+		<mx:ViewStack id="stack"
+					  width="100%">
+
+			<components:QuestionStatChart id="chart"/>
+
+			<components:SessionQuestionList id="session"
+											close="onCloseSessionClick(event)"/>
+
+		</mx:ViewStack>
+
+	</pages:PageContentWrapper>
+
+	<pages:PageFooter/>
+	
+	<util:EvolaHttpService id="service"
+						   restUrl="statistics/loadAllTestingSessions"
+						   result="onAllSessionsLoaded(event)"
+						   faultFunction="onFault"/>
+
+	<util:EvolaHttpService id="serviceLoadSession"
+						   restUrl="statistics/loadTestingSessionQuestions"
+						   result="onSessionQuestionsLoaded(event)"
+						   faultFunction="onFault"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.spinner.SpinnerUtil;
+			import com.evola.driving.util.DateUtils;
+			import com.evola.driving.util.DrivingUtils;
+			import com.evola.driving.util.FormattingUtils;
+
+			import mx.collections.ArrayCollection;
+			import mx.events.ListEvent;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+
+			override protected function displayPage():void
+			{
+
+				SpinnerUtil.showSpinner(this);
+
+				service.send({userId: Settings.user.id});
+
+				if (stack && chart)
+					stack.selectedChild=chart;
+			}
+
+			protected function onAllSessionsLoaded(event:ResultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+
+				var result:XML=XML(event.result);
+
+				var sessions:ArrayCollection=DrivingUtils.createStatObjectList(result.child('testing-session'));
+
+				grid.dataProvider=sessions;
+
+				chart.dataProvider=sessions;
+			}
+
+			private function timeLabelFunction(item:Object, col:DataGridColumn):String
+			{
+
+				var expression:String=DateUtils.getPrettyTimeAgoText(item.date);
+
+				return expression;
+			}
+
+			protected function onFault(event:FaultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+			}
+
+			protected function onItemSelected(event:ListEvent):void
+			{
+
+				serviceLoadSession.send({userId: Settings.user.id, sessionUid: event.itemRenderer.data.uid});
+			}
+
+			protected function onSessionQuestionsLoaded(event:ResultEvent):void
+			{
+
+				stack.selectedChild=session;
+
+				var result:XML=XML(event.result);
+				var sessionXML:XML=result.child("testing-session")[0];
+
+				session.title="Detalji testiranja - " + DateUtils.formatDateExtended(FormattingUtils.parseJavaDateString(sessionXML.@start));
+				session.dataProvider=sessionXML.child("question-test");
+			}
+
+			protected function onCloseSessionClick(event:Event):void
+			{
+
+				stack.selectedChild=chart;
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

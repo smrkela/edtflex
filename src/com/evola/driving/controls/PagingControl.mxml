@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 xmlns:controls="com.evola.driving.controls.*">
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.collections.ArrayCollection;
+			import mx.events.ListEvent;
+
+			protected function onFirstPageClick(event:MouseEvent):void
+			{
+
+				PresenterProvider.mainPresenter.selectFirstPage();
+			}
+
+			protected function onPreviousPageClick(event:MouseEvent):void
+			{
+				PresenterProvider.mainPresenter.selectPreviousPage();
+			}
+
+			protected function onPageSelected(event:ListEvent):void
+			{
+				PresenterProvider.mainPresenter.selectPage(event.target.selectedItem);
+			}
+
+			protected function onNextPageClick(event:MouseEvent):void
+			{
+				PresenterProvider.mainPresenter.selectNextPage();
+			}
+
+			protected function onLastPageClick(event:MouseEvent):void
+			{
+				PresenterProvider.mainPresenter.selectLastPage();
+			}
+
+			private function comboLabelFunction(item:ArrayCollection):String
+			{
+
+				return PresenterProvider.mainPresenter.model.currentQuestionPages.getItemIndex(item) + 1 + "";
+			}
+		]]>
+	</mx:Script>
+
+
+	<mx:Image source="@Embed(source='/data/images/page_first.png')"
+			  toolTip="Nazad na prvu stranu"
+			  useHandCursor="true"
+			  buttonMode="true"
+			  click="onFirstPageClick(event)"/>
+	<mx:Image source="@Embed(source='/data/images/page_previous.png')"
+			  toolTip="Nazad na prethodnu stranu"
+			  useHandCursor="true"
+			  buttonMode="true"
+			  click="onPreviousPageClick(event)"/>
+	<mx:ComboBox dataProvider="{PresenterProvider.mainPresenter.model.currentQuestionPages}"
+				 toolTip="Izaberite stranu sa pitanjima"
+				 change="onPageSelected(event)"
+				 selectedIndex="{PresenterProvider.mainPresenter.model.currentQuestionPages.getItemIndex(PresenterProvider.mainPresenter.model.currentQuestions)}"
+				 labelFunction="comboLabelFunction"
+				 rowCount="20"/>
+	<mx:Image source="@Embed(source='/data/images/page_next.png')"
+			  buttonMode="true"
+			  useHandCursor="true"
+			  toolTip="Napred na narednu stranu"
+			  click="onNextPageClick(event)"/>
+	<mx:Image source="@Embed(source='/data/images/page_last.png')"
+			  useHandCursor="true"
+			  buttonMode="true"
+			  toolTip="Napred na poslednju stranu"
+			  click="onLastPageClick(event)"/>
+
+</mx:HBox>

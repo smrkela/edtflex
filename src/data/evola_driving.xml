@@ -1,0 +1,35 @@
+<evola-driving>
+
+	<question-categories>
+		<question-category id="pravila" name="Правила саобраћаја" />
+		<question-category id="signalizacija" name="Саобраћајна сигнализација" />
+		<question-category id="vozaci" name="Возачи" />
+		<question-category id="bezbednost"
+			name="Основе безбедности саобраћаја и појмови" />
+		<question-category id="mere" name="Посебне мере и овлашћења" />
+		<question-category id="posledice"
+			name="Последице непоштовања прописа" />
+		<question-category id="vozila" name="Возила" />
+	</question-categories>
+
+	<driving-categories>
+		<driving-category id="a" name="A" />
+		<driving-category id="b" name="B" />
+		<driving-category id="c" name="C" />
+		<driving-category id="d" name="D" />
+		<driving-category id="f" name="F" />
+		<driving-category id="m" name="M" />
+	</driving-categories>
+	
+	<question-files>
+		<question-file url="data/evola_driving_questions_pravila_1.xml"/>
+		<question-file url="data/evola_driving_questions_pravila_2.xml"/>
+		<question-file url="data/evola_driving_questions_signalizacija.xml"/>
+		<question-file url="data/evola_driving_questions_vozaci.xml"/>
+		<question-file url="data/evola_driving_questions_vozila.xml"/>
+		<question-file url="data/evola_driving_questions_bezbednost.xml"/>
+		<question-file url="data/evola_driving_questions_mere.xml"/>
+		<question-file url="data/evola_driving_questions_posledice.xml"/>
+	</question-files>
+
+</evola-driving>

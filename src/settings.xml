@@ -1,0 +1,15 @@
+<settings>
+
+	 <!-- 
+	<url value="www.vozacisrbije.com"/>
+	<site value="www.vozacisrbije.com"/>
+	<application value=""/>
+	<email value="office.vozacisrbije@gmail.com"/>
+	
+	-->
+	<url value="localhost:8080"/>
+	<site value="www.vozacisrbije.com"/>
+	<application value="ROOT"/>
+	<email value="office.vozacisrbije@gmail.com"/>
+	
+</settings>

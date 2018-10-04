@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:LinkButton xmlns:mx="http://www.adobe.com/2006/mxml" 
+			   fontWeight="{PresenterProvider.mainPresenter.model.currentQuestions == data ? 'bold' : 'normal'}">
+	
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PresenterProvider;
+		]]>
+	</mx:Script>
+	
+</mx:LinkButton>

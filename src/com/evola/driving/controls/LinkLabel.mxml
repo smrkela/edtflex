@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Label xmlns:mx="http://www.adobe.com/2006/mxml"
+		  rollOver="setStyle('textDecoration', 'underline')"
+		  rollOut="setStyle('textDecoration', 'none')"
+		  useHandCursor="true"
+		  buttonMode="true"
+		  mouseChildren="false">
+
+</mx:Label>

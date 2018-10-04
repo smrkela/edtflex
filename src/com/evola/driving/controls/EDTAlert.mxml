@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="500"
+		 maxHeight="600"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 paddingTop="20"
+		 paddingLeft="10"
+		 paddingRight="10"
+		 horizontalAlign="center"
+		 paddingBottom="10"
+		 backgroundColor="#FFFFFF"
+		 doubleClickEnabled="true"
+		 doubleClick="onActivateHiddenText(event)">
+
+	<mx:Text text="{message}"
+			 width="100%"/>
+
+	<mx:Spacer height="10"/>
+
+	<controls:BoxButton label="OK"
+						width="100"
+						height="{30}"
+						primaryColor="0xE3A21A"
+						secondaryColor="0x00A300"
+						click="onOkClick(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import mx.core.FlexGlobals;
+			import mx.managers.PopUpManager;
+
+			[Bindable]
+			public var message:String;
+
+			[Bindable]
+			public var details:String;
+
+			public static function show(message:String, details:String):void
+			{
+
+				var popup:EDTAlert=new EDTAlert();
+				popup.message=message;
+				popup.details=details;
+
+				PopUpManager.addPopUp(popup, FlexGlobals.topLevelApplication as DisplayObject, true);
+				PopUpManager.centerPopUp(popup);
+			}
+
+			protected function onOkClick(event:MouseEvent):void
+			{
+
+				PopUpManager.removePopUp(this);
+			}
+
+			protected function onActivateHiddenText(event:MouseEvent):void
+			{
+
+				message=details;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

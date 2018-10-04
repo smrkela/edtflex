@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 horizontalAlign="center"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:util="com.evola.driving.util.*">
+
+	<mx:HBox width="100%"
+			 styleName="userHeaderBox">
+
+		<controls:ImageControl source="@Embed(source='/data/images/car.png')"
+							   click="onLogoImageClick(event)"
+							   buttonMode="true"
+							   useHandCursor="true"/>
+
+		<mx:Label text="Vozači Srbije"
+				  color="#FFFFFF"
+				  fontSize="18"/>
+
+		<mx:Spacer width="100%"/>
+
+		<mx:HBox horizontalGap="15"
+				 visible="{Settings.user != null}">
+
+			<controls:UserHeaderButton label="Početna"
+									   click="onLogoImageClick(event)"/>
+
+			<controls:UserHeaderButton label="Moja učenja"
+									   click="onMyLearningsClick(event)"/>
+
+			<controls:UserHeaderButton label="Moje provere"
+									   click="onMyTestingsClick(event)"/>
+
+			<controls:UserHeaderButton label="Diskusije"
+									   click="onDiscussionsClick(event)"/>
+			
+			<controls:UserHeaderButton label="Moj profil"
+									   click="onMyProfileClick(event)"/>
+			
+			<controls:UserHeaderButton label="Pomoć"
+									   click="onInfoClick(event)"/>
+
+		</mx:HBox>
+
+		<mx:Spacer width="100%"/>
+
+		<mx:HBox visible="{Settings.user != null}"
+				 paddingLeft="2"
+				 paddingTop="2"
+				 paddingRight="2"
+				 paddingBottom="2"
+				 borderStyle="solid"
+				 cornerRadius="4">
+
+			<mx:Image width="30"
+					  height="30"
+					  buttonMode="true"
+					  useHandCursor="true"
+					  click="onUserClick(event)"
+					  source="{Settings.SERVER_URL + '/resource?path=/users/'+Settings.user.id + '/smallImage'}"/>
+
+		</mx:HBox>
+
+		<controls:LinkLabel text="Zdravo {Settings.user.firstName}"
+							color="#FFFFFF"
+							visible="{Settings.user != null}"
+							click="onUserClick(event)"/>
+
+		<mx:Image visible="{Settings.user != null}"
+				  toolTip="odjavi se"
+				  useHandCursor="true"
+				  buttonMode="true"
+				  source="@Embed(source='/data/images/log_out.png')"
+				  click="onLogoutClick(event)"/>
+
+	</mx:HBox>
+
+	<util:EvolaHttpService id="serviceLogout"
+						   url="{Settings.SERVER_URL}/logout"
+						   skipError401="true"
+						   result="onLogoutResult(event)"
+						   fault="onFault(event)"/>
+
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.util.PresenterProvider;
+			
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+
+			protected function onLogoutClick(event:MouseEvent):void
+			{
+
+				serviceLogout.send();
+			}
+
+			protected function onUserClick(event:MouseEvent):void
+			{
+				PageManager.selectPage("UserProfile");
+			}
+
+			protected function onLogoImageClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("HomePage");
+			}
+
+			protected function onLogoutResult(event:ResultEvent):void
+			{
+				var u:URLRequest=new URLRequest("javascript:window.location.reload()");
+				navigateToURL(u, "_self");
+			}
+
+			protected function onMyLearningsClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("AllLearningSessions", {isLearning: true});
+			}
+
+			protected function onMyTestingsClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("AllTestingSessions", {isLearning: false});
+			}
+
+			protected function onMyProfileClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("UserProfile");
+			}
+
+			protected function onInfoClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("About");
+			}
+			
+			protected function onFault(event:FaultEvent):void
+			{
+				var u:URLRequest=new URLRequest("javascript:window.location.reload()");
+				navigateToURL(u, "_self");				
+			}
+			
+			protected function onDiscussionsClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("Discussions");
+			}
+			
+		]]>
+	</mx:Script>
+
+</mx:VBox>

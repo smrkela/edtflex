@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*"
+					xmlns:components="com.evola.driving.views.pages.components.*"
+					xmlns:sessions="com.evola.driving.views.pages.sessions.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper height="100%"
+							  styleName="contentWrapper">
+
+		<controls1:PageTitle label="{getTitle(_isLearning)}"
+							 note="{getNumOfQuestionsString(_numberOfQuestions, _isLearning)}"/>
+
+		<mx:VBox width="100%">
+
+			<mx:Repeater id="rpt"
+						 dataProvider="{_sessions}"
+						 recycleChildren="true">
+
+				<sessions:LearningSessionsMonthRenderer data="{rpt.currentItem}"/>
+
+			</mx:Repeater>
+
+		</mx:VBox>
+
+	</pages:PageContentWrapper>
+
+	<pages:PageFooter/>
+
+	<util:EvolaHttpService id="serviceLearning"
+						   restUrl="statistics/loadAllLearningSessions"
+						   result="onAllSessionsLoaded(event)"
+						   faultFunction="onFault"/>
+
+	<util:EvolaHttpService id="serviceTesting"
+						   restUrl="statistics/loadAllTestingSessions"
+						   result="onAllSessionsLoaded(event)"
+						   faultFunction="onFault"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.spinner.SpinnerUtil;
+			import com.evola.driving.util.Session;
+			import com.evola.driving.util.SessionGroupMonth;
+			import com.evola.driving.util.SessionUtils;
+			
+			import mx.collections.ListCollectionView;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+
+			[Bindable]
+			private var _sessions:ListCollectionView;
+
+			[Bindable]
+			private var _numberOfQuestions:int;
+
+			[Bindable]
+			private var _isLearning:Boolean;
+
+			override protected function displayPage():void
+			{
+
+				_isLearning=params.isLearning;
+
+				SpinnerUtil.showSpinner(this);
+
+				if (_isLearning)
+					serviceLearning.send({userId: Settings.user.id});
+				else
+					serviceTesting.send({userId: Settings.user.id});
+			}
+
+			protected function onAllSessionsLoaded(event:ResultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+
+				var result:XML=XML(event.result);
+
+				if (_isLearning)
+					_sessions=SessionUtils.regroupSessions(result.child('learning-session'));
+				else
+					_sessions=SessionUtils.regroupSessions(result.child('testing-session'));
+				
+				//sada treba proci kroz sve grupe da bi izvukli konacan broj pitanja
+				var total : int = 0;
+				
+				for each(var session : SessionGroupMonth in _sessions){
+					
+					total += session.numberOfQuestions;
+				}
+				
+				_numberOfQuestions = total;
+			}
+
+			protected function onFault(event:FaultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+			}
+			
+			private static function getTitle(isLearning:Boolean):Object
+			{
+				
+				return isLearning ? "Moja učenja" : "Moje provere";
+			}
+
+			private function getNumOfQuestionsString(numOfQuestions:int, isLearning:Boolean):Object
+			{
+
+				var string:String="Ukupno " + numOfQuestions + " pitanja";
+
+				string+=_isLearning ? " naučeno" : " uspešno provereno";
+
+				return string;
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

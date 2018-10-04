@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 addedToStage="onCreationComplete(event)"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:util="com.evola.driving.util.*"
+		 xmlns:controls1="com.evola.driving.views.controls.*"
+		 xmlns:containers="flexlib.containers.*">
+
+	<mx:VBox width="100%">
+
+		<mx:HBox width="100%"
+				 verticalAlign="middle">
+
+			<mx:Label text="Izaberi kategoriju pitanja i kreni sa učenjem"/>
+
+			<mx:Spacer width="100%"/>
+
+			<mx:Label text="Koji put učiš i proveravaš?"
+					  color="#777777"/>
+
+			<controls:BoxButton isExternalRollOver="true"
+								primaryColor="#999999"
+								click="Settings.learningOrderNumber = 1"
+								isRollOver="{Settings.learningOrderNumber == 1}"
+								label="Prvi"/>
+
+			<controls:BoxButton isExternalRollOver="true"
+								primaryColor="#999999"
+								click="Settings.learningOrderNumber = 2"
+								isRollOver="{Settings.learningOrderNumber == 2}"
+								label="Drugi"/>
+
+			<controls:BoxButton isExternalRollOver="true"
+								primaryColor="#999999"
+								click="Settings.learningOrderNumber = 3"
+								isRollOver="{Settings.learningOrderNumber == 3}"
+								label="Treći"/>
+
+		</mx:HBox>
+
+		<mx:HRule width="100%"
+				  styleName="sectionTitleRule"/>
+
+	</mx:VBox>
+
+	<mx:VBox width="100%"
+			 verticalGap="10">
+
+		<mx:Repeater id="rpt"
+					 dataProvider="{groups}"
+					 recycleChildren="true">
+
+			<controls1:LearningGroupRenderer data="{rpt.currentItem}"
+											 groupId="{rpt.currentItem.@id}"/>
+
+		</mx:Repeater>
+
+	</mx:VBox>
+
+	<mx:Spacer height="20"/>
+
+	<controls:NotificationControl notificationText="{getNoteText()}"/>
+
+	<util:EvolaHttpService id="service"
+						   fault="onLoadFault(event)"
+						   restUrl="statistics/loadGroups"
+						   result="onLoadResult(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PageManager;
+
+			import mx.controls.Alert;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+
+			[Bindable]
+			private var groups:XMLList;
+
+			private function onLoadResult(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				groups=result.child("group");
+			}
+
+			protected function onCreationComplete(event:Event):void
+			{
+
+				service.send();
+			}
+
+			protected function onLoadFault(event:FaultEvent):void
+			{
+
+				Alert.show("Error loading progress");
+			}
+
+			protected function onLearningDetailsClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("LearningDetails");
+			}
+
+			protected function onTestingDetailsClick(event:MouseEvent):void
+			{
+				PageManager.selectPage("TestingDetails");
+			}
+
+			private function getNoteText():String
+			{
+
+				var text:String="NAPOMENA: Uz svaku grupu pitanja predstavljen " + "je broj pitanja ove grupe koji je učen barem jedanput i uz to grafik " + "koji predstavlja precentualnu vrednost tog broja u odnosu na ukupan broj pitanja u toj grupi. " + "Ispod, analogno tome, predstavljen je napredak u proveri znanja.";
+				text+="\n\n";
+				text+="Ispod naziva grupe pitanja nalazi se procentualni iznos koji pokazuje koliki je napredak u završavanju date grupe pitanja odnosno pokazuje koliko je pitanja, od ukupnog broja pitanja, učeno i provereno barem jednom. Procenat od 100% znači da su sva pitanja barem jednom učena i proverena.";
+				text+="\n\n";
+				text+="Pored procentualnog iznosa nalazi se ukupan broj pitanja u datoj grupi pitanja.";
+
+				return text;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

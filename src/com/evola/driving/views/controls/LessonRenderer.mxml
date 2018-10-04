@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 verticalAlign="middle"
+		 width="100%"
+		 borderStyle="solid"
+		 borderSides="bottom"
+		 borderThickness="5"
+		 backgroundAlpha="{_isRollOver ? 0.9: 0.6}"
+		 backgroundColor="{GroupColors.getAlternateColor(lessonId % 2 != 0)}"
+		 borderColor="{_isRollOver ? GroupColors.getHoverAlternateColor(lessonId % 2 != 0) : GroupColors.getAlternateColor(lessonId % 2 != 0)}"
+		 rollOver="_isRollOver = true"
+		 rollOut="_isRollOver = false"
+		 xmlns:controls="com.evola.driving.views.controls.*"
+		 xmlns:controls1="com.evola.driving.controls.*">
+
+	<mx:HBox width="100%"
+			 borderColor="{_isRollOver ? GroupColors.getHoverAlternateColor(lessonId % 2 != 0) : GroupColors.getAlternateColor(lessonId % 2 != 0)}"
+			 borderSides="top"
+			 borderStyle="solid"
+			 verticalAlign="middle">
+
+		<mx:VBox width="100%"
+				 verticalGap="2">
+
+			<mx:HBox width="100%">
+
+				<mx:Text text="{data.@title}"
+						 fontSize="16"
+						 fontWeight="bold"
+						 width="120"
+						 color="{GroupColors.getColor(groupId)}"/>
+
+				<mx:Label text="{getProgressValue(data.@learn1, Settings.learningOrderNumber)}%"
+						  alpha="{getProgressValue(data.@learn1, Settings.learningOrderNumber) / 100 + 0.2}"
+						  fontWeight="bold"
+						  fontSize="16"/>
+
+			</mx:HBox>
+
+			<mx:HBox verticalAlign="bottom">
+
+				<mx:Label textAlign="right"
+						  alpha="0.5"
+						  text="{data.attribute('number-of-questions')} pitanja"/>
+
+				<controls1:LinkLabel textAlign="right"
+									 visible="{data.attribute('favorites-count') > 0}"
+									 includeInLayout="{data.attribute('favorites-count') > 0}"
+									 alpha="0.5"
+									 text="{data.attribute('favorites-count')} omiljenih"
+									 click="onFavoriteClick(event)"/>
+
+			</mx:HBox>
+
+		</mx:VBox>
+
+		<mx:Spacer width="100%"/>
+
+		<mx:HBox height="100%"
+				 width="290"
+				 verticalAlign="middle">
+
+			<controls1:BoxButton label="Uči"
+								 isRollOver="{_isRollOver}"
+								 isExternalRollOver="true"
+								 color="#000000"
+								 height="25"
+								 width="95"
+								 primaryColor="#DDDDDD"
+								 secondaryColor="0x00A300"
+								 icon="@Embed(source='/data/images/book.png')"
+								 click="onClick('learn')"/>
+
+			<controls:LearningLessonProgressControl progress="{data.attribute('learn'+Settings.learningOrderNumber) / data.attribute('number-of-questions')}"
+													total="{data.attribute('number-of-questions')}"
+													value="{data.attribute('learn'+Settings.learningOrderNumber)}"
+													index="{Settings.learningOrderNumber}"
+													click="onProgressClick(event)"
+													isRollOver="{_isRollOver}"/>
+
+		</mx:HBox>
+
+		<mx:HBox height="100%"
+				 width="290"
+				 verticalAlign="middle">
+
+			<controls1:BoxButton label="Proveri"
+								 isRollOver="{_isRollOver}"
+								 isExternalRollOver="true"
+								 color="#000000"
+								 height="25"
+								 width="95"
+								 primaryColor="#DDDDDD"
+								 secondaryColor="0xFFC40D"
+								 icon="@Embed(source='/data/images/pencil.png')"
+								 click="onClick('test')"/>
+
+			<controls:LearningLessonProgressControl progress="{data.attribute('test'+Settings.learningOrderNumber) / data.attribute('number-of-questions')}"
+													total="{data.attribute('number-of-questions')}"
+													value="{data.attribute('test'+Settings.learningOrderNumber)}"
+													index="{Settings.learningOrderNumber}"
+													click="onProgressClick(event)"
+													isRollOver="{_isRollOver}"
+													isLearn="false"/>
+
+		</mx:HBox>
+
+	</mx:HBox>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.FavoriteQuestionsDropdown;
+			import com.evola.driving.util.GroupColors;
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.views.pages.grouplessons.GroupLessonsPage;
+			import com.evola.driving.views.pages.grouplessons.GroupLessonsPresenter;
+
+			[Bindable]
+			public var groupId:int;
+
+			[Bindable]
+			public var lessonId:int;
+
+			[Bindable]
+			private var _isRollOver:Boolean=false;
+
+			[Bindable]
+			public var presenter:GroupLessonsPresenter;
+
+			protected function onClick(type:String):void
+			{
+
+				PageManager.selectPage("LearningSession", {groupId: groupId, lessonId: data.@id, type: type});
+			}
+
+			private function getProgressValue(learns:int, learnOrderNumber:int):Number
+			{
+
+				var learned:int=data.attribute('learn' + learnOrderNumber);
+				var tested:int=data.attribute('test' + learnOrderNumber);
+				var total:int=data.attribute("number-of-questions");
+
+				var value:int=(learned + tested) * 100 / (2 * total);
+
+				value=Math.min(value, 100);
+
+				return value;
+			}
+
+			protected function onProgressClick(event:MouseEvent):void
+			{
+
+				var progresControl:LearningLessonProgressControl=event.currentTarget as LearningLessonProgressControl;
+
+				//ako je reseno 100% onda nemamo sta parcijalno da ucitavamo
+				if (progresControl.progress == 1)
+					return;
+
+				var lessonId:String=data.@id;
+				var type:String=progresControl.isLearn ? "learn" : "test";
+				var repeatCount:int=progresControl.index;
+
+				PageManager.selectPage("LearningSession", {groupId: groupId, lessonId: lessonId, type: type, repeatCount: repeatCount, isPartialLesson: true});
+			}
+
+			protected function onFavoriteClick(event:MouseEvent):void
+			{
+
+				FavoriteQuestionsDropdown.show(event, groupId, data.@id);
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

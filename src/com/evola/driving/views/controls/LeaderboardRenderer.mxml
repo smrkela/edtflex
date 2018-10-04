@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%">
+
+	<mx:HBox paddingLeft="2"
+			 paddingTop="2"
+			 paddingRight="2"
+			 paddingBottom="2"
+			 borderStyle="solid"
+			 cornerRadius="4">
+
+		<mx:Image width="30"
+				  height="30"
+				  source="{Settings.SERVER_URL + '/resource?path=/users/'+data.@userid + '/smallImage'}"/>
+
+	</mx:HBox>
+
+	<mx:VBox verticalGap="-4">
+		<mx:Label text="{data.@username}"
+				  fontWeight="bold"/>
+		<mx:Label text="{data.@level}. nivo"
+				  color="#777777"/>
+	</mx:VBox>
+
+	<mx:Spacer width="100%"/>
+
+	<mx:Label htmlText="{getPointsText(data)}"
+			  textAlign="right"/>
+
+	<mx:Script>
+		<![CDATA[
+			private function getPointsText(data:Object):String
+			{
+
+				var points:int=data.@points;
+
+				var text:String="<b>" + points + "</b> poena";
+
+				return text;
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

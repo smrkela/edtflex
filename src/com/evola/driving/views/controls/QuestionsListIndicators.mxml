@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 xmlns:controls="com.evola.driving.views.controls.*"
+		 verticalAlign="middle"
+		 horizontalGap="4"
+		 height="14">
+
+	<mx:Repeater dataProvider="{questions}"
+				 id="rpt">
+
+		<controls:QuestionsListIndicator questionIndex="{rpt.currentIndex}"
+										 selectedQuestionIndex="{selectedIndex}"
+										 groupId="{groupId}"/>
+
+	</mx:Repeater>
+
+	<mx:Script>
+		<![CDATA[
+			import mx.collections.ListCollectionView;
+
+			[Bindable]
+			public var questions:ListCollectionView;
+
+			[Bindable]
+			public var selectedIndex:int;
+
+			[Bindable]
+			public var groupId:String;
+		]]>
+	</mx:Script>
+
+</mx:HBox>

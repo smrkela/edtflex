@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					width="1024"
+					height="100%"
+					creationComplete="onCreationComplete(event)"
+					horizontalAlign="center"
+					xmlns:header="com.evola.driving.views.header.*"
+					xmlns:controls="com.evola.driving.controls.*"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:util="com.evola.driving.util.*"
+					xmlns:controls1="com.evola.driving.views.controls.*">
+
+	<controls1:UserHeaderControl/>
+
+	<pages:PageContentWrapper horizontalAlign="center"
+							  styleName="contentWrapper">
+
+		<mx:Spacer height="20"/>
+
+		<mx:HBox width="100%"
+				 verticalAlign="middle"
+				 horizontalAlign="center">
+
+			<mx:Text text="Pripremi se za polaganje vozačkog ispita brzo, jednostavno i zabavno!"
+					 fontSize="24"
+					 width="400"/>
+
+			<controls:ImageControl source="@Embed(source='/mxcpdriver_student.jpg')"
+								   width="400"/>
+
+		</mx:HBox>
+
+		<mx:Spacer height="80"/>
+
+		<mx:HBox id="boxLogin"
+				 paddingBottom="20"
+				 paddingLeft="20"
+				 paddingRight="20"
+				 paddingTop="20"
+				 fontSize="24"
+				 defaultButton="{btnSubmit}">
+
+			<mx:VBox>
+				<mx:Label text="Korisničko ime"/>
+				<mx:TextInput id="tiUsername"
+							  width="250"/>
+			</mx:VBox>
+
+			<mx:VBox>
+				<mx:Label text="Lozinka"/>
+				<mx:TextInput id="tiPassword"
+							  displayAsPassword="true"
+							  width="250"/>
+			</mx:VBox>
+
+			<mx:VBox>
+				<mx:Label text=""/>
+				<controls:BoxButton id="btnSubmit"
+									label="Prijavi se"
+									width="150"
+									icon="@Embed(source='/data/images/log_in.png')"
+									height="{tiPassword.height}"
+									primaryColor="0xE3A21A"
+									secondaryColor="0x00A300"
+									click="onLoginClick(event)"/>
+			</mx:VBox>
+
+		</mx:HBox>
+
+		<mx:HBox width="100%"
+				 horizontalAlign="center">
+			<mx:Label text="{_errorMessage}"
+					  fontSize="18"
+					  color="0xFF981D"/>
+		</mx:HBox>
+
+		<mx:HBox width="100%"
+				 horizontalAlign="center"
+				 fontSize="12">
+
+			<mx:CheckBox id="cbRememberPassword"
+						 label="Zapamti me na ovom računaru"
+						 labelPlacement="left"/>
+
+			<mx:Spacer width="100%"/>
+
+			<controls:LinkLabel text="Problemi sa loginom?"
+								click="onLoginProblemClick(event)"/>
+
+			<!--
+			<controls:LinkLabel text="Nemaš nalog?"
+								click="onRegisterClick(event)"/>
+			-->
+
+		</mx:HBox>
+
+	</pages:PageContentWrapper>
+
+	<mx:VBox styleName="footer"
+			 width="100%">
+
+		<mx:HBox width="100%">
+
+			<mx:Label text="2013, Vozači Srbije © Evola Software"/>
+
+			<mx:Spacer width="100%"/>
+
+			<controls:LinkLabel color="#FFFFFF"
+								text="{'klikni ovde da se vratiš na sajt  '+Settings.SITE}"
+								click="onBackToMainSiteClick(event)"/>
+
+		</mx:HBox>
+
+	</mx:VBox>
+
+	<util:EvolaHttpService id="serviceLogin"
+						   method="POST"
+						   resultFormat="e4x"
+						   fault="onLoginFault(event)"
+						   url="{Settings.SERVER_URL}/login"
+						   result="onLoginResult(event)"/>
+
+	<util:EvolaHttpService id="serviceGetUser"
+						   restUrl="user/getUser"
+						   faultFunction="onGetUserFault"
+						   result="onGetUserResult(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.EDTAlert;
+			import com.evola.driving.controls.spinner.SpinnerUtil;
+			import com.evola.driving.model.User;
+			import com.evola.driving.util.DrivingUtils;
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.utils.StringUtil;
+
+			[Bindable]
+			private var _errorMessage:String;
+
+			private var _credentialsSO:SharedObject;
+
+			protected function onLoginClick(event:MouseEvent):void
+			{
+
+				var email:String=tiUsername.text;
+				var pass:String=tiPassword.text;
+
+				if (email && pass)
+				{
+
+					var req:Object={username: email, password: pass};
+
+					serviceLogin.request=req;
+
+					SpinnerUtil.showSpinner(boxLogin);
+
+					serviceLogin.send();
+
+					_errorMessage="";
+				}
+
+			}
+
+			protected function onLoginFault(event:FaultEvent):void
+			{
+				SpinnerUtil.removeSpinner(boxLogin);
+
+				if (event.statusCode == 401)
+				{
+
+					_errorMessage="Ne postoji korisnik sa prosleđenim podacima.";
+				}
+				else
+				{
+
+					EDTAlert.show("Greška :(. Pokušaj ponovo.", event.toString());
+				}
+			}
+
+			private function onGetUserFault(event:FaultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+
+				EDTAlert.show("Greška :(. Pokušaj ponovo ili osveži stranicu u svom pregledaču.", event.toString());
+			}
+
+			protected function onLoginResult(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				//<user class-name="User" email="smrkela@gmail.com" firstName="Sasa" isMale="true" last-login="2014-07-01T20:17:26+02:00" lastName="Mrkela" questions-per-page="10" username="smrkela" id="12"/>
+
+				var userId:String=result.@id;
+
+				Settings.userId=userId;
+
+				//sada pamtimo podatke u so ako treba
+				if (cbRememberPassword.selected)
+				{
+					// if we selected remember password
+					// we save the login data in the shared object
+					_credentialsSO.data.username=tiUsername.text;
+					_credentialsSO.data.password=tiPassword.text;
+					// saving/writing
+					_credentialsSO.flush();
+				}
+				else
+				{
+					// otherwise we clear the shared object
+					_credentialsSO.clear();
+				}
+
+				serviceGetUser.send();
+			}
+
+			protected function onGetUserResult(event:ResultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+
+				var result:XML=XML(event.result);
+
+				var user:User=User.createFromXML(result);
+
+				PresenterProvider.mainPresenter.loginUser(user);
+			}
+
+			protected function onRegisterClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("Register");
+			}
+
+			protected function onForgottenPasswordClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("PasswordReset");
+			}
+
+			protected function onBackToMainSiteClick(event:MouseEvent):void
+			{
+
+				navigateToURL(new URLRequest(Settings.SERVER_URL), "_blank");
+			}
+
+			protected function onCreationComplete(event:FlexEvent):void
+			{
+
+				_credentialsSO=SharedObject.getLocal("loginData");
+
+				if (_credentialsSO.data.username != undefined && _credentialsSO.data.password != undefined)
+				{
+					cbRememberPassword.selected=true;
+					tiUsername.text=_credentialsSO.data.username;
+					tiPassword.text=_credentialsSO.data.password;
+				}
+			}
+
+			protected function onLoginProblemClick(event:MouseEvent):void
+			{
+
+				navigateToURL(new URLRequest(Settings.SERVER_URL + "/uloguj-se"), "_blank");
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

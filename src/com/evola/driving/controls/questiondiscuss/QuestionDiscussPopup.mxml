@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="1000"
+		 height="700"
+		 backgroundColor="#FFFFFF"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:util="com.evola.driving.util.*"
+		 xmlns:controls1="com.evola.driving.controls.questiondiscuss.controls.*"
+		 borderStyle="solid"
+		 borderThickness="3"
+		 borderColor="{ThemeColors.ORANGE}"
+		 cornerRadius="3"
+		 xmlns:controls2="com.evola.driving.views.pages.discussions.controls.*"
+		 creationComplete="onCreationComplete(event)">
+
+	<mx:HBox width="100%"
+			 backgroundColor="{ThemeColors.ORANGE}"
+			 color="#FFFFFF">
+
+		<mx:Label text="Diskusija - {presenter.model.totalMessages} poruka - {presenter.model.question.text}..."
+				  fontWeight="bold"
+				  width="600"/>
+
+	</mx:HBox>
+
+	<mx:VBox width="100%"
+			 height="100%"
+			 paddingLeft="5"
+			 paddingBottom="5"
+			 paddingRight="5"
+			 paddingTop="5">
+
+		<mx:VBox width="100%"
+				 height="100%">
+
+			<mx:HBox height="100%"
+					 width="100%"
+					 verticalAlign="middle"
+					 horizontalAlign="center"
+					 visible="{presenter.model.isLoading}"
+					 includeInLayout="{presenter.model.isLoading}">
+
+				<mx:Label text="Učitava se diskusija..."/>
+
+			</mx:HBox>
+
+			<mx:VBox width="100%"
+					 height="100%"
+					 minHeight="0"
+					 visible="{!presenter.model.isLoading}"
+					 includeInLayout="{!presenter.model.isLoading}">
+
+				<controls1:QuestionDiscussQuestionViewControl question="{presenter.model.loadedQuestion}"
+															  visible="{presenter.model.showLoadedQuestion}"
+															  includeInLayout="{presenter.model.showLoadedQuestion}"/>
+
+				<mx:Text width="100%">
+					<mx:text>
+						<![CDATA[Ukoliko imaš nedoumica vezanih za ovo pitanje, smatraš da nije tačno ili ti odgovor deluje nejasno, ovde možeš to da napišeš. Takođe ukoliko znaš odgovor na pitanje koje je neko drugi postavio, ovde možeš odgovoriti na takvo pitanje i pomoći drugima.
+						]]>
+					</mx:text>
+				</mx:Text>
+
+				<controls2:DiscussionsPageControl totalPages="{presenter.model.totalPages}"
+												  currentPageIndex="{presenter.model.currentPageIndex}"
+												  pageClick="presenter.pageClicked(event)"/>
+
+				<mx:Repeater id="rpt"
+							 width="100%"
+							 dataProvider="{presenter.model.messages}"
+							 recycleChildren="true">
+
+					<controls1:QuestionDiscussRenderer message="{rpt.currentItem}"
+													   presenter="{presenter}"
+													   index="{rpt.currentIndex}"/>
+
+				</mx:Repeater>
+
+				<controls2:DiscussionsPageControl totalPages="{presenter.model.totalPages}"
+												  currentPageIndex="{presenter.model.currentPageIndex}"
+												  pageClick="presenter.pageClicked(event)"/>
+
+			</mx:VBox>
+
+			<mx:HBox height="100%"
+					 width="100%"
+					 verticalAlign="middle"
+					 horizontalAlign="center"
+					 visible="{!presenter.model.isLoading &amp;&amp; presenter.model.messages.length == 0}"
+					 includeInLayout="{!presenter.model.isLoading &amp;&amp; presenter.model.messages.length == 0}">
+
+				<mx:Label text="Trenutno nema poruka o ovom pitanju."/>
+
+				<controls:LinkLabel text="Napiši poruku"
+									click="presenter.writeMessageClicked(event)"/>
+
+			</mx:HBox>
+
+		</mx:VBox>
+
+		<mx:HBox width="100%"
+				 height="200"
+				 paddingBottom="10"
+				 paddingLeft="10"
+				 paddingRight="10"
+				 paddingTop="10"
+				 visible="{presenter.model.isWritingMessage}"
+				 includeInLayout="{presenter.model.isWritingMessage}"
+				 backgroundColor="{ThemeColors.FORUM_HEADER}">
+
+			<mx:Label text="Poruka:"
+					  fontSize="14"
+					  color="#FFFFFF"/>
+
+			<mx:VBox width="100%"
+					 height="100%">
+
+				<mx:TextArea id="txtMessage"
+							 maxChars="{Settings.FORUM_MESSAGE_LIMIT}"
+							 width="100%"
+							 height="100%"
+							 text="{presenter.model.messageText}"
+							 change="presenter.model.messageText = event.target.text"/>
+
+				<mx:HBox enabled="{!presenter.model.isSavingMessage}"
+						 width="100%">
+
+					<controls:BoxButton label="Sačuvaj poruku"
+										primaryColor="{ThemeColors.BLUE}"
+										click="presenter.saveMessage()"/>
+					<controls:BoxButton label="Otkaži"
+										primaryColor="{ThemeColors.RED}"
+										click="presenter.cancelMessage()"/>
+
+					<mx:Spacer width="100%"/>
+
+					<mx:Label text="Preostalo {Settings.FORUM_MESSAGE_LIMIT - presenter.model.messageText.length} slova."
+							  color="#FFFFFF"/>
+
+				</mx:HBox>
+
+			</mx:VBox>
+
+		</mx:HBox>
+
+		<mx:HBox width="100%"
+				 visible="{!presenter.model.isWritingMessage}"
+				 includeInLayout="{!presenter.model.isWritingMessage}">
+
+			<controls:BoxButton label="Napiši poruku"
+								icon="@Embed(source='/data/images/pencil.png')"
+								click="presenter.writeMessageClicked(event)"/>
+			<controls:BoxButton label="Zatvori diskusiju"
+								primaryColor="{ThemeColors.YELLOW}"
+								click="presenter.close()"/>
+
+		</mx:HBox>
+
+	</mx:VBox>
+
+	<util:EvolaHttpService id="serviceLoadMessages"
+						   restUrl="question/getQuestionMessages"
+						   result="presenter.onLoadMessagesResult(event)"
+						   faultFunction="{presenter.loadMessagesFaultFunction}"/>
+
+	<util:EvolaHttpService id="serviceSaveMessage"
+						   restUrl="question/saveQuestionMessage"
+						   result="presenter.onSaveMessageResult(event)"
+						   faultFunction="{presenter.saveMessageFaultFunction}"/>
+
+	<util:EvolaHttpService id="serviceDeleteMessage"
+						   restUrl="question/deleteQuestionMessage"
+						   result="presenter.onDeleteMessageResult(event)"
+						   faultFunction="{presenter.deleteMessageFaultFunction}"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.Question;
+			import com.evola.driving.util.ThemeColors;
+			
+			import mx.core.Application;
+			import mx.events.FlexEvent;
+			import mx.managers.PopUpManager;
+			import mx.rpc.events.ResultEvent;
+
+			private static var _instance:QuestionDiscussPopup;
+
+			[Bindable]
+			private var presenter:QuestionDiscussPresenter;
+
+			public static function init(question:Question, showLoadedQuestion:Boolean):void
+			{
+
+				if (!_instance)
+				{
+
+					_instance=new QuestionDiscussPopup();
+					_instance.presenter=new QuestionDiscussPresenter();
+					_instance.presenter.view=_instance;
+				}
+
+				_instance.presenter.initialize(question, showLoadedQuestion);
+			}
+
+			protected function onCreationComplete(event:FlexEvent):void
+			{
+
+				Application.application.addEventListener(Event.RESIZE, onApplicationResize);
+			}
+
+			private function onApplicationResize(event:Event):void
+			{
+
+				presenter.positionAndSize();
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 height="100%"
+		 visible="{progress != 0}"
+		 horizontalScrollPolicy="off"
+		 toolTip="{getTooltip(index, isLearn, progress)}"
+		 mouseChildren="false"
+		 useHandCursor="{progress != 1}"
+		 buttonMode="true"
+		 verticalAlign="middle"
+		 xmlns:controls="com.evola.driving.controls.*">
+
+	<controls:BoxProgressBar height="15"
+							 width="50"
+							 progressColor="{GroupColors.getProgressActiveColor(index, progress)}"
+							 progress="{progress}"/>
+
+	<mx:Label text="{value}"
+			  left="0"
+			  color="#555555"
+			  verticalCenter="0"
+			  visible="{!lbl.visible}"
+			  includeInLayout="{!lbl.visible}"/>
+
+	<controls:LinkLabel id="lbl"
+						text="{isLearn ? 'uči preostalih '+(total - value) : 'proveri preostalih '+(total - value)}"
+						visible="{isRollOver &amp;&amp; progress != 1}"
+						includeInLayout="{isRollOver &amp;&amp; progress != 1}"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.GroupColors;
+
+			[Bindable]
+			public var progress:Number=0;
+
+			[Bindable]
+			public var index:int=1; //od 1 pa na vise
+
+			[Bindable]
+			public var isLearn:Boolean=true; //da li je learning ili testing
+
+			[Bindable]
+			public var isRollOver:Boolean=false;
+
+			[Bindable]
+			public var value:int; //broj naucenih ili proverenih pitanja
+
+			[Bindable]
+			public var total:int; //ukupan broj pitanja u lekciji
+
+			private function getTooltip(index:int, isLearn:Boolean, progress:Number):String
+			{
+
+				var text:String="";
+
+				var p:Number=Math.round(progress * 100);
+
+				if (isLearn)
+					text+="Naučeno ";
+				else
+					text+="Provereno ";
+
+				text+=p + "% ";
+
+				if (index == 1)
+					text+="prvi put.";
+				else if (index == 2)
+					text+="drugi put.";
+				else if (index == 3)
+					text+="treći put.";
+
+				if (progress < 1)
+				{
+					if (isLearn)
+						text+=" Klikni da učis samo preostala pitanja.";
+					else
+						text+=" Klikni da proveriš samo preostala pitanja.";
+				}
+
+				return text;
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

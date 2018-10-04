@@ -1,0 +1,3278 @@
+﻿<questions>
+
+	<question id="vozaci_1" number="1"
+		text="Моторним возилом, односно скупом возила, може самостално да управља возач који"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="испуњава прописане услове и има уверење о положеном возачком испиту оне категорије возила којим управља" />
+			<question-answer
+				text="испуњава прописане услове и има возачку дозволу за управљање возилом оне категорије возила којим управља" correct="true" />
+			<question-answer text="има возачку дозволу" />
+		</question-answers>
+	</question>
+	<question id="vozaci_2" number="2"
+		text="Пробна возачка дозвола се издаје за управљање моторним возилима категорије"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="А" />
+			<question-answer text="B" correct="true" />
+			<question-answer text="B1" />
+		</question-answers>
+	</question>
+	<question id="vozaci_3" number="3"
+		text="Лице са пробном возачком дозволом може управљати моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="само на територији општине у којој живи" />
+			<question-answer text="без ограничења у територијалном смислу" />
+			<question-answer text="на територији Републике Србије" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_4" number="4"
+		text="Пробна возачка дозвола се може издати лицу које испуњава услове за управљање возилима категорије В и"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="које је навршило 17 година живота" correct="true" />
+			<question-answer text="које је навршило 16 година живота" />
+			<question-answer
+				text="које је навршило 18 година живота, и први пут стиче право на управљање моторним возилом категорије В" correct="true" />
+			<question-answer
+				text="коме је одузета возачка дозвола зато што није управљао возилом на савестан и прописан начин" />
+		</question-answers>
+	</question>
+	<question id="vozaci_5" number="5"
+		text="Возач који је пробну возачку дозволу стекао пре навршених 18 година живота за време управљања моторним возилом категорије В"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="мора бити под надзором лица које се налази у возилу и има возачку дозволу за категорију В најмање пет година, у периоду важења пробне возачке дозволе" correct="true" />
+			<question-answer
+				text="мора бити под надзором лица које се налази у возилу и има возачку дозволу за категорију В најмање пет година, до навршених 18 година живота" />
+			<question-answer
+				text="мора бити под надзором лица које се налази у возилу и има возачку дозволу за категорију В најмање три године, до навршених 18 година живота" />
+		</question-answers>
+	</question>
+	<question id="vozaci_6" number="6"
+		text="Моторно возило, којим управља возач који има пробну возачку дозволу, мора бити означено посебном ознаком &quot;П&quot;, која мора бити постављена на видном месту"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="само са задње стране возила" />
+			<question-answer text="са предње и задње стране возила" correct="true" />
+			<question-answer text="са предње, задње и бочне стране возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_7" number="7"
+		text="Возач који је пробну возачку дозволу стекао са навршених 18 година живота за време управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="не мора бити под надзором лица које се налази у возилу и има возачку дозволу за категорију В најмање пет година" correct="true" />
+			<question-answer
+				text="мора бити под надзором лица које се налази у возилу и има возачку дозволу за категорију В најмање три године, у периоду од6 месеци од дана добијања дозволе" />
+			<question-answer
+				text="мора бити под надзором лица које се налази у возилу и има возачку дозволу за категорију В најмање пет година, у периоду важења пробне возачке дозволе" />
+		</question-answers>
+	</question>
+	<question id="vozaci_8" number="8"
+		text="Возач који има пробну возачку дозволу, не сме управљати моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="у периоду од 22,00 до 06,00 сати" />
+			<question-answer
+				text="у периоду од 23,00 до 05,00 сати, до навршених 18 година живота" />
+			<question-answer text="у периоду од 23,00 до 05,00 сати" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_9" number="9"
+		text="Возачу који има пробну возачку дозволу, за време управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="дозвољено је коришћење телефона и других средстава за комуникацију само уз опрему која омогућава њихову употребу без ангажовања руку" />
+			<question-answer
+				text="дозвољено је коришћење телефона и других средстава за комуникацију само уз опрему која омогућава њихову употребу без ангажовања руку, у периоду од 05,00 до 23,00 сата" />
+			<question-answer
+				text="није дозвољено коришћење телефона и других средстава за комуникацију" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_10" number="10"
+		text="Возачу који има пробну возачку дозволу кретање брзином већом од 90% од брзине која је дозвољена на делу пута којим се креће"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="није дозвољено" correct="true" />
+			<question-answer
+				text="није дозвољено само у периоду од 23,00 до 05,00 сати" />
+			<question-answer text="није дозвољено само до навршених 18 година живота" />
+		</question-answers>
+	</question>
+	<question id="vozaci_11" number="11"
+		text="Пробна возачка дозвола издаје се са роком важења" points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="од једне године" correct="true" />
+			<question-answer
+				text="до навршених 18 година живота лица које има пробну возачку дозволу" />
+			<question-answer text="од пет година" />
+		</question-answers>
+	</question>
+	<question id="vozaci_13" number="13"
+		text="Возачу којем је одлуком надлежног органа забрањено управљање моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="дозвољено је управљање моторним возилом, односно скупом возила, само на локалним путевима" />
+			<question-answer
+				text="дозвољено је управљање само моторним возилима чија највећа конструктивна брзина није већа од 45km/h" />
+			<question-answer
+				text="није дозвољено управљање моторним возилом, односно скупом возила" correct="true" />
+			<question-answer text="дозвољено је управљање само скупом возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_14" number="14"
+		text="Возачу који је искључен из саобраћаја" points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="дозвољено је управљање моторним возилом, односно скупом возила, само до места његовог пребивалишта, односно седишта правног лица у случају када је возило власништво правног лица" />
+			<question-answer
+				text="није дозвољено управљање само моторним возилима оне категорије којом је управљао у моменту искључења" />
+			<question-answer text="дозвољено је управљање само скупом возила" />
+			<question-answer
+				text="није дозвољено управљање моторним возилом, односно скупом возила" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_15" number="15"
+		text="Возачу који има две возачке дозволе издате од стране две државе, коришћење обе дозволе у исто време"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="није дозвољено" correct="true" />
+			<question-answer text="је дозвољено" />
+			<question-answer
+				text="је дозвољено, ако борави ван места пребивалишта дуже од три месеца" />
+		</question-answers>
+	</question>
+	<question id="vozaci_16" number="16"
+		text="Коришћење возачке дозволе чији је нестанак возач пријавио надлежном органу"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="је дозвољено" />
+			<question-answer text="није дозвољено" correct="true" />
+			<question-answer
+				text="је дозвољено само у случају одузимања дупликата возачке дозволе" />
+		</question-answers>
+	</question>
+	<question id="vozaci_17" number="17"
+		text="Да ли возач има обавезу да пријави промену пребивалишта надлежном органу"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="Да, ради уписа у евиденцију возача, у року од 30 дана од дана те промене" correct="true" />
+			<question-answer text="Не, јер постоји јединствена евиденција возача" />
+			<question-answer
+				text="Да, ради уписа у евиденцију возача, у року од 90 дана од дана те промене" />
+		</question-answers>
+	</question>
+	<question id="vozaci_18" number="18"
+		text="За време управљања моторним возилом, односно скупом возила, возач код себе"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="мора имати возачку дозволу, односно пробну возачку дозволу" correct="true" />
+			<question-answer
+				text="мора имати само личну карту, јер постоји јединствени регистар возача, путем кога је могуће извршити проверу" />
+			<question-answer
+				text="не мора имати возачку дозволу, односно пробну возачку дозволу, ако поседује међународну возачку дозволу" />
+		</question-answers>
+	</question>
+	<question id="vozaci_19" number="19"
+		text="Возач коме је издата пробна возачка дозвола не управља возилом савесно и на прописан начин ако има"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="најмање 18 казнених поена" />
+			<question-answer text="најмање 12 казнених поена" />
+			<question-answer text="најмање 9 казнених поена" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_20" number="20"
+		text="Међународна возачка дозвола издата у Републици Србији" points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="сме се користити за управљање моторним возилима на територији Републике Србије" />
+			<question-answer
+				text="не сме се користити за управљање моторним возилима на територији Републике Србије" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_21" number="21"
+		text="Да ли возач мора дати овлашћеном лицу на увид возачку дозволу, односно пробну возачку дозволу, при контроли у саобраћају на путу"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="Да" correct="true" />
+			<question-answer
+				text="Не, ако је на увид дата лична карта помоћу које се може извршити провера у јединственом регистру возача" />
+			<question-answer
+				text="Не, ако је на увид дата међународна возачка дозвола" />
+		</question-answers>
+	</question>
+	<question id="vozaci_22" number="22"
+		text="Приликом управљања возилом на путу возач је дужан да" points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="користи помагала која су уписана у возачку дозволу, односно пробну возачку дозволу" correct="true" />
+			<question-answer
+				text="има у возилу помагала која су уписана у возачку дозволу, односно пробну возачку дозволу и да их по потреби користи" />
+			<question-answer
+				text="користи само она помагала која су му потребна за време вожње" />
+		</question-answers>
+	</question>
+	<question id="vozaci_23" number="23"
+		text="Здравственом прегледу ради утврђивања психофизичке способности морају се у одређеном року подвргавати"
+		points="3" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="сви возачи који управљају моторним возилима" />
+			<question-answer
+				text="возачи који управљају моторним возилима, односно скупом возила којима се обавља јавни превоз" correct="true" />
+			<question-answer
+				text="возачи који управљају возилима којима се обавља превоз опасних материја" />
+			<question-answer
+				text="возачи којима је управљање моторним возилима основно занимање" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_24" number="24"
+		text="Возачи који управљају моторним возилом, односно скупом возила којима се обавља јавни превоз, морају се подвргавати здравственом прегледу ради утврђивања психофизичке способности за возача"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="у року који не може бити дужи од три године" correct="true" />
+			<question-answer text="у року који не може бити дужи од пет годинa" />
+			<question-answer text="сваке године" />
+		</question-answers>
+	</question>
+	<question id="vozaci_25" number="25"
+		text="Контролном здравственом прегледу мора се подвргнути возач"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="који је учествовао у саобраћајној незгоди" />
+			<question-answer
+				text="код кога се посумња да због психофизичких сметњи, односно недостатака, није у стању безбедно да управља возилом" correct="true" />
+			<question-answer
+				text="који је учинио више од три прекршаја из прописа из безбедности саобраћаја у току једне године" />
+		</question-answers>
+	</question>
+	<question id="vozaci_26" number="26"
+		text="Возач коме је издата возачка дозвола не управља возилом савесно и на прописан начин ако има"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="најмање 10 казнених поена" />
+			<question-answer text="најмање 14 казнених поена" />
+			<question-answer text="најмање 18 казнених поена" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_27" number="27"
+		text="Када се возач у одређеном року не подвргне контролном здравственом прегледу на који је упућен, надлежни орган ће"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="возачу одузети возачку дозволу" correct="true" />
+			<question-answer
+				text="против возача поднети захтев за покретање прекршајног поступка" />
+			<question-answer
+				text="возачу привремено забранити управљање возилом у саобраћају на путу док се не подвргне контролном здравственом прегледу" />
+		</question-answers>
+	</question>
+	<question id="vozaci_28" number="28"
+		text="Возачу који возилом не управља савесно и на прописан начин организациона јединица Министарства унутрашњих послова која возача води у евиденцији"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="одузеће возачку дозволу" correct="true" />
+			<question-answer
+				text="привремено ће забранити управљање моторним возилом у трајању до једне године" />
+			<question-answer text="изрећи ће одговарајући број казнених поена" />
+		</question-answers>
+	</question>
+	<question id="vozaci_29" number="29"
+		text="Возач коме је издата возачка дозвола не управља возилом савесно и на прописан начин уколико је"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="правноснажном пресудом осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има смрт лица" correct="true" />
+			<question-answer
+				text="најмање2 пута у року од5 година правноснажно осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има смрт лица" />
+			<question-answer
+				text="правноснажном пресудом осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има тешке телесне повреде другог лица" />
+		</question-answers>
+	</question>
+	<question id="vozaci_30" number="30"
+		text="Возач коме је издата возачка дозвола не управља возилом савесно и на прописан начин уколико је"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="правноснажном пресудом осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има тешке телесне повреде другог лица" />
+			<question-answer
+				text="више од једном у року од 5 година правноснажно осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има тешке телесне повреде другог лица" correct="true" />
+			<question-answer
+				text="више од једном у року од 5 година правноснажно осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има телесне повреде другог лица или имовинску штету" />
+		</question-answers>
+	</question>
+	<question id="vozaci_33" number="33"
+		text="Возач коме је издата возачка дозвола не управља возилом савесно и на прописан начин уколико је"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="правноснажном пресудом осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има телесне повреде другог лица или имовинску штету" />
+			<question-answer
+				text="више од једном у року од 5 година правноснажно осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има телесне повреде другог лица или имовинску штету" />
+			<question-answer
+				text="више од једном у року од 3 године правноснажно осуђен за кривично дело против безбедности јавног саобраћаја, које за последицу има телесне повреде другог лица или имовинску штету" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_34" number="34"
+		text="Казнени поени изречени возачу се бришу" points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="након истека 24 месеца од дана правноснажности одлуке о прекршају" correct="true" />
+			<question-answer text="након истека 24 месеца од дана извршења прекршаја" />
+			<question-answer
+				text="уколико возач у току 24 месеца од дана правноснажности одлуке о прекршају није поново правноснажно кажњен изрицањем казнених поена" />
+		</question-answers>
+	</question>
+	<question id="vozaci_35" number="35"
+		text="Лице којем је изречена заштитна мера, односно мера безбедности забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="не може започети нити вршити обуку и полагати возачки испит у време трајања те мере" correct="true" />
+			<question-answer
+				text="може вршити обуку али не може полагати возачки испит, у време трајања те мере" />
+			<question-answer
+				text="може вршити теоријску обуку и полагати теоријски испит, али не може вршити практичну обуку и полагати практични испит, у време трајања те мере" />
+		</question-answers>
+	</question>
+	<question id="vozaci_36" number="36"
+		text="Кандидат за возача за време практичне обуке код себе мора имати и ставити на увид"
+		points="2" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="доказ о здравственој способности за возача" correct="true" />
+			<question-answer text="потврду о положеном теоријском испиту" />
+			<question-answer text="личну карту" correct="true" />
+			<question-answer text="потврду о завршеној теоријској обуци" correct="true" />
+			<question-answer text="уговор о условима под којима ће се обавити обука" />
+			<question-answer text="књижицу обуке кандидата за возача" />
+		</question-answers>
+	</question>
+	<question id="vozaci_47" number="47"
+		text="Возачку дозволу за управљање возилима категорије BЕ могу добити само они возачи који већ имају возачку дозволу за управљање моторним возилом категорије"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="А" />
+			<question-answer text="B" correct="true" />
+			<question-answer text="B1" />
+		</question-answers>
+	</question>
+	<question id="vozaci_48" number="48"
+		text="Возачку дозволу за управљање возилима категорије C1Е могу добити само они возачи који већ имају возачку дозволу за управљање моторним возилом категорије"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="B" />
+			<question-answer text="B1" />
+			<question-answer text="C1" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_49" number="49"
+		text="Возачку дозволу за управљање возилима категорије CЕ могу добити само они возачи који већ имају возачку дозволу за управљање моторним возилом категорије"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="B" />
+			<question-answer text="C1" />
+			<question-answer text="C" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_50" number="50"
+		text="Возачку дозволу за управљање возилима категорије D1Е могу добити само они возачи који већ имају возачку дозволу за управљање возилом категорије"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="BE" />
+			<question-answer text="C" />
+			<question-answer text="D1" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_51" number="51"
+		text="Возачку дозволу за управљање возилима категорије DЕ могу добити само они возачи који већ имају возачку дозволу за управљање возилом категорије"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="BE" />
+			<question-answer text="D1" />
+			<question-answer text="D" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_52" number="52"
+		text="Возачку дозволу за управљање моторним возилима категорије C1 и C могу добити само они возачи који већ имају возачку дозволу за управљање моторним возилом категорије"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="А" />
+			<question-answer text="B" correct="true" />
+			<question-answer text="B1" />
+		</question-answers>
+	</question>
+	<question id="vozaci_53" number="53"
+		text="Возачку дозволу за управљање моторним возилима категорије D могу добити само они возачи који већ имају возачку дозволу за управљање моторним возилом категорије C најмање"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="једну годину" />
+			<question-answer text="две године" correct="true" />
+			<question-answer text="три године" />
+		</question-answers>
+	</question>
+	<question id="vozaci_54" number="54"
+		text="Возачку дозволу за управљање моторним возилима категорије D1 могу добити само они возачи који већ имају возачку дозволу за управљање моторним возилом категорије C1 најмање"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="једну годину" />
+			<question-answer text="две године" correct="true" />
+			<question-answer text="три године" />
+		</question-answers>
+	</question>
+	<question id="vozaci_55" number="55"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије А1 сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="тешким трициклом чија снага мотора не прелази 15kW" correct="true" />
+			<question-answer
+				text="мотоциклом чија радна запремина мотора није већа од 125cm3 и снаге мотора до 11kW, чији однос снаге мотора и масе возила није већи од 0,1kW/kg" correct="true" />
+			<question-answer
+				text="мотоциклом чија снага мотора није већа од 35kW и чији однос снаге мотора и масе возила није већи од 0,2kW/kg" />
+			<question-answer text="тешким четвороциклом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_56" number="56"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије АМ сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мопедом" correct="true" />
+			<question-answer
+				text="мотоциклом чија радна запремина мотора није већа од 125cm3" />
+			<question-answer text="тешким трициклом" />
+			<question-answer text="лаким трициклом" correct="true" />
+			<question-answer text="лаким четвороциклом" correct="true" />
+			<question-answer text="тешким четвороциклом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_57" number="57"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије А1 сме да управља у саобраћају на путу:"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="мотоциклом чија је радна запремина мотора 150cm3, снага мотора 15kW и однос снаге мотора и масе возила је 0,1kW/kg" />
+			<question-answer
+				text="мотоциклом чија је радна запремина мотора 100cm3, снага мотора 15kW и однос снаге мотора и масе возила је 0,1kW/kg" />
+			<question-answer
+				text="мотоциклом чија је радна запремина мотора 100cm3, снага мотора 10kW и однос снаге мотора и масе возила је 0,1kW/kg" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_58" number="58"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије А2 сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="мотоциклом чија снага мотора није већа од 35kW и чији однос снаге мотора и масе возила није већи од 0,2kW/kg" correct="true" />
+			<question-answer text="тешким четвороциклом" />
+			<question-answer text="тешким трициклом чија снага мотора не прелази 15kW" correct="true" />
+			<question-answer text="тешким трициклом без обзира на снагу мотора" />
+		</question-answers>
+	</question>
+	<question id="vozaci_59" number="59"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије А2 сме да управља у саобраћају на путу:"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="мотоциклом чија је снага мотора 30kW и однос снаге мотора и масе возила је 0,2kW/kg" correct="true" />
+			<question-answer
+				text="мотоциклом чија је снага мотора 40kW и однос снаге мотора и масе возила је 0,3kW/kg" />
+			<question-answer
+				text="мотоциклом чија је снага мотора 30kW и однос снаге мотора и масе возила је 0,3kW/kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_60" number="60"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије D1 сме да управља у саобраћају на путу"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="аутобусима чија највећа дозвољена маса није већа од 7.500kg и чија максимална дужина не прелази 8m" />
+			<question-answer
+				text="аутобусима који осим седишта за возача имају највише 16 седишта и чија максимална дужина не прелази 8m"  correct="true"/>
+			<question-answer
+				text="аутобусима који осим седишта за возача имају највише 25 седишта и чија максимална дужина не прелази 8m" />
+		</question-answers>
+	</question>
+	<question id="vozaci_61" number="61"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије А сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мотоциклом" correct="true" />
+			<question-answer text="мопедом" correct="true" />
+			<question-answer text="тешким четвороциклом" />
+			<question-answer text="радном машином" />
+		</question-answers>
+	</question>
+	<question id="vozaci_62" number="62"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије В1 сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="тешким трициклом чија снага мотора није већа од 15kW" correct="true" />
+			<question-answer text="мопедом" />
+			<question-answer text="тешким трициклом без обзира на снагу мотора" />
+			<question-answer text="лаким и тешким четвороциклом" correct="true" />
+			<question-answer text="радном машином" />
+			<question-answer text="мотокултиватором" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_63" number="63"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије В1 сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="трактором" />
+			<question-answer
+				text="тешким трициклом чија снага мотора није већа од 15kW" correct="true" />
+			<question-answer
+				text="радном машином чија највећа дозвољена маса није већа од 3.500kg" />
+			<question-answer text="лаким трициклом и лаким четвороциклом" correct="true" />
+			<question-answer text="мопедом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_64" number="64"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије В сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="трактором" />
+			<question-answer
+				text="тешким трициклом чија снага мотора није већа од 15kW" correct="true" />
+			<question-answer
+				text="радном машином чија највећа дозвољена маса није већа од 3.500kg" />
+			<question-answer
+				text="тешким трициклом чија снага мотора је већа од 15kW када напуни 21 годину" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_65" number="65"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије В сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мопедом" />
+			<question-answer text="лаким трициклом" correct="true" />
+			<question-answer text="радном машином" />
+			<question-answer text="лаким четвороциклом" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_66" number="66"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије А сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мотоциклом" correct="true" />
+			<question-answer text="тешким трициклом" correct="true" />
+			<question-answer text="тешким четвороциклом" />
+			<question-answer text="радном машином" />
+		</question-answers>
+	</question>
+	<question id="vozaci_67" number="67"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије В може да управља у саобраћају на путу тим возилима и када им је придодато прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="чија највећа дозвољена маса није већа од 750kg" correct="true" />
+			<question-answer
+				text="ако највећа дозвољена маса скупа возила није већа од 3.500kg" />
+			<question-answer
+				text="ако маса прикључног возила није већа од масе вучног возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_68" number="68"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије В сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="путничким возилима чија највећа дозвољена маса није већа од 3.500kg" correct="true" />
+			<question-answer text="мопедом" />
+			<question-answer
+				text="теретним возилима чија највећа дозвољена маса није већа од 3.500kg" />
+			<question-answer
+				text="теретним возилима чија носивост није већа од 3.500kg" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_69" number="69"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије В сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="трактором" />
+			<question-answer text="мотокултиватором" correct="true" />
+			<question-answer text="радном машином" />
+			<question-answer text="тешким четвороциклом" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_70" number="70"
+		text="Возач коме је издата возачка дозвола за управљање возилима категорије BЕ сме да управља у саобраћају на путу скуповима возила који чине вучно возило које припада категорији В и прикључно возило чија"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="највећа дозвољена маса није већа од 3.500kg" correct="true" />
+			<question-answer text="највећа дозвољена маса није већа од 5.000kg" />
+			<question-answer text="носивост није већа од 3.500kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_71" number="71"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије C1 сме да управља у саобраћају на путу"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="аутобусима чија највећа дозвољена маса није већа од 7.500kg" />
+			<question-answer
+				text="теретним возилима чија највећа дозвољена маса није већа од 7.500kg" correct="true" />
+			<question-answer
+				text="тракторима са или без прикључних возила за трактор, чија највећа дозвољена маса није већа од 7.500kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_72" number="72"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије C1 може да управља у саобраћају на путу тим возилима и када им је придодато прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="чија највећа дозвољена маса није већа од 750kg" correct="true" />
+			<question-answer text="чија носивост није већа од 750kg" />
+			<question-answer text="чија укупна маса није већа од 750kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_73" number="73"
+		text="Возач коме је издата возачка дозвола за управљање возилима категорије C1Е сме да управља у саобраћају на путу скуповима возила који чине вучно возило које припада категорији C1 и прикључно возило, ако"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="највећа дозвољена маса скупа возила није већа од 12.000kg" correct="true" />
+			<question-answer
+				text="највећа дозвољена маса прикључног возила није већа од 12.000kg" />
+			<question-answer text="укупна маса скупа возила није већа од 12.000kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_74" number="74"
+		text="Возач коме је издата возачка дозвола за управљање возилима категорије C1Е сме да управља у саобраћају на путу скуповима возила који чине вучно возило које припада категорији В и прикључно возило, ако"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="највећа дозвољена маса скупа возила није већа од 12.000kg" correct="true" />
+			<question-answer text="дужина скупа возила није већа од 8m" />
+			<question-answer text="укупна маса скупа возила није већа од 12.000kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_75" number="75"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије D1 може да управља у саобраћају на путу тим возилима и када им је придодато прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="чија највећа дозвољена маса није већа од 750kg" correct="true" />
+			<question-answer text="чија носивост није већа од 750kg" />
+			<question-answer text="чија укупна маса није већа од 750kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_76" number="76"
+		text="Возач коме је издата возачка дозвола за управљање возилима категорије D1Е сме да управља у саобраћају на путу скуповима возила који чине вучно возило које припада категорији D1 и прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="само ако највећа дозвољена маса скупа возила није већа од 12.000kg" />
+			<question-answer
+				text="само ако највећа дозвољена маса прикључног возила није већа од 3.500kg" />
+			<question-answer
+				text="без обзира на највећу дозвољену масу прикључног возила" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_77" number="77"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије C сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="теретним возилом" correct="true" />
+			<question-answer text="трактором са или без прикључних возила за трактор" />
+			<question-answer text="путничким возилом" correct="true" />
+			<question-answer text="мопедом" />
+			<question-answer text="радном машином" />
+		</question-answers>
+	</question>
+	<question id="vozaci_78" number="78"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије C1 и C може да управља у саобраћају на путу тим возилима и када им је придодато прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="чија укупна маса није већа од 750kg" />
+			<question-answer text="чија носивост није већа од 750kg" />
+			<question-answer text="чија највећа дозвољена маса није већа од 750kg" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_79" number="79"
+		text="Возач коме је издата возачка дозвола за управљање возилима категорије CЕ сме да управља у саобраћају на путу скуповима возила који чине вучно возило које припада категорији C и прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="само ако највећа дозвољена маса скупа возила није већа од 12.000kg" />
+			<question-answer text="без обзира на највећу дозвољену масу скупа возила" correct="true" />
+			<question-answer
+				text="само ако највећа дозвољена маса прикључног возила није већа од 12.000kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_80" number="80"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије D сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="аутобусом" correct="true" />
+			<question-answer
+				text="скупом возила који чине аутобус и прикључно возило чија највећа дозвољена маса није већа од 750kg" correct="true" />
+			<question-answer
+				text="скупом возила који чине аутобус и прикључно возило чија највећа дозвољена маса није већа од 3.500kg" />
+			<question-answer text="трактором и радном машином" />
+		</question-answers>
+	</question>
+	<question id="vozaci_81" number="81"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије D1 иD може да управља у саобраћају на путу тим возилима и када им је придодато прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="чија укупна маса није већа од 750kg" />
+			<question-answer text="чија носивост није већа од 750kg" />
+			<question-answer text="чија највећа дозвољена маса није већа од 750kg" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_82" number="82"
+		text="Возач коме је издата возачка дозвола за управљање возилима категоријеDЕ сме да управља у саобраћају на путу скуповима возила који чине вучно возило које припада категоријиD и прикључно возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="само ако највећа дозвољена маса скупа возила није већа од 12.000kg" />
+			<question-answer text="без обзира на највећу дозвољену масу скупа возила" correct="true" />
+			<question-answer
+				text="само ако највећа дозвољена маса прикључног возила није већа од 3.500kg" />
+		</question-answers>
+	</question>
+	<question id="vozaci_83" number="83"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије F сме да управља у саобраћају на путу"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="радном машином" correct="true" />
+			<question-answer text="мопедом" />
+			<question-answer text="лаким трициклом и лаким четвороциклом" />
+			<question-answer text="трактором са или без прикључних возила за трактор" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_84" number="84"
+		text="Возач коме је издата возачка дозвола за управљање моторним возилима категорије М сме да управља у саобраћају на путу"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="m" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мопедом" />
+			<question-answer text="лаким трициклом и лаким четвороциклом" />
+			<question-answer text="мотокултиватором" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_85" number="85"
+		text="Возач који је неспособан за безбедно управљање возилом, односно који је у толикој мери уморан, односно болестан или је у таквом психичком стању да није способан да безбедно управља возилом"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="не сме да управља возилом у саобраћају на путу" correct="true" />
+			<question-answer
+				text="сме да управља возилом у саобраћају на кратком делу пута" />
+			<question-answer
+				text="сме да управља возилом у саобраћају на путу ако тиме не омета, односно не угрожава друге учеснике у саобраћају" />
+		</question-answers>
+	</question>
+	<question id="vozaci_86" number="86"
+		text="Возач који је под дејством алкохола, односно психоактивних супстанци"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="сме да управља возилом у саобраћају на путу ако тиме не омета, односно не угрожава друге учеснике у саобраћају" />
+			<question-answer
+				text="сме да управља возилом у саобраћају на кратком делу пута" />
+			<question-answer text="не сме да управља возилом у саобраћају на путу" correct="true" />
+			<question-answer
+				text="не сме да управља возилом само у саобраћају на јавном путу" />
+		</question-answers>
+	</question>
+	<question id="vozaci_87" number="87"
+		text="Под дејством алкохола је возач код којег је садржај алкохола у крви (утврђен анализом одговарајућег узорка крви или средствима или апаратима за мерење алкохолисаности) већи од"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="1,20 mg/ml" />
+			<question-answer text="0,50 mg/ml" />
+			<question-answer text="0,30 mg/ml" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_88" number="88"
+		text="Возач аутобуса, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml, ако не обавља јавни превоз лица" />
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_89" number="89"
+		text="Возач моторног возила чија је највећа дозвољена маса већа од 3.500kg, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml, ако не обавља јавни превоз лица, односно ствари" />
+		</question-answers>
+	</question>
+	<question id="vozaci_90" number="90"
+		text="Возач возила којим се превозе опасне материје, односно врши ванредни превоз, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml, ако не обавља јавни превоз ствари" />
+		</question-answers>
+	</question>
+	<question id="vozaci_91" number="91"
+		text="Када учествује у саобраћају на путу, не сме да има алкохола у организму возач"
+		points="3" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="возила којим се превозе опасне материје" correct="true" />
+			<question-answer text="возила којим се врши ванредни превоз" correct="true" />
+			<question-answer text="возила којим се врши пробна вожња" />
+			<question-answer text="мотокултиватора" />
+		</question-answers>
+	</question>
+	<question id="vozaci_92" number="92"
+		text="Возач возила категорије АМ, када управља возилом у саобраћају на путу:"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_93" number="93"
+		text="Возач возила категорије А1, када управља возилом у саобраћају на путу:"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_94" number="94"
+		text="Возач возила категорије А2, када управља возилом у саобраћају на путу:"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_95" number="95"
+		text="Возач возила категорије А, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_96" number="96"
+		text="Кандидат за возача током практичне обуке и полагања практичног испита"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_97" number="97"
+		text="Возач са пробном возачком дозволом, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="не сме да има алкохола у крви само у периоду од 23,00 до 05,00 сати" />
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_98" number="98"
+		text="Утврђивање да ли је возач у толикој мери уморан, болестан или је у таквом психофизичком стању да није способан да безбедно управља возилом, врши се"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="стручним прегледом" correct="true" />
+			<question-answer text="непосредним увидом полицијског службеника" />
+			<question-answer
+				text="помоћу одговарајућих уређаја, од стране полицијског службеника" />
+		</question-answers>
+	</question>
+	<question id="vozaci_99" number="99" text="Возач возила на слици"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="vozaci_a_99_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_100" number="100"
+		text="Возач возила којим се обавља јавни превоз лица, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у организму" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_101" number="101"
+		text="Возач возила са правом првенства пролаза, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+			<question-answer text="не сме да има алкохола у крви" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_102" number="102"
+		text="Возач возила којим се обавља јавни превоз ствари, када управља возилом у саобраћају на путу"
+		points="3">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="не сме да има алкохола у организму" correct="true" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,30 mg/ml" />
+			<question-answer
+				text="сме да има садржај алкохола у крви највише до 0,50 mg/ml" />
+		</question-answers>
+	</question>
+	<question id="vozaci_103" number="103"
+		text="Лице које се затекне или наиђе на место саобраћајне незгоде у којој има повређених лица дужно је да одмах обавести"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="управљача пута" />
+			<question-answer text="полицију, односно службу хитне медицинске помоћи" correct="true" />
+			<question-answer text="породицу повређеног лица" />
+		</question-answers>
+	</question>
+	<question id="vozaci_104" number="104"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, односно погинуло, или је настала велика материјална штета дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="обавести полицију и попуни Европски извештај о саобраћајној незгоди" />
+			<question-answer
+				text="обезбеди трагове и предмете незгоде, под условом да тиме не угрожава безбедност саобраћаја" correct="true" />
+			<question-answer
+				text="обавести службу помоћи на путу и удаљи се са места незгоде ако прети опасност од нових саобраћајних незгода" />
+		</question-answers>
+	</question>
+	<question id="vozaci_105" number="105"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, односно погинуло, или је настала велика материјална штета дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="обавести службу хитне помоћи и удаљи се са места незгоде ако прети опасност од нових саобраћајних незгода" />
+			<question-answer
+				text="обавести службу хитне помоћи, повређене што пре уклони са коловоза, односно избави из возила и остави их на месту где не могу бити угрожени" />
+			<question-answer
+				text="укаже помоћ повређенима, односно прву помоћ или медицинску помоћ у складу са својим знањима, способностима и могућностима" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_106" number="106"
+		text="Лице које се затекне или наиђе на место саобраћајне незгоде у којој има повређених лица"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="није обавезно да предузима било какве радње, односно мора обићи место саобраћајне незгоде на начин који неће довести до уништења трагова уколико је то могуће" />
+			<question-answer
+				text="обавезно је да у складу са својим знањима, способностима и могућностима пружи помоћ лицима повређеним у саобраћајној незгоди и по потреби их превезе до најближе здравствене установе" correct="true" />
+			<question-answer
+				text="обавезно је да се што пре удаљи са места саобраћајне незгоде и обавести најближу службу помоћи на путу" />
+			<question-answer
+				text="обавезно је да предузме све што је у његовој моћи да спречи увећавање постојећих, односно настајање нових последица" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_107" number="107"
+		text="Возач је дужан да заустави возило, искључи мотор, укључи све показиваче правца, постави сигурносни троугао на безбедном растојању, обавести полицију и/или службу хитне помоћи и предузме друге расположиве мере како би упозорио остале учеснике у саобраћају о постојању незгоде"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="када је учествовао у саобраћајној незгоди без обзира на њене последице" />
+			<question-answer
+				text="када је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, односно погинуло, или је настала велика материјална штета" correct="true" />
+			<question-answer
+				text="када учесник који је изазвао саобраћајну незгоду неће да надокнади малу материјалну штету која је наступила као последица те незгоде" />
+		</question-answers>
+	</question>
+	<question id="vozaci_108" number="108"
+		text="Од настанка саобраћајне незгоде до завршетка увиђаја, учесницима саобраћајне незгоде узимање алкохолних пића, односно психоактивних супстанци"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="није дозвољено" correct="true" />
+			<question-answer
+				text="је дозвољено, након спроведеног испитивања на присуство ових материја" />
+			<question-answer
+				text="није дозвољено, само када му такву забрану саопшти лице које врши увиђај" />
+		</question-answers>
+	</question>
+	<question id="vozaci_109" number="109"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, односно погинуло, или је настала велика материјална штета дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="предузме све мере заштите које су у његовој моћи да се спречи настајање нових и увећавање постојећих последица и повреда" correct="true" />
+			<question-answer
+				text="обавести службу помоћи на путу и удаљи се са места незгоде ако прети опасност од нових саобраћајних незгода" />
+			<question-answer
+				text="обавести полицију и удаљи се са места незгоде ако није изазвао ту незгоду и нема знања, способности и могућности да пружи помоћ лицима повређеним у саобраћајној незгоди" />
+		</question-answers>
+	</question>
+	<question id="vozaci_110" number="110"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, односно погинуло, или је настала велика материјална штета"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужан је да до доласка полиције врши регулисање саобраћаја на начин како то раде овлашћена лица" />
+			<question-answer
+				text="дужан је да упозори сва лица да се склоне са коловоза да не би била повређена и да не би уништавала трагове незгоде" correct="true" />
+			<question-answer
+				text="није дужан да даје упозорења лицима која се затекну или наиђу на место саобраћајне незгоде" />
+		</question-answers>
+	</question>
+	<question id="vozaci_111" number="111"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, односно погинуло, или је настала велика материјална штета дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="обавести службу помоћи на путу и да се удаљи са места незгоде ако прети опасност од нових саобраћајних незгода" />
+			<question-answer
+				text="обавести полицију и да се удаљи са места незгоде ако није изазвао ту незгоду и нема знања, способности и могућности да пружи помоћ лицима повређеним у саобраћајној незгоди" />
+			<question-answer
+				text="обавести полицију и остане на месту незгоде до доласка полиције и завршетка увиђаја" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_112" number="112"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, односно погинуло, или је настала велика материјална штета"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужан је да остане на месту незгоде до доласка полиције, без обзира на своје и повреде других учесника незгоде" />
+			<question-answer
+				text="може се удаљити са места незгоде ако му је неопходна хитна медицинска помоћ" correct="true" />
+			<question-answer
+				text="може се удаљити са места незгоде ради превожења повређеног до најближе здравствене установе" />
+			<question-answer
+				text="може се удаљити са места незгоде ако нема знања, способности и могућности да пружи помоћ лицима повређеним у саобраћајној незгоди" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_113" number="113"
+		text="У саобраћајној незгоди у којој је настала мања материјална штета, било који учесник саобраћајне незгоде или лице које је претрпело материјалну штету"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="може захтевати да полицијски службеник изађе на место незгоде и изврши увиђај" correct="true" />
+			<question-answer
+				text="не може захтевати да полицијски службеник изађе на место незгоде и изврши увиђај, односно учесници ће попунити Европски извештај о саобраћајној незгоди" />
+			<question-answer
+				text="може захтевати да полицијски службеник изађе на место незгоде и изврши увиђај, само у случају када су и остали учесници, односно лице које је претрпело материјалну штету, сагласни са тим захтевом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_114" number="114"
+		text="Ако је бар један учесник или лице које је претрпело материјалну штету, у саобраћајној незгоди у којој је настала мања материјална штета, захтевао вршење увиђаја остали учесници"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="нису дужни да остану на месту саобраћајне незгоде, до завршетка увиђаја" />
+			<question-answer
+				text="су дужни да оставе податке о себи и возилу учеснику који је захтевао вршење увиђаја и могу се удаљити са места саобраћајне незгоде" />
+			<question-answer
+				text="су дужни да остану на месту саобраћајне незгоде, до завршетка увиђаја" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_115" number="115"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је настала само мања материјална штета"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужан је да до доласка полиције врши регулисање саобраћаја на начин како то раде овлашћена лица" />
+			<question-answer
+				text="дужан је да упозори остале учеснике у саобраћају о постојању возила и других препрека на путу, уколико их сам не може уклонити" correct="true" />
+			<question-answer
+				text="дужан је да уклони возило и друге предмете са коловоза, ако онемогућавају или угрожавају одвијање саобраћаја, односно ако прети опасност од нових саобраћајних незгода" correct="true" />
+			<question-answer
+				text="није дужан да даје упозорења лицима која се затекну или наиђу на место саобраћајне незгоде" />
+			<question-answer
+				text="не сме померати возило са места саобраћајне незгоде" />
+		</question-answers>
+	</question>
+	<question id="vozaci_116" number="116"
+		text="Узимање узорка крви, односно урина, ради утврђивања присуства алкохола, односно психоактивних супстанци у организму учесника саобраћајне незгоде у којој има погинулих, односно повређених лица"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="је обавезно" correct="true" />
+			<question-answer
+				text="није обавезно, уколико је провера присуства ових материја извршена коришћењем одговарајућих средстава" />
+			<question-answer
+				text="је обавезно, само у случају када је присуство ових материја утврђено коришћењем одговарајућих средстава" />
+		</question-answers>
+	</question>
+	<question id="vozaci_117" number="117"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је настала само мања материјална штета"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужан је да попуни Европски извештај о саобраћајној незгоди у случају када овлашћено лице не врши увиђај саобраћајне незгоде" correct="true" />
+			<question-answer
+				text="не сме померати возило са места саобраћајне незгоде" />
+			<question-answer
+				text="дужан је да упозори сва лица да се склоне са коловоза да не би ометала саобраћај" correct="true" />
+			<question-answer
+				text="дужан је да обавести полицију и поступи у складу са добијеним упутствима од стране полиције" />
+			<question-answer
+				text="није дужан да даје упозорења лицима која се затекну или наиђу на место саобраћајне незгоде" />
+		</question-answers>
+	</question>
+	<question id="vozaci_118" number="118"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је настала само мања материјална штета"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужан је да обавести полицију и поступи у складу са добијеним упутствима од стране полиције" />
+			<question-answer
+				text="дужан је да остави податке о себи и возилу возачу оштећеног возила или држаоцу друге оштећене ствари у незгоди, односно полицији" correct="true" />
+			<question-answer
+				text="дужан је да до доласка полиције врши регулисање саобраћаја на начин како то раде овлашћена лица" />
+			<question-answer
+				text="дужан је да предузме мере заштите које су у његовој моћи да се спречи настајање нових и увећавање постојећих последица незгоде" correct="true" />
+			<question-answer
+				text="дужан је да одмах надокнади штету другим учесницима саобраћајне незгоде ако је изазвао ту незгоду" />
+		</question-answers>
+	</question>
+	<question id="vozaci_119" number="119"
+		text="Ако учесник у саобраћајној незгоди у којој је настала мања материјална штета на другом возилу, због одсутности возача другог возила, није у могућности да пружи личне податке и податке о осигурању возила, дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="на оштећеном возилу у писаној форми остави своје личне податке" />
+			<question-answer
+				text="о тој незгоди обавести полицију и саопшти своје личне податке и податке о оштећеном возилу" correct="true" />
+			<question-answer
+				text="о тој незгоди обавести осигуравајуће друштво код којег је осигурано његово возило и саопшти своје личне податке и податке о оштећеном возилу" />
+		</question-answers>
+	</question>
+	<question id="vozaci_120" number="120"
+		text="Одузете регистарске таблице са возила које је учествовало у саобраћајној незгоди враћају се власнику, односно кориснику возила"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="када надлежном органу достави доказ да је возило технички исправно" correct="true" />
+			<question-answer text="након обављеног вештачења возила" />
+			<question-answer text="након извршене поправке возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_121" number="121"
+		text="Приликом вршења увиђаја саобраћајне незгоде у којој нема погинулих, односно повређених лица, испитивање возача на присуство алкохола, односно психоактивних супстанци, помоћу одговарајућих средстава (алкометар, дрога тест и др.)"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="није обавезно" />
+			<question-answer text="је обавезно" correct="true" />
+			<question-answer
+				text="врши се само када то захтева бар један од учесника саобраћајне незгоде" />
+		</question-answers>
+	</question>
+	<question id="vozaci_122" number="122"
+		text="Меру искључења и одузимања регистарских таблица возила која су учествовала у саобраћајној незгоди полицијски службеник примењује"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="на сва возила, када у незгоди има погинулих, односно повређених лица" />
+			<question-answer
+				text="на возила која нису у возном стању, односно на којима су очигледно неисправни склопови и уређаји битни за безбедно кретање" correct="true" />
+			<question-answer
+				text="на возила којима је управљао возач чије је непрописно понашање довело до саобраћајне незгоде" />
+		</question-answers>
+	</question>
+	<question id="vozaci_123" number="123"
+		text="Након обављеног увиђаја саобраћајне незгоде, возач, односно власник возила, дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="без одлагања уклони са коловоза возило, терет, ствари или други материјал расут по путу" correct="true" />
+			<question-answer
+				text="уклони возило са коловоза и обавести управљача пута о месту на коме се налазе ствари или други материјали расути по путу" />
+			<question-answer text="уклони возило уколико је у возном стању" />
+		</question-answers>
+	</question>
+	<question id="vozaci_124" number="124"
+		text="Након саобраћајне незгоде са мањом материјалном штетом учесници у саобраћајној незгоди"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="попуњавају записник о саобраћајној незгоди" />
+			<question-answer
+				text="попуњавају Европски извештај о саобраћајној незгоди" correct="true" />
+			<question-answer text="сачињавају изјаве" />
+			<question-answer
+				text="обавезни су да обавесте полицију ради вршења увиђаја" />
+		</question-answers>
+	</question>
+	<question id="vozaci_125" number="125"
+		text="Дневно време управљања је укупно време управљања возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="у току било која24 часа" />
+			<question-answer text="између две паузе" />
+			<question-answer
+				text="између два дневна одмора или између дневног и недељног одмора" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_126" number="126" text="Недеља је временски период"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="од краја једног до почетка наредног недељног одмора" />
+			<question-answer
+				text="од било којих узастопних 7 периода по 24 часа у којима је возач управљао возилом" />
+			<question-answer
+				text="између понедељка у 00:00 сати и недеље у 24:00 сата" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_127" number="127"
+		text="500kg или аутобусом, може бити највише" points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="9 сати, односно највише два пута недељно по 10 сати" correct="true" />
+			<question-answer text="8 сати" />
+			<question-answer text="11 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_128" number="128"
+		text="Укупно време управљања теретним возилом или скупом возила чија је највећа дозвољена маса већа од 3.500kg или аутобусом у раздобљу од две узастопне недеље може бити највише"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="56 сати" />
+			<question-answer text="90 сати" correct="true" />
+			<question-answer text="72 сата" />
+		</question-answers>
+	</question>
+	<question id="vozaci_129" number="129"
+		text="Дневно време управљања возача аутобуса и тролејбуса, у јавном градском превозу путника, може бити највише"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="7 сати" />
+			<question-answer text="8 сати" correct="true" />
+			<question-answer text="9 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_130" number="130"
+		text="Пуни дневни одмор возача теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса траје најмање"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="9 сати" />
+			<question-answer text="11 сати" correct="true" />
+			<question-answer text="12 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_131" number="131"
+		text="Скраћени дневни одмор возача теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса траје"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="најмање 10 сати, а мање од 12 сати" />
+			<question-answer text="најмање 8 сати, а мање од 12 сати" />
+			<question-answer text="најмање 9 сати, а мање од 11 сати" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_132" number="132"
+		text="Пуни недељни одмор возача теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса траје најмање"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="48 сати" />
+			<question-answer text="45 сати" correct="true" />
+			<question-answer text="56 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_133" number="133"
+		text="Скраћени недељни одмор возача теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса траје"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="најмање 24 сата, а мање од 45 сати" correct="true" />
+			<question-answer text="најмање 30 сати, а мање од 48 сати" />
+			<question-answer text="најмање 12 сати, а мање од 24 сата" />
+		</question-answers>
+	</question>
+	<question id="vozaci_134" number="134"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, мора направити паузу у трајању од најмање 45 минута најкасније након"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="5 сати и 30 минута управљања возилом" />
+			<question-answer text="4 сата и 30 минута управљања возилом" correct="true" />
+			<question-answer text="4 сата управљања возилом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_135" number="135"
+		text="Паузу од најмање 45 минута, најкасније након 4 сата и 30 минута управљања возилом, мора направити возач"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="било којег возила" />
+			<question-answer text="теретног возила" correct="true" />
+			<question-answer
+				text="теретног возила, само када његова највећа дозвољена маса прелази 7.500kg" />
+			<question-answer
+				text="скупа возила чија највећа дозвољена маса прелази 3.500kg" correct="true" />
+			<question-answer text="било којег скупа возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_136" number="136"
+		text="Паузу од најмање 45 минута, најкасније након 4 сата и 30 минута управљања возилом, мора направити возач"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="аутобуса" correct="true" />
+			<question-answer
+				text="аутобуса, само када његова највећа дозвољена маса прелази 3.500kg" />
+			<question-answer
+				text="аутобуса, само када има више од 17 седишта укључујући и седиште за возача" />
+		</question-answers>
+	</question>
+	<question id="vozaci_137" number="137"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса уместо паузе од најмање 45 минута, може направити више пауза распоређених током вожње тако да време управљања не сме бити дуже од 4 сата и 30 минута и да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="укупно трајање пауза износи најмање 45 минута" />
+			<question-answer
+				text="прва пауза траје најмање 10 минута, а друга најмање 35 минута" />
+			<question-answer
+				text="свака пауза траје најмање 15 минута, при чему укупно трајање пауза износи најмање 45 минута" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_138" number="138"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, уместо паузе од најмање 45 минута, може направити две паузе распоређене током вожње тако да време управљања не сме бити дуже од 4 сата и 30 минута и да"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="прва пауза траје најмање 20 минута, а друга најмање 25 минута" />
+			<question-answer
+				text="прва пауза траје најмање 15 минута, а друга најмање 30 минута" correct="true" />
+			<question-answer text="укупно трајање пауза износи најмање 45 минута" />
+		</question-answers>
+	</question>
+	<question id="vozaci_139" number="139"
+		text="Возач аутобуса и тролејбуса, у јавном градском превозу путника, сме управљати возилом најдуже осам сати, уз услов да на полазним стајалиштима има прекид вожње од најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="5 минута" correct="true" />
+			<question-answer text="10 минута" />
+			<question-answer text="15 минута" />
+		</question-answers>
+	</question>
+	<question id="vozaci_140" number="140"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, мора да искористи дневни одмор, након завршетка претходног дневног или недељног одмора, у року од"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="24 сата" correct="true" />
+			<question-answer text="26 сати" />
+			<question-answer text="30 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_141" number="141"
+		text="Ако се у управљању теретним возилом или скупом возила чија највећа дозвољена маса прелази 3.500kg или аутобусом, смењују најмање два возача, сваки од њих мора да искористи дневни одмор, након завршетка претходног дневног или недељног одмора, најкасније у року од"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="24 сатa" />
+			<question-answer text="30 сати" correct="true" />
+			<question-answer text="48 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_142" number="142"
+		text="Ако се у управљању теретним возилом или скупом возила чија највећа дозвољена маса прелази 3.500kg или аутобусом, смењују најмање два возача, најкасније 30 сати након завршетка претходног дневног или недељног одмора, сваки од њих мора да искористи дневни одмор у трајању од најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="8 сати" />
+			<question-answer text="7 сати" />
+			<question-answer text="9 сати" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_143" number="143"
+		text="Ако се у управљању теретним возилом или скупом возила чија највећа дозвољена маса прелази 3.500kg или аутобусом, смењују најмање два возача, сваки од њих дневни одмор"
+		points="4" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора да користи ван возила" correct="true" />
+			<question-answer
+				text="може да користи у возилу када се оно креће, уколико у возилу постоји лежај" />
+			<question-answer text="може да користи у возилу када се оно не креће" correct="true" />
+			<question-answer
+				text="може да користи у возилу само када се оно креће у полупречнику до 100km од базе возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_144" number="144"
+		text="Ако се у управљању теретним возилом или скупом возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, смењују најмање два возача, сваки од њих дневни одмор"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора да користи само ван возила" />
+			<question-answer
+				text="може да користи у возилу када се оно креће, уколико у возилу постоји лежај" />
+			<question-answer
+				text="мора да користи ван возила или у возилу када се оно не креће" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_145" number="145"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, мора да започне коришћење недељног одмора, након завршетка претходног недељног одмора, најкасније у року од"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="8 периода по 24 часа" />
+			<question-answer text="7 периода по 24 часа" />
+			<question-answer text="6 периода по 24 часа" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_146" number="146"
+		text="Време одмора и управљања возача моторних возила којим се обавља међународни превоз уређено је"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="Законом о безбедности саобраћаја на путевима" />
+			<question-answer
+				text="Уредбом о времену одмора и управљања возача моторних возила када обављају међународни превоз, као и о примени система дигиталних тахографа" correct="true" />
+			<question-answer
+				text="Законом о међународном превозу у друмском саобраћају" />
+		</question-answers>
+	</question>
+	<question id="vozaci_147" number="147"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, одмор који користи за надокнађивање скраћеног недељног одмора, мора да се користи тако да се надовеже на други период одмора који траје најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="9 сати" correct="true" />
+			<question-answer text="11 сати" />
+			<question-answer text="24 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_148" number="148"
+		text="Међународни друмски превоз је друмски превоз при чијем обављању се"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="прелази најмање једна државна граница" correct="true" />
+			<question-answer text="прелазе најмање две државне границе" />
+			<question-answer text="транзитира најмање једна држава" />
+		</question-answers>
+	</question>
+	<question id="vozaci_149" number="149"
+		text="Недељно време управљања теретним возилом или скупом возила чија највећа дозвољена маса прелази 3.500kg или аутобусом, у међународном друмском превозу може бити највише"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="48 сати" />
+			<question-answer text="56 сати" correct="true" />
+			<question-answer text="90 сати" />
+		</question-answers>
+	</question>
+	<question id="vozaci_150" number="150"
+		text="Када се у управљању возилом, у међународном друмском превозу, смењују два или више возача који су чланови вишечлане посаде, присуство другог, односно других возача, није обавезно само током"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="првих пола часа управљања возилом" />
+			<question-answer text="првог часа управљања возилом" correct="true" />
+			<question-answer text="прва два часа управљања возилом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_151" number="151"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз мора да започне коришћење недељног одмора, након завршетка претходног недељног одмора, најкасније у року од"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="8 периода по 24 часа" />
+			<question-answer text="7 периода по 24 часа" />
+			<question-answer text="6 периода по 24 часа" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_152" number="152"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, може да користи пуни дневни одмор подељен на два дела, тако да први део одмора траје непрекидно најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="4 часа, а други непрекидно најмање 8 часова" />
+			<question-answer text="3 часа, а други непрекидно најмање 9 часова" correct="true" />
+			<question-answer text="3 часа, а други непрекидно најмање 11 часова" />
+		</question-answers>
+	</question>
+	<question id="vozaci_153" number="153"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, током било које две узастопне недеље мора да користи најмање два недељна одмора"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="од којих бар један мора да буде пуни недељни одмор" correct="true" />
+			<question-answer text="при чему оба могу бити скраћени недељни одмори" />
+			<question-answer text="који морају бити пуни недељни одмори" />
+		</question-answers>
+	</question>
+	<question id="vozaci_154" number="154"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, у случају коришћења скраћеног недељног одмора, је дужан да надокнади временску разлику до пуног недељног одмора најкасније до краја"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="четврте недеље рачунајући од недеље у којој је коришћен скраћени недељни одмор" />
+			<question-answer
+				text="треће недеље рачунајући од недеље у којој је коришћен скраћени недељни одмор" correct="true" />
+			<question-answer
+				text="друге недеље рачунајући од недеље у којој је коришћен скраћени недељни одмор" />
+		</question-answers>
+	</question>
+	<question id="vozaci_155" number="155"
+		text="Возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, у возилу изван базе возила, које је опремљено одговарајућим лежајем, када је возило у стању мировања, возач може да користи"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="дневни одмор и скраћени недељни одмор" correct="true" />
+			<question-answer text="скраћени дневни одмор и скраћени недељни одмор" />
+			<question-answer text="дневни одмор и недељни одмор" />
+		</question-answers>
+	</question>
+	<question id="vozaci_156" number="156"
+		text="Недељни одмор који започиње у једној недељи и наставља се у наредној недељи возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, може да се рачуна"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="као два недељна одмора" />
+			<question-answer text="само као недељни одмор у једној од те две недеље" correct="true" />
+			<question-answer
+				text="само као недељни одмор у недељи у којој је возач започео коришћење недељног одмора" />
+		</question-answers>
+	</question>
+	<question id="vozaci_157" number="157"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, у току управљања возилом направио паузу од 10 минута и паузу од 35 минута, након укупног времена управљања од 4 сата и 30 минута"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора направити паузу од најмање 45 минута" />
+			<question-answer text="не мора правити паузу" />
+			<question-answer text="мора направити паузу од најмање 15 минута" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_158" number="158"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, у току управљања возилом направио паузу од 10 минута након укупног времена управљања од 4 сата и 30 минута"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора направити паузу од најмање 45 минута" correct="true" />
+			<question-answer text="не мора правити паузу" />
+			<question-answer text="мора направити паузу од најмање 35 минута" />
+		</question-answers>
+	</question>
+	<question id="vozaci_159" number="159"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, у току управљања возилом направио паузу од 20 минута и паузу од 25 минута, након укупног времена управљања од 4 сата и 30 минута"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора направити паузу од најмање 45 минута" />
+			<question-answer text="не мора правити паузу" correct="true" />
+			<question-answer text="мора направити паузу од најмање 15 минута" />
+		</question-answers>
+	</question>
+	<question id="vozaci_160" number="160"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, у току управљања возилом направио паузу од 10 минута и паузу од 35 минута, након укупног времена управљања од 4 сата и 30 минута"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора направити паузу од најмање 45 минута" />
+			<question-answer text="не мора правити паузу" />
+			<question-answer text="мора направити паузу од најмање 15 минута" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_161" number="161"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, у току управљања возилом направио две паузе од по 20 минута, након укупног времена управљања од 4 сата и 30 минута, мора направити паузу од најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="45 минута" />
+			<question-answer text="5 минута" />
+			<question-answer text="15 минута" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_162" number="162"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, направио паузу од 20 минута и паузу од 25 минута, након укупног времена управљања од 4 сата и 30 минута"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора направити паузу од најмање 5 минута" />
+			<question-answer text="не мора правити паузу" />
+			<question-answer text="мора направити паузу од најмање 30 минута" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_163" number="163"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобусa, којим се обавља међународни друмски превоз, направио паузу од 10 минута, након укупног времена управљања од 4 сата и 30 минута, мора направити паузу од најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="45 минута" correct="true" />
+			<question-answer text="30 минута" />
+			<question-answer text="35 минута" />
+		</question-answers>
+	</question>
+	<question id="vozaci_164" number="164"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, направио паузу од 20 минута након укупног времена управљања од 4 сата и 30 минута"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="мора направити паузу од најмање 25 минута" />
+			<question-answer text="мора направити паузу од најмање 30 минута" correct="true" />
+			<question-answer text="мора направити паузу од најмање 35 минута" />
+		</question-answers>
+	</question>
+	<question id="vozaci_165" number="165"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, направио две паузе од по 20 минута, након укупног времена управљања од 4 сата и 30 минута, мора направити паузу од најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="45 минута" />
+			<question-answer text="5 минута" />
+			<question-answer text="30 минута" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_166" number="166"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, завршио дневни одмор у 08:00 часова, наредни дневни одмор мора да заврши најкасније у"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="04:00 часова наредног дана" />
+			<question-answer text="24:00 часова истог дана" />
+			<question-answer text="08:00 часова наредног дана" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_167" number="167"
+		text="Ако је возач теретног возила или скупа возила чија највећа дозвољена маса прелази 3.500kg или аутобуса, којим се обавља међународни друмски превоз, направио паузу од 10 минута и паузу од 25 минута, након укупног времена управљања од 4 сата и 30 минута, мора направити паузу од најмање"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="10 минута" />
+			<question-answer text="20 минута" />
+			<question-answer text="30 минута" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_168" number="168"
+		text="Возач моторног возила којe јe опремљенo са аналогним тахографом мора код себе имати кључ тахографа и претходно коришћене носаче података из тахографа свих возила којим је управљао"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="у последњих 6 дана, односно од последњег недељног одмора, из којих су видљиве активности возача" correct="true" />
+			<question-answer
+				text="у последњих 7 дана, из којих су видљиве активности возача" />
+			<question-answer
+				text="у последњих 14 дана, из којих су видљиве активности возача" />
+		</question-answers>
+	</question>
+	<question id="vozaci_169" number="169"
+		text="Возач возила којим се обавља међународни друмски превоз је дужан да на захтев надлежног органа да на увид тахографске листиће са свим писаним забелешкама, односно исписе из дигиталног тахографа и картицу возача уколико је поседује, као и потврде о одсуствовању возача за текући дан и претходних"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="14 дана" />
+			<question-answer text="21 дан" />
+			<question-answer text="28 дана" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_170" number="170"
+		text="Да ли је возач који управља возилом којим се обавља међународни друмски превоз, дужан да потврде о одсуствовању возача држи у возилу"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="Да" correct="true" />
+			<question-answer text="Не, јер их чува превозник" />
+		</question-answers>
+	</question>
+	<question id="vozaci_171" number="171"
+		text="Тахографски листићи који се користе" points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="не смеју бити запрљани или оштећени" correct="true" />
+			<question-answer text="не смеју бити оштећени, а могу бити запрљани" />
+			<question-answer
+				text="могу бити запрљани или оштећени, ако се са њих могу очитати подаци које региструју" />
+		</question-answers>
+	</question>
+	<question id="vozaci_172" number="172"
+		text="Возач који управља возилом са уграђеним аналогним тахографом, за могућу потребу замене листића, дужан је да има"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="најмање 7 тахографских листића" />
+			<question-answer
+				text="довољан број тахографских листића одговарајућег типа, водећи рачуна о потребном времену за реализацију превоза" correct="true" />
+			<question-answer text="најмање 10 тахографских листића" />
+		</question-answers>
+	</question>
+	<question id="vozaci_173" number="173"
+		text="Taхографски листић може да се користи" points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="најдуже до истека периода за који је предвиђен" correct="true" />
+			<question-answer
+				text="од почетка управљања возилом, до краја дана, односно до 24:00 часа" />
+			<question-answer
+				text="и дуже од периода за који је предвиђен, ако на листићу има места за регистровање података" />
+		</question-answers>
+	</question>
+	<question id="vozaci_174" number="174"
+		text="Ознака на аналогном тахографу која служи евидентирању активности возача у возилу, приказана на слици, означава"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="vozaci_a_174_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="време управљања возилом" correct="true" />
+			<question-answer text="време расположивости" />
+			<question-answer text="остало радно време" />
+		</question-answers>
+	</question>
+	<question id="vozaci_175" number="175"
+		text="Ознака на аналогном тахографу која служи евидентирању активности возача у возилу, приказана на слици, означава"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="vozaci_a_175_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="време управљања возилом" />
+			<question-answer text="време расположивости" />
+			<question-answer text="остало радно време" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_176" number="176"
+		text="Ознака на аналогном тахографу која служи евидентирању активности возача у возилу, приказана на слици, означава"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="vozaci_a_176_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="време управљања возилом" />
+			<question-answer text="време расположивости" correct="true" />
+			<question-answer text="остало радно време" />
+		</question-answers>
+	</question>
+	<question id="vozaci_177" number="177"
+		text="Ознака на аналогном тахографу која служи евидентирању активности возача у возилу, приказана на слици, означава"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="vozaci_a_177_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="паузу или одмор" correct="true" />
+			<question-answer text="време расположивости" />
+			<question-answer text="остало радно време" />
+		</question-answers>
+	</question>
+	<question id="vozaci_178" number="178"
+		text="Управљање возилом, у које је уграђен аналогни тахограф који има могућности евидентирања података једног возача, од стране вишечлане посаде"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="је дозвољено" />
+			<question-answer text="није дозвољено" correct="true" />
+			<question-answer
+				text="је дозвољено, само када возачи користе различите тахографске листиће" />
+		</question-answers>
+	</question>
+	<question id="vozaci_179" number="179"
+		text="У аналогном тахографу, који има могућност евидентирања података за два члана вишечлане посаде, за евидентирање својих активности возачи користе"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="заједнички тахографски листић" />
+			<question-answer
+				text="посебне тахографске листиће (сваки возач има свој листић)" correct="true" />
+			<question-answer text="заједничке или посебне тахографске листиће" />
+		</question-answers>
+	</question>
+	<question id="vozaci_180" number="180"
+		text="Члан вишечлане посаде, време проведено на седишту или лежају у возилу док возилом управља други члан посаде, своје активности евидентира постављањем преклопника или тастера тахографа на ознаку за"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="паузу или одмор" />
+			<question-answer text="време расположивости" correct="true" />
+			<question-answer text="остало радно време" />
+		</question-answers>
+	</question>
+	<question id="vozaci_181" number="181"
+		text="Приликом постављања тахографског листића у тахограф, евидентирање презимена и имена возача, од стране возача"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="је обавезно само када возилом управља вишечлана посада" />
+			<question-answer text="није обавезно" />
+			<question-answer text="је обавезно" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_182" number="182"
+		text="Приликом постављања тахографског листића у тахограф, евидентирање података о тачном времену постављања листића, од стране возача"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="је обавезно" />
+			<question-answer text="није обавезно" correct="true" />
+			<question-answer
+				text="је обавезно само на првом тахографском листићу који се поставља приликом поласка на путовање које траје више дана" />
+		</question-answers>
+	</question>
+	<question id="vozaci_183" number="183"
+		text="Приликом постављања тахографског листића у тахограф, евидентирање података о марки и типу возила, од стране возача"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="је обавезно" />
+			<question-answer
+				text="није обавезно, осим у случају када возач управља скупим возилом" />
+			<question-answer text="није обавезно" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_184" number="184"
+		text="Приликом постављања тахографског листића у тахограф, евидентирање података о стању на одометру, од стране возача"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="није обавезно" />
+			<question-answer text="је обавезно" correct="true" />
+			<question-answer
+				text="је обавезно само на првом тахографском листићу који се поставља приликом поласка на путовање које траје више дана" />
+		</question-answers>
+	</question>
+	<question id="vozaci_185" number="185"
+		text="Приликом постављања тахографског листића у тахограф, евидентирање података о датуму и месту, од стране возача"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="није обавезно" />
+			<question-answer text="је обавезно" correct="true" />
+			<question-answer
+				text="је обавезно само на првом тахографском листићу који се поставља приликом поласка на путовање које траје више дана" />
+		</question-answers>
+	</question>
+	<question id="vozaci_186" number="186"
+		text="Приликом постављања тахографског листића у тахограф, евидентирање податка о називу и седишту власника возила, од стране возача"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="није обавезно" correct="true" />
+			<question-answer text="је обавезно" />
+			<question-answer
+				text="је обавезно само када возилом не управља власник возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_187" number="187"
+		text="Приликом завршетка дневног времена управљања, на тахографском листићу од стране возача се евидентирају подаци о"
+		points="4" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="стању на одометру" correct="true" />
+			<question-answer text="тачном времену завршетка дневног времена управљања" />
+			<question-answer text="укупном времену одмора возача" />
+			<question-answer
+				text="пређеном путу(разлика стања одометра на завршетку дневног времена управљања и при постављању листића)" correct="true" />
+			<question-answer text="датуму и месту завршетка коришћења листића" correct="true" />
+			<question-answer text="укупном времену управљања возилом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_188" number="188"
+		text="Тахографски листић који се поставља у аналогни тахограф мора"
+		points="4" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="имати мерни опсег брзине чија је горња граница већа од највеће брзине коју региструје брзиномер" />
+			<question-answer
+				text="бити одобреног типа и имати одштампану ознаку типа тахографа у којима листић може да се користи" correct="true" />
+			<question-answer
+				text="имати мерни опсег брзине чија се горња граница поклапа са највећом брзином коју региструје брзиномер" correct="true" />
+			<question-answer
+				text="бити типа који је одредио произвођач возила, а постојање ознаке типа тахографа није обавезно ако мерни опсег брзине није мањи од брзине коју региструје брзиномер" />
+		</question-answers>
+	</question>
+	<question id="vozaci_189" number="189"
+		text="Током периода у коме је аналогни тахограф ван употребе, односно неисправан, податке о активностима возача које тахограф више не евидентира на исправан начин, возач је дужан да бележи"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="на посебно прописаном обрасцу" />
+			<question-answer text="на предњој страни тахографског листића" />
+			<question-answer text="на полеђини тахографског листића" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_190" number="190"
+		text="Аналогни тахограф уграђен у возило може да се употребљава, односно користи само ако је спроведен поступак прегледа у радионици, и то"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="у року од једне године, од последњег прегледа" correct="true" />
+			<question-answer text="у року од две године, од последњег прегледа" />
+			<question-answer text="у року од три године, од последњег прегледа" />
+		</question-answers>
+	</question>
+	<question id="vozaci_191" number="191"
+		text="Ако овлашћено службено лице приликом контроле на путу захтева отварање аналогног тахографа и вађење тахографског листића"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужно је да ту радњу овери, најмање, потписом на полеђини тахографског листића" correct="true" />
+			<question-answer
+				text="није дужно да врши било какву оверу те радње на тахографском листићу" />
+			<question-answer
+				text="дужно је да оверу те радње изврши само ако возач то захтева" />
+		</question-answers>
+	</question>
+	<question id="vozaci_192" number="192"
+		text="Возач који управља возилом са уграђеним дигиталним тахографом"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужан је да има најмање једну траку за испис из тахографа" />
+			<question-answer text="није дужан да има траке за испис из тахографа" />
+			<question-answer
+				text="дужан је да има довољну количину трака за испис из тахографа, узимајући у обзир потребно време за реализацију превоза" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_193" number="193"
+		text="Картица возача за дигитални тахограф може се користити" points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="само у току периода за који је издата" correct="true" />
+			<question-answer text="без ограничења у погледу периода важења" />
+			<question-answer
+				text="најдуже30 дана након истека периода за који је издата" />
+		</question-answers>
+	</question>
+	<question id="vozaci_194" number="194" text="Возач може имати"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="по једну картицу возача за свако возило којим управља" />
+			<question-answer text="само једну картицу возача" correct="true" />
+			<question-answer
+				text="по једну картицу возача за сваког превозника чијим возилима управља" />
+		</question-answers>
+	</question>
+	<question id="vozaci_195" number="195"
+		text="Картица возача за дигитални тахограф омогућава чување података о активностима возача најмање за текући дан и претходних"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="21 дан" />
+			<question-answer text="28 дана" correct="true" />
+			<question-answer text="60 дана" />
+		</question-answers>
+	</question>
+	<question id="vozaci_196" number="196"
+		text="Дигитални тахограф може да меморише податке за најмање" points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="365 дана" correct="true" />
+			<question-answer text="72 дана" />
+			<question-answer text="60 дана" />
+		</question-answers>
+	</question>
+	<question id="vozaci_197" number="197"
+		text="Када се, код вишечлане посаде, мења возач који управља возилом са уграђеним дигиталним тахографом, возачи"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="морају да замене позиције картица возача" correct="true" />
+			<question-answer text="не морају да замене позиције картица возача" />
+			<question-answer
+				text="не морају да замене позиције картица возача, осим када се један возач одмара на лежају у возилу" />
+		</question-answers>
+	</question>
+	<question id="vozaci_198" number="198"
+		text="Ако се картица возача за дигитални тахограф оштети, возач је дужан да штампа и прилoжи уз оштећену картицу"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="дневни испис са картице возача" />
+			<question-answer text="дневни испис за возило" correct="true" />
+			<question-answer text="испис догађаја и грешака са возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_199" number="199"
+		text="Ако је картица возача оштећена, неисправна или је нестала(изгубљена или украдена), возач је дужан да на дневном испису са дигиталног тахографа, по завршетку времена управљања, евидентира"
+		points="4" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="име и презиме" correct="true" />
+			<question-answer text="регистарску ознаку возила" />
+			<question-answer text="својеручни потпис" correct="true" />
+			<question-answer
+				text="податке о датуму и месту почетка дневног времена управљања возилом"  />
+			<question-answer text="број возачке дозволе или број картице возача" correct="true" />
+			<question-answer text="стање на одометру" />
+		</question-answers>
+	</question>
+	<question id="vozaci_200" number="200"
+		text="Возач може картицу возача извадити из дигиталног тахографа"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="било када, без обзира да ли се возило креће или стоји" />
+			<question-answer
+				text="само уколико возило мирује и пошто су на њој сачувани сви релевантни подаци" correct="true" />
+			<question-answer text="било када у току вожње" />
+		</question-answers>
+	</question>
+	<question id="vozaci_201" number="201"
+		text="Да ли возач који је управљао возилом у које је уграђен дигитални тахограф сме да након тога управља возилом у које је уграђен аналогни тахограф, до истека дневног времена управљања"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="Да" correct="true" />
+			<question-answer text="Не" />
+		</question-answers>
+	</question>
+	<question id="vozaci_202" number="202"
+		text="Током периода у коме је дигитални тахограф ван употребе, односно неисправан, све податке о активностима возача које дигитални тахограф више не евидентира или не штампа на исправан начин, возач је дужан да бележи"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="на предњој страни термалног папира за испис" />
+			<question-answer text="на полеђини термалног папира за испис" correct="true" />
+			<question-answer text="на посебно прописаном обрасцу" />
+		</question-answers>
+	</question>
+	<question id="vozaci_203" number="203"
+		text="Дигитални тахограф уграђен у возило може да се употребљава, односно користи само ако је спроведен поступак прегледа у радионици, и то у року од"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="једне године, од последњег прегледа" />
+			<question-answer text="две године, од последњег прегледа" correct="true" />
+			<question-answer text="три године, од последњег прегледа" />
+		</question-answers>
+	</question>
+	<question id="vozaci_204" number="204"
+		text="Ако је картица возача оштећена, неисправна или је нестала (изгубљена или украдена), пре почетка времена управљања"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="возач своје активности евидентира на полеђини термалног папира за испис" />
+			<question-answer
+				text="возач мора одштампати дневни испис са дигиталног тахографа и на његовој полеђини уписати личне податке" correct="true" />
+			<question-answer text="возачу није дозвољено управљање возилом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_205" number="205"
+		text="Ако је картица возача оштећена, неисправна или је нестала (изгубљена или украдена), возач је дужан дана дневном испису са дигиталног тахографа, пре почетка времена управљања, евидентира"
+		points="4" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="име и презиме" correct="true" />
+			<question-answer text="регистарску ознаку возила" />
+			<question-answer text="својеручни потпис" correct="true" />
+			<question-answer
+				text="податке о датуму и месту почетка дневног времена управљања возилом" />
+			<question-answer text="број возачке дозволе или број картице возача" correct="true" />
+			<question-answer text="стање на одометру" />
+		</question-answers>
+	</question>
+	<question id="vozaci_206" number="206"
+		text="Време проведено у чекању на граничним прелазима или приликом забрана кретања возила, возач евидентира постављањем преклопника или тастера тахографа на ознаку за"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="паузу или одмор" />
+			<question-answer text="остало радно време" />
+			<question-answer text="време расположивости" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_207" number="207"
+		text="Ако је картица возача оштећена, неисправна или је нестала (изгубљена или украдена), по завршетку времена управљања возач"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="своје активности евидентира на полеђини термалног папира за испис" />
+			<question-answer
+				text="своје активности евидентира на полеђини тахографског листића" />
+			<question-answer
+				text="мора одштампати дневни испис са дигиталног тахографа и на његовој полеђини уписати личне податке" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_208" number="208"
+		text="Нестанак (губитак или крађа) картице возача, возач у најкраћем могућем року мора пријавити"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="најближој полицијској управи" correct="true" />
+			<question-answer text="Агенцији за безбедност саобраћаја" />
+			<question-answer text="министарству надлежном за послове саобраћаја" />
+		</question-answers>
+	</question>
+	<question id="vozaci_209" number="209"
+		text="Нестанак (губитак или крађа) картице возача, возач мора пријавити најближој полицијској управи"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="у року од 7 дана" />
+			<question-answer text="у најкраћем могућем року" correct="true" />
+			<question-answer text="у року од 15 дана" />
+		</question-answers>
+	</question>
+	<question id="vozaci_210" number="210"
+		text="Време проведено у пратњи возила које се превози трајектом или возом, возач евидентира постављањем преклопника или тастера тахографа на ознаку за"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="време расположивости" correct="true" />
+			<question-answer text="паузу или одмор" />
+			<question-answer text="остало радно време" />
+		</question-answers>
+	</question>
+	<question id="vozaci_211" number="211"
+		text="Време у којем возач отклањања неисправности уређаја или делова возила, евидентира се постављањем преклопника или тастера тахографа на ознаку за"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="време расположивости" />
+			<question-answer text="паузу или одмор" />
+			<question-answer text="остало радно време" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_212" number="212"
+		text="Возач који започне дневно време управљања на возилу у којем је уграђен аналогни тахограф и настави управљање возилом у којем је уграђен дигитални тахограф"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="није дужан да поседује било који доказ о управљању возилом са аналогним тахографом" />
+			<question-answer
+				text="дужан је да закључи ручни унос на тахографском листићу и да исти има код себе" correct="true" />
+			<question-answer
+				text="дужан је да на крају дневног времена управљања, на одштампаном дневном испису са картице возача, упише укупно време управљања возилом са аналогним тахографом" />
+		</question-answers>
+	</question>
+	<question id="vozaci_213" number="213"
+		text="Контрола усклађености брзине, одређене граничником брзине и вредности брзине уписане на информативној налепници, се врши"
+		points="4" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="након било које поправке на возилу" />
+			<question-answer
+				text="након замене пнеуматика пнеуматицима других димензија, услед чега је промењен обим пнеуматика" correct="true" />
+			<question-answer text="након оправки на систему за довод горива" correct="true" />
+			<question-answer text="при вршењу техничког прегледа возила" />
+		</question-answers>
+	</question>
+	<question id="vozaci_214" number="214"
+		text="Возач који започне дневно време управљања на возилу у којем је уграђен дигитални тахограф и настави управљање возилом у којем је уграђен аналогни тахограф"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="дужан је да са собом носи картицу возача,ако нема одштампан дневни испис са картице" />
+			<question-answer
+				text="није дужан да поседује било који доказ о управљању возилом са дигиталним тахографом јер су ти подаци евидентирани на картици возача и у дигиталном тахографу" />
+			<question-answer
+				text="дужан је да одштампа дневни испис са картице возача и носи га са собом до завршетка дневног времена управљања" correct="true" />
+		</question-answers>
+	</question>
+	<question id="vozaci_215" number="215"
+		text="Периодичне контроле исправности рада граничника брзине обављају се"
+		points="4">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="при вршењу техничког прегледа возила" />
+			<question-answer text="истовремено са периодичном контролом тахографа" correct="true" />
+			<question-answer text="сваких 6 месеци" />
+		</question-answers>
+	</question>
+	<!-- DS: ZA OVO PITANJE NEMAMO ODGOVOR! -->
+	<question id="vozaci_216" number="216"
+		text="Када учествује у саобраћају на путу, не сме да има алкохола у организму"
+		points="0" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="vozaci" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="кандидат за возача током практичне обуке" />
+			<question-answer text="возач мотокултиватора" />
+			<question-answer text="возач мотоцикла и мопеда" />
+			<question-answer text="возач возила којим се врши пробна вожња" />
+		</question-answers>
+	</question>
+
+</questions>

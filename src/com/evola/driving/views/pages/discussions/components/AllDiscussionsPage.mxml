@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 visible="{presenter.model.allDiscussionMessages.length > 0}"
+		 xmlns:discussions="com.evola.driving.views.pages.discussions.*"
+		 xmlns:controls="com.evola.driving.views.pages.discussions.controls.*">
+
+	<controls:DiscussionsPageControl totalPages="{presenter.model.allDiscussionsTotalPages}"
+									 currentPageIndex="{presenter.model.allDiscussionsStartPageIndex}"
+									 pageClick="presenter.pageChangeClicked(event)"/>
+
+	<mx:Repeater id="rpt"
+				 recycleChildren="true"
+				 dataProvider="{presenter.model.allDiscussionMessages}">
+
+		<controls:DiscussionsAllDiscussionRenderer message="{rpt.currentItem}"
+												   presenter="{presenter}"/>
+
+	</mx:Repeater>
+
+	<controls:DiscussionsPageControl totalPages="{presenter.model.allDiscussionsTotalPages}"
+									 currentPageIndex="{presenter.model.allDiscussionsStartPageIndex}"
+									 pageClick="presenter.pageChangeClicked(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.views.pages.discussions.DiscussionsPresenter;
+
+			[Bindable]
+			public var presenter:DiscussionsPresenter;
+		]]>
+	</mx:Script>
+
+</mx:VBox>

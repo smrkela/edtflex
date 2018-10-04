@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					width="100%"
+					height="100%"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper styleName="contentWrapper">
+
+		<controls1:PageTitle label="Moj profil"/>
+
+		<mx:Form verticalGap="10">
+
+			<mx:FormItem label="Ime">
+				<mx:TextInput id="tiFirstName"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Prezime">
+				<mx:TextInput id="tiLastName"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="E-mail">
+				<mx:Label id="tiEmail"
+						  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Pol"
+						 direction="horizontal">
+				<mx:RadioButtonGroup id="rbgSex"/>
+				<mx:RadioButton value="true"
+								group="{rbgSex}"
+								label="Muški"/>
+				<mx:RadioButton value="false"
+								group="{rbgSex}"
+								label="Ženski"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Kategorija vozila">
+				<mx:ComboBox id="cmbDrivignCategory"
+							 width="300"
+							 labelField="name"/>
+			</mx:FormItem>
+
+			<!--
+			<mx:FormItem label="Broj pitanja po stranici">
+				<mx:ComboBox id="cmbQuestionsPerPage"
+							 dataProvider="{[1, 2, 3, 4, 5, 10, 15, 20]}"
+							 width="300"/>
+			</mx:FormItem>
+			-->
+
+			<mx:FormItem>
+				<controls1:BoxButton label="Sačuvaj izmene"
+									 click="onUpdateUserClick(event)"/>
+			</mx:FormItem>
+
+		</mx:Form>
+
+	</pages:PageContentWrapper>
+	
+	<pages:PageFooter/>
+
+	<util:EvolaHttpService id="serviceLoadUser"
+						   restUrl="user/loadUser"
+						   result="onUserLoaded(event)"/>
+
+	<util:EvolaHttpService id="serviceUpdateUser"
+						   restUrl="user/updateUser"
+						   result="onUserUpdated(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.DrivingCategory;
+			import com.evola.driving.model.User;
+			import com.evola.driving.util.DrivingUtils;
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.ResultEvent;
+
+			override protected function displayPage():void
+			{
+
+				serviceLoadUser.send({userId: Settings.user.id});
+			}
+
+			protected function onUserLoaded(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				var user:User=User.createFromXML(result.user[0]);
+				var categories:ArrayCollection=new ArrayCollection();
+
+				for each (var dcXML:XML in result.child("driving-category"))
+				{
+
+					categories.addItem(DrivingCategory.createFromXML(dcXML));
+				}
+
+				tiFirstName.text=user.firstName;
+				tiLastName.text=user.lastName;
+				tiEmail.text=user.email;
+				rbgSex.selectedValue=user.isMale;
+				//cmbQuestionsPerPage.selectedItem=user.questionsPerPage;
+				cmbDrivignCategory.dataProvider=categories;
+				cmbDrivignCategory.selectedItem=DrivingUtils.getBaseEntity(categories, user.drivingCategory);
+			}
+
+			protected function onUserUpdated(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				var user:User=User.createFromXML(result.user[0]);
+
+				Settings.user=user;
+
+				PageManager.selectPage("HomePage");
+			}
+
+			protected function onUpdateUserClick(event:MouseEvent):void
+			{
+
+				var firstName:String=tiFirstName.text;
+				var lastName:String=tiLastName.text;
+				var email:String=tiEmail.text; //email ne menjamo uopste
+				var isMale:Boolean=rbgSex.selectedValue;
+				var questionsPerPage:int= 10;//int(cmbQuestionsPerPage.text);
+				var drivingCategoryId:String=cmbDrivignCategory.selectedItem ? cmbDrivignCategory.selectedItem.id : null;
+
+				if (!questionsPerPage)
+					questionsPerPage=20;
+
+				serviceUpdateUser.send({userId: Settings.user.id, firstName: firstName, lastName: lastName, email: email, isMale: isMale, questionsPerPage: questionsPerPage, drivingCategoryId: drivingCategoryId});
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

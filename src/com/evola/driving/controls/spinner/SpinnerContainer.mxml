@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 alpha="0.3"
+		 tabEnabled="false"
+		 backgroundColor="0xEEEEEE"
+		 includeInLayout="false"
+		 horizontalAlign="center"
+		 verticalAlign="middle"
+		 xmlns:ui="com.generic.navigation.util.ui.*"
+		 removed="onRemoved(event)"
+		 xmlns:spinner="com.evola.driving.controls.spinner.*">
+
+	<mx:Style>		
+		.spinnerStyle {
+			spinner-type: gradientlines;
+			spinner-color: #ffffff;
+			spinner-highlight-color: #000000;	
+			spinnerLineThickness: 4;
+		}		
+		
+	</mx:Style>
+
+	<mx:Binding source="parentContainer.height"
+				destination="height"/>
+	<mx:Binding source="parentContainer.width"
+				destination="width"/>
+
+	<spinner:Spinner styleName="spinnerStyle"
+					 width="30"
+					 height="30"
+					 id="spinner"/>
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Container;
+
+			[Bindable]
+			public var parentContainer:Container;
+
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+			{
+
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+
+				if (parent)
+				{
+
+					move(0, 0);
+
+					var spinnerX:Number=(parent.width - spinner.width) / 2;
+					var spinnerY:Number=(parent.height - spinner.height) / 2;
+					spinner.move(spinnerX, spinnerY);
+				}
+
+			}
+
+			protected function onRemoved(event:Event):void
+			{
+
+				if (spinner)
+					spinner.stop();
+			}
+		]]>
+	</mx:Script>
+</mx:HBox>

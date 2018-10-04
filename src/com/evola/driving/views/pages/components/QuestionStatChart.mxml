@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 height="250"
+		 showEffect="{effShow}">
+
+	<!-- EFEKTI ZA KONTROLU -->
+
+	<mx:WipeUp id="effShow"
+			   duration="300"/>
+
+	<!-- EFEKTI ZA CHART -->
+
+	<mx:SeriesSlide id="slideIn"
+					duration="1000"
+					direction="up"/>
+
+	<!-- BOJE I STILOVI -->
+
+	<mx:SolidColorStroke id="stroke1"
+						 color="#777777"
+						 weight="1"/>
+	<mx:SolidColor id="fill"
+				   color="#ffc40d"/>
+	<mx:SolidColorStroke id="stroke2"
+						 color="#C0FDAC"
+						 weight="1"/>
+	<mx:SolidColorStroke id="axisStroke"
+						 color="#777777"
+						 alpha="1"
+						 weight="1"/>
+	<mx:SolidColorStroke id="lineStroke"
+						 color="#777777"
+						 alpha="0.6"
+						 weight="1"/>
+
+	<mx:HBox width="100%">
+
+		<mx:Label text="Grafički prikaz"
+				  fontWeight="bold"/>
+
+		<mx:Label text="(prikaz broja pitanja po danu)"
+				  color="#777777"/>
+
+	</mx:HBox>
+
+	<mx:ColumnChart dataProvider="{getDataProvider(dataProvider)}"
+					showDataTips="true"
+					width="100%"
+					height="100%">
+
+		<mx:seriesFilters>
+			<mx:Array/>
+		</mx:seriesFilters>
+
+		<mx:horizontalAxis>
+			<mx:DateTimeAxis id="xAxis"
+							 dataUnits="days"
+							 labelUnits="days"
+							 labelFunction="dateLabelFunction"/>
+		</mx:horizontalAxis>
+
+		<mx:verticalAxis>
+			<mx:LinearAxis id="yAxis"/>
+		</mx:verticalAxis>
+
+		<!-- assign strokes to axis renderers -->
+		<mx:horizontalAxisRenderers>
+			<mx:AxisRenderer axis="{xAxis}">
+				<mx:axisStroke>{axisStroke}</mx:axisStroke>
+				<mx:tickStroke>{axisStroke}</mx:tickStroke>
+				<mx:minorTickStroke>{axisStroke}</mx:minorTickStroke>
+			</mx:AxisRenderer>
+		</mx:horizontalAxisRenderers>
+
+		<mx:verticalAxisRenderers>
+			<mx:AxisRenderer axis="{yAxis}">
+				<mx:axisStroke>{axisStroke}</mx:axisStroke>
+				<mx:tickStroke>{axisStroke}</mx:tickStroke>
+				<mx:minorTickStroke>{axisStroke}</mx:minorTickStroke>
+			</mx:AxisRenderer>
+		</mx:verticalAxisRenderers>
+
+		<!-- assign stroke to grid lines -->
+		<mx:backgroundElements>
+			<mx:GridLines>
+				<mx:horizontalStroke>{lineStroke}</mx:horizontalStroke>
+			</mx:GridLines>
+		</mx:backgroundElements>
+
+		<mx:series>
+
+			<mx:ColumnSeries xField="date"
+							 yField="value"
+							 fill="{fill}"
+							 stroke="{stroke1}"
+							 showDataEffect="{slideIn}">
+			</mx:ColumnSeries>
+
+		</mx:series>
+
+	</mx:ColumnChart>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DateUtils;
+
+			import mx.charts.chartClasses.AxisBase;
+			import mx.collections.ArrayCollection;
+
+			[Bindable]
+			public var dataProvider:ArrayCollection;
+
+			private function dateLabelFunction(date:Date, previousValue:Date, axis:AxisBase):String
+			{
+
+				return DateUtils.formatDateSimple(date);
+			}
+
+			private function getDataProvider(dp:ArrayCollection):ArrayCollection
+			{
+
+				//treba da grupisemo sve podatke po datumu posto moze biti vise sesija u istom danu, 
+				//takve sesije treba sabrati
+
+				var items:ArrayCollection=new ArrayCollection();
+
+				var lastItem:Object=null;
+
+				for each (var obj:Object in dp)
+				{
+
+					var value:Number=obj.value;
+					var date:Date=obj.date;
+
+					if (lastItem && isSameDay(lastItem.date, date))
+					{
+
+						lastItem.value=lastItem.value + value;
+					}
+					else
+					{
+
+						lastItem={date: date, value: value};
+
+						items.addItem(lastItem);
+					}
+				}
+
+				return items;
+			}
+
+			private function isSameDay(date1:Date, date2:Date):Boolean
+			{
+
+				if (!date1 || !date2)
+					return false;
+
+				return date1.fullYear == date2.fullYear && date1.month == date2.month && date1.date && date2.date;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

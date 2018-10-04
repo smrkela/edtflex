@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 mouseChildren="false"
+		 useHandCursor="true"
+		 buttonMode="true"
+		 rollOver="isRollOver = true"
+		 rollOut="isRollOver = false"
+		 borderStyle="solid"
+		 borderThickness="0"
+		 backgroundColor="#FFFFFF"
+		 backgroundAlpha="{isRollOver ? 0.3 : 0.1}"
+		 cornerRadius="4">
+
+	<controls:LinkLabel text="{label}"
+						color="#FFFFFF"/>
+
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			public var isRollOver:Boolean=false;
+		]]>
+	</mx:Script>
+
+</mx:VBox>

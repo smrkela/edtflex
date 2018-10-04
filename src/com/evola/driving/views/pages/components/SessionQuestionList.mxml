@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 height="250"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 showEffect="{effShow}">
+
+	<mx:WipeUp id="effShow"
+			   duration="300"/>
+
+	<mx:Metadata>
+		
+		[Event(name="close", type="flash.events.Event")]
+		
+	</mx:Metadata>
+
+	<mx:HBox width="100%">
+
+		<mx:Label fontWeight="bold"
+				  text="{title}"/>
+
+		<controls:LinkLabel text="sakrij ovaj prikaz"
+							click="dispatchEvent(new Event('close'))"/>
+
+	</mx:HBox>
+
+	<mx:VBox width="100%"
+			 height="100%"
+			 minHeight="0">
+
+		<mx:Repeater id="rptSession"
+					 dataProvider="{dataProvider}"
+					 width="100%">
+
+			<mx:HBox width="100%">
+
+				<mx:Label text="{'#' + rptSession.currentItem.question.attribute('id')[0]}"
+						  data="{rptSession.currentItem.question.attribute('id')[0]}"
+						  width="40"/>
+
+				<mx:Text text="{rptSession.currentItem.question.attribute('text')[0]}"
+						 width="100%"/>
+
+				<mx:Label text="tačno odgovoreno"
+						  color="green"
+						  visible="{rptSession.currentItem.@correct == 'true'}"
+						  includeInLayout="{rptSession.currentItem.@correct == 'true'}"/>
+
+				<mx:Label text="netačno odgovoreno"
+						  color="red"
+						  visible="{rptSession.currentItem.@correct == 'false'}"
+						  includeInLayout="{rptSession.currentItem.@correct == 'false'}"/>
+
+			</mx:HBox>
+
+		</mx:Repeater>
+
+	</mx:VBox>
+
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			public var dataProvider:XMLList;
+
+			[Bindable]
+			public var title:String;
+		]]>
+	</mx:Script>
+
+</mx:VBox>

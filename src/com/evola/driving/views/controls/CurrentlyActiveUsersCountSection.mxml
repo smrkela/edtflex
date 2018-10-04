@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 addedToStage="onAddedToStage(event)"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:util="com.evola.driving.util.*">
+
+	<controls:SectionTitle label="Ko još uči sa tobom?"/>
+
+	<mx:HBox>
+
+		<mx:Label id="lblText"
+				  fontSize="12"/>
+
+		<controls:LinkLabel text="vidi sve"
+							click="onCheckDetailsClick(event)"/>
+
+	</mx:HBox>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="statistics/loadCurrentlyActiveUsersCount"
+						   result="onCountLoaded(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DrivingUtils;
+			import com.evola.driving.util.PageManager;
+
+			import mx.rpc.events.ResultEvent;
+
+			protected function onAddedToStage(event:Event):void
+			{
+				service.send({userId: Settings.user.id, AuthenticationToken: Settings.userToken});
+			}
+
+			protected function onCountLoaded(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				var count:int=result.attribute("logged-in-users-count");
+
+				if (count > 0)
+				{
+
+					var countString:String=String(count);
+					if (countString.indexOf("1") == countString.length - 1)
+						lblText.text="Trenutno još " + count + " polaznik uči zajedno sa tobom.";
+					else
+						lblText.text="Trenutno još " + count + " polaznika uči zajedno sa tobom.";
+
+				}
+				else
+				{
+
+					lblText.text="Trenutno nema drugih polaznika koji uče.";
+				}
+			}
+
+			protected function onCheckDetailsClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("ActiveUsers");
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

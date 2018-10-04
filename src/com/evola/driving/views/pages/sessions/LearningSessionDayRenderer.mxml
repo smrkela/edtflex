@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 backgroundColor="{dayIndex % 2 == 0 ? 0xFFFFFF : 0xDDDDDD}">
+
+	<mx:Label text="{DateUtils.getPrettyDayOfWeek(data.date)}"
+			  color="{getDayColor(data.date.day)}"
+			  width="100%"/>
+
+	<mx:Label text="{data.numberOfQuestions} pitanja"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DateUtils;
+			import com.evola.driving.util.ThemeColors;
+			
+			[Bindable]
+			public var dayIndex : int;
+
+			private function getDayColor(day:int):uint
+			{
+
+				if (day == 0)
+					return ThemeColors.RED;
+
+				if (day == 6)
+					return ThemeColors.BLUE;
+
+				return 0x555555;
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

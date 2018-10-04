@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 backgroundColor="{ThemeColors.FORUM_DETAILS}">
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.ThemeColors;
+			import com.evola.driving.views.pages.discussions.DiscussionsPresenter;
+
+			[Bindable]
+			public var message:XML;
+
+			[Bindable]
+			public var presenter:DiscussionsPresenter;
+
+			protected function getMessageNumber(index:int, startPageIndex : int):String
+			{
+
+				var messageNumber:int=index + 1 + presenter.model.pageSize * presenter.model.allDiscussionsStartPageIndex;
+
+				return "#" + messageNumber;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

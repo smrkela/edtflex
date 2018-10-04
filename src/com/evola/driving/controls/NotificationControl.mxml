@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 cornerRadius="3"
+		 backgroundColor="#FFFFFF"
+		 borderStyle="solid"
+		 paddingLeft="5"
+		 paddingTop="2"
+		 paddingRight="5"
+		 paddingBottom="2">
+
+	<mx:Image source="@Embed(source='/data/images/info.png')"/>
+	<mx:Text htmlText="{notificationText}"
+			 width="100%"/>
+
+	<mx:String id="notificationText"/>
+
+</mx:HBox>

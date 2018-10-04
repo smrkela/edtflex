@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 verticalGap="2"
+		 xmlns:sessions="com.evola.driving.views.pages.sessions.*">
+
+	<mx:HBox width="100%"
+			 backgroundColor="{ThemeColors.FORUM_HEADER}"
+			 color="#FFFFFF"
+			 fontWeight="bold"
+			 fontSize="16">
+
+		<mx:Label text="{DateUtils.getPrettyMonthAndYear(data.date)}"
+				  width="100%"/>
+
+		<mx:Label text="{data.numberOfQuestions} pitanja"/>
+
+	</mx:HBox>
+
+	<mx:Repeater id="rpt"
+				 dataProvider="{data.groups}"
+				 recycleChildren="true">
+
+		<sessions:LearningSessionDayRenderer data="{rpt.currentItem}"
+											 dayIndex="{rpt.currentIndex}"/>
+
+	</mx:Repeater>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DateUtils;
+			import com.evola.driving.util.ThemeColors;
+		]]>
+	</mx:Script>
+
+
+</mx:VBox>

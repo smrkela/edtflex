@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 backgroundColor="{getBackgroundColor(message)}"
+		 toolTip="{getCategoryTooltip(message)}"
+		 verticalAlign="middle"
+		 horizontalAlign="center">
+
+	<mx:Label text="{getCategoryText(message)}"
+			  color="#FFFFFF"
+			  textAlign="center"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.GroupColors;
+			import com.evola.driving.util.PresenterProvider;
+
+			[Bindable]
+			public var message:XML;
+
+			private function getBackgroundColor(message:XML):uint
+			{
+
+				var categoryIdString:String=message.attribute('category-id');
+
+				var categoryId:int=int(PresenterProvider.mainPresenter.model.getQuestionCategory(categoryIdString).id);
+
+				return GroupColors.getColor(categoryId);
+			}
+
+			private function getCategoryText(message:XML):String
+			{
+
+				var categoryId:String=message.attribute('category-id');
+
+				var categoryName:String=PresenterProvider.mainPresenter.model.getQuestionCategory(categoryId).name;
+
+				return categoryName.substr(0, 2).toUpperCase();
+			}
+
+			private function getCategoryTooltip(message:XML):String
+			{
+
+				var categoryId:String=message.attribute('category-id');
+
+				var categoryName:String=PresenterProvider.mainPresenter.model.getQuestionCategory(categoryId).name;
+
+				return categoryName;
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

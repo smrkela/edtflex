@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.controls.*"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:controls1="com.evola.driving.views.controls.*"
+					xmlns:util="com.evola.driving.util.*">
+
+	<controls1:UserHeaderControl/>
+
+	<pages:PageContentWrapper>
+
+		<controls:PageTitle label="Napredak učenja po kategorijama pitanja"/>
+
+		<mx:Repeater id="rpt"
+					 width="100%">
+			<controls:QuestionCategoryProgressControl progressXML="{rpt.currentItem as XML}"
+													  width="100%"/>
+		</mx:Repeater>
+
+		<pages:PageFooter/>
+
+	</pages:PageContentWrapper>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="statistics/loadLearnedPerCategory"
+						   result="onLearnedPerCategory(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DrivingUtils;
+
+			import mx.rpc.events.ResultEvent;
+
+			override protected function displayPage():void
+			{
+
+				service.send({userId: Settings.user.id});
+			}
+
+			protected function onLearnedPerCategory(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				trace(result.toString());
+
+				rpt.dataProvider=result.children();
+			}
+		]]>
+	</mx:Script>
+
+
+</pages:AbstractPage>

@@ -1,0 +1,968 @@
+﻿<questions>
+
+	<question id="mere_1" number="1"
+		text="Полицијски службеник ће привремено искључити из саобраћаја возача који"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="се креће возилом брзином која је од 51km/h до 70km/h већа од дозвољене на путу у насељу" />
+			<question-answer correct="true" text="управља возилом под дејством алкохола" />
+			<question-answer
+				text="управља возилом за које је при контроли саобраћаја утврђено да је технички неисправно због неисправности уређаја за управљање или уређаја за заустављање" />
+			<question-answer correct="true"
+				text="одбије да се подвргне испитивању, односно стручном прегледу" />
+		</question-answers>
+	</question>
+	<question id="mere_2" number="2"
+		text="Полицијски службеник ће привремено искључити из саобраћаја возача који"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="захтева анализу крви, односно урина" />
+			<question-answer
+				text="ноћу на моторном возилу за време вожње у саобраћају на путу нема укључена дуга светла" />
+			<question-answer correct="true"
+				text="управља возилом под дејством психоактивних супстанци" />
+			<question-answer
+				text="се креће брзином која је већа за више од 70km/h од дозвољене на путу ван насеља" />
+		</question-answers>
+	</question>
+	<question id="mere_3" number="3"
+		text="Полицијски службеник ће привремено искључити из саобраћаја возача који"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="прекорачи дневно време управљања" />
+			<question-answer correct="true"
+				text="се насилнички понаша у саобраћају (насилничка вожња)" />
+			<question-answer
+				text="се креће брзином која је већа за више од 70km/h од дозвољене на путу ван насеља" />
+			<question-answer text="прекорачи недељно време управљања" />
+		</question-answers>
+	</question>
+	<question id="mere_4" number="4"
+		text="Полицијски службеник ће привремено искључити из саобраћаја возача који"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="управља возилом за време трајања заштитне мере или мере безбедности" />
+			<question-answer
+				text="управља возилом које је оптерећено преко своје носивости за више од 5%" />
+			<question-answer correct="true"
+				text="нема возачку дозволу за управљање возилом оне категорије којој припада возило којим управља" />
+			<question-answer
+				text="прође светлосни саобраћајни знак када је тим знаком забрањен пролаз" />
+		</question-answers>
+	</question>
+	<question id="mere_5" number="5"
+		text="Полицијски службеник ће привремено искључити из саобраћаја возача који"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="је затечен да управља возилом у саобраћају за време трајања искључења возача" />
+			<question-answer correct="true"
+				text="управља возилом након истека рока важења возачке дозволе, односно пробне возачке дозволе" />
+			<question-answer
+				text="није искористио дневни одмор у року од 24 сата након завршетка претходног дневног или недељног одмора" />
+			<question-answer
+				text="се у зони школе креће брзином која је преко 50km/h већа од дозвољене" />
+		</question-answers>
+	</question>
+	<question id="mere_6" number="6"
+		text="Полицијски службеник ће привремено искључити из саобраћаја возача који"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="је затечен да управља возилом у саобраћају за време трајања искључења возача" />
+			<question-answer correct="true"
+				text="управља возилом након истека рока важења возачке дозволе, односно пробне возачке дозволе" />
+			<question-answer
+				text="прође светлосни саобраћајни знак када је тим знаком забрањен пролаз" />
+			<question-answer
+				text="се у зони школе креће брзином која је преко50km/h већа од дозвољене" />
+		</question-answers>
+	</question>
+	<question id="mere_7" number="7"
+		text="Полицијски службеник ће привремено искључити из саобраћаја возача који"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="управља возилом за време трајања заштитне мере или мере безбедности" />
+			<question-answer text="управља возилом које је технички неисправно" />
+			<question-answer correct="true"
+				text="нема возачку дозволу за управљање возилом оне категорије којој припада возило којим управља" />
+			<question-answer
+				text="прође светлосни саобраћајни знак када је тим знаком забрањен пролаз" />
+		</question-answers>
+	</question>
+	<question id="mere_8" number="8"
+		text="Ради утврђивања присуства алкохола у организму возач по налогу овлашћеног лица"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="је дужан да поступи без одлагања и омогући вршење испитивања помоћу одговарајућих средстава(алкометар и др.)" />
+			<question-answer
+				text="није дужан да омогући вршење испитивања помоћу одговарајућих средстава(алкометар и др.), у случају да захтева да се изврши анализа крви, односно крви и урина у одговарајућој установи" />
+			<question-answer
+				text="није дужан да омогући вршење испитивања помоћу одговарајућих средстава(алкометар и др.), уколико прекине са управљањем моторним возилом" />
+		</question-answers>
+	</question>
+	<question id="mere_9" number="9"
+		text="Да ли је возач дужан да ради утврђивања присуства алкохола у организму без одлагања поступи по налогу овлашћеног лица, и омогући вршење испитивања помоћу одговарајућих средстава(алкометар и др.)"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="Не" />
+			<question-answer correct="true" text="Да" />
+			<question-answer text="Да, само ако је учествовао у саобраћајној незгоди" />
+		</question-answers>
+	</question>
+	<question id="mere_10" number="10"
+		text="Возач може захтевати да се изврши анализа крви, односно крви и урина или других телесних материја, у одговарајућој установи, о сопственом трошку"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="ако оспорава резултате добијене извршеним испитивањем помоћу одговарајућих средстава (алкометар, дрога тест и др.)" />
+			<question-answer
+				text="и без извршеног испитивања помоћу одговарајућих средстава(алкометар, дрога тест и др.)" />
+			<question-answer text="у року од 24 сата након извршеног испитивања" />
+		</question-answers>
+	</question>
+	<question id="mere_11" number="11"
+		text="Возач може захтевати да се изврши анализа крви, односно крви и урина или других телесних материја, у одговарајућој установи, о сопственом трошку ако оспорава резултате добијене извршеним испитивањем помоћу одговарајућих средстава(алкометар, дрога тест и др.)"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="у писаној форми, на лицу места, у записник у коме су утврђени резултати испитивања" />
+			<question-answer text="усмено на лицу места" />
+			<question-answer
+				text="у писаној форми, у року од 24 сата након извршеног испитивања" />
+		</question-answers>
+	</question>
+	<question id="mere_12" number="12"
+		text="Ако возило којим је управљао возач који је искључен из саобраћаја омета несметано и безбедно одвијање саобраћаја, полицијски службеник може"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="привремено одузети возило док не престану разлози за искључење возача" />
+			<question-answer correct="true"
+				text="преместити возило, односно наложити да се возило премести" />
+			<question-answer
+				text="омогућити возачу да заврши започету вожњу до жељеног одредишта" />
+		</question-answers>
+	</question>
+	<question id="mere_13" number="13"
+		text="Ако возило које је искључено из саобраћаја, омета несметано и безбедно одвијање саобраћаја полицијски службеник може"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="привремено одузети возило док не престану разлози за искључење возача, односно возила" />
+			<question-answer correct="true"
+				text="преместити возило, односно наложити да се возило премести" />
+			<question-answer
+				text="омогућити возачу да заврши започету вожњу до жељеног одредишта" />
+		</question-answers>
+	</question>
+	<question id="mere_14" number="14"
+		text="Полицијски службеник може преместити, односно наложити да се премести"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="свако возило којим је управљао возач који је искључен из саобраћаја" />
+			<question-answer correct="true"
+				text="возило којим је управљао возач који је искључен из саобраћаја када исто омета несметано и безбедно одвијање саобраћаја" />
+			<question-answer
+				text="свако возило чији возач је прекршио и показује намеру за даље кршења прописа о безбедности саобраћаја" />
+		</question-answers>
+	</question>
+	<question id="mere_15" number="15"
+		text="Полицијски службеник може преместити, односно наложити да се премести"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="свако возило које је искључено из саобраћаја" />
+			<question-answer
+				text="свако возило које не испуњава услове за учешће у саобраћају" />
+			<question-answer correct="true"
+				text="возило које је искључено из саобраћаја када исто омета несметано и безбедно одвијање саобраћаја" />
+		</question-answers>
+	</question>
+	<question id="mere_16" number="16"
+		text="Трошкове премештања возила којим је управљао возач који је искључен из саобраћаја сноси"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="власник, односно корисник возила" />
+			<question-answer text="орган чији је службеник наложио премештање" />
+			<question-answer
+				text="власник, односно корисник возила, само у случају када је искључени возач задржан до отрежњења" />
+		</question-answers>
+	</question>
+	<question id="mere_17" number="17"
+		text="Трошкове премештања возила које је искључено из саобраћаја сноси"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="власник, односно корисник возила, само у случају када је возило искључено због неисправности уређаја за управљање или уређаја за заустављање" />
+			<question-answer text="орган чији је службеник наложио премештање" />
+			<question-answer correct="true" text="власник, односно корисник возила" />
+		</question-answers>
+	</question>
+	<question id="mere_18" number="18"
+		text="Возач који је под дејством алкохола ће бити задржан до отрежњења, а најдуже 12 сати, ако има садржај алкохола у крви већи од"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="0,50mg/ml" />
+			<question-answer text="1,00mg/ml" />
+			<question-answer correct="true" text="1,20mg/ml" />
+		</question-answers>
+	</question>
+	<question id="mere_19" number="19"
+		text="Возач који одбије да се подвргне испитивању на присуство алкохола и/или других психоактивних супстанци ће бити"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="само искључен из саобраћаја" />
+			<question-answer
+				text="спроведен у одговарајућу установу да се изврши анализа крви, односно крви и урина или других телесних материја" />
+			<question-answer correct="true" text="искључен из саобраћаја и обавезно задржан" />
+		</question-answers>
+	</question>
+	<question id="mere_20" number="20"
+		text="Возач који је под дејством алкохола, чији је садржај алкохола у крви мањи од 1,20mg/ml"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мора бити обавезно задржан" />
+			<question-answer correct="true"
+				text="може бити задржан само ако изражава намеру, односно ако постоји опасност да ће наставити са управљањем возилом након што је искључен из саобраћаја" />
+			<question-answer
+				text="може бити задржан само ако је изазвао саобраћајну незгоду" />
+		</question-answers>
+	</question>
+	<question id="mere_21" number="21"
+		text="Возач који је под дејством алкохола, чији је садржај алкохола у крви 1,00mg/ml"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мора бити обавезно задржан" />
+			<question-answer correct="true"
+				text="може бити задржан само ако изражава намеру, односно ако постоји опасност да ће наставити са управљањем возилом након што је искључен из саобраћаја" />
+			<question-answer
+				text="може бити задржан само ако је изазвао саобраћајну незгоду" />
+		</question-answers>
+	</question>
+	<question id="mere_22" number="22"
+		text="Надлежном органу за прекршаје биће доведен возач" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="који је затечен у чињењу прекршаја и који оспорава чињење прекршаја" />
+			<question-answer
+				text="који је затечен у чињењу прекршаја за које је обавезно изрицање казнених поена" />
+			<question-answer correct="true"
+				text="који је затечен у чињењу прекршаја и који изражава намеру за даље чињење прекршаја" />
+			<question-answer
+				text="који је затечен у чињењу прекршаја за које је обавезно изрицање заштитне мере забране управљања моторним возилом" />
+			<question-answer correct="true"
+				text="који је затечен у чињењу прекршаја и који је наставио са чињењем тог прекршаја" />
+		</question-answers>
+	</question>
+	<question id="mere_23" number="23"
+		text="Возач који је затечен у чињењу прекршаја и који изражава намеру за даље чињење прекршаја, односно који је наставио са чињењем тог прекршаја може бити задржан најдуже 24 сата"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="само ако је прекршај учињен под дејством алкохола" />
+			<question-answer correct="true"
+				text="само ако не може одмах бити доведен надлежном органу за прекршаје" />
+			<question-answer
+				text="ако је прекршајем изазвана непосредна опасност за друге учеснике у саобраћају" />
+		</question-answers>
+	</question>
+	<question id="mere_24" number="24"
+		text="Возило може бити упућено на контролни технички преглед када"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="полицијски службеник посумња у техничку исправност возила" />
+			<question-answer
+				text="је возило искључено из саобраћаја због техничке неисправности" />
+			<question-answer
+				text="су на возилу које је учествовало у саобраћајној незгоди оштећени витални склопови и уређаји битни за безбедно учешће возила у саобраћају на путу" />
+		</question-answers>
+	</question>
+	<question id="mere_25" number="25" text="Контролни технички преглед возила"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="може бити извршен у објекту за вршење техничког прегледа који одабере возач" />
+			<question-answer correct="true"
+				text="може бити извршен само у објекту за вршење техничког прегледа који одреди полицијски службеник" />
+			<question-answer
+				text="мора бити извршен у објекту за вршење техничког прегледа у којем је извршен последњи редовни технички преглед возила" />
+		</question-answers>
+	</question>
+	<question id="mere_26" number="26"
+		text="Возач возила које је упућено на контролни технички преглед дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="без одлагања поступи по налогу овлашћеног лица и омогући вршење контролног техничког прегледа само ако је возило учествовало у саобраћајној незгоди" />
+			<question-answer correct="true"
+				text="без одлагања поступи по налогу овлашћеног лица и омогући вршење контролног техничког прегледа" />
+			<question-answer
+				text="омогући вршење контролног техничког прегледа најкасније до истека рока од 24 сата од упућивања" />
+		</question-answers>
+	</question>
+	<question id="mere_27" number="27"
+		text="Да ли је возач дужан да без одлагања поступи по налогу овлашћеног лица и омогући вршење контролног техничког прегледа"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="Да" />
+			<question-answer text="Да, само уколико је возило неоптерећено" />
+			<question-answer
+				text="Не, уколико за возило постоји потврда о техничкој исправности" />
+		</question-answers>
+	</question>
+	<question id="mere_28" number="28"
+		text="Трошкове контролног техничког прегледа сноси" points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="власник, односно корисник возила, без обзира на утврђено стање техничке исправности" />
+			<question-answer
+				text="орган чије је службено лице упутило возило на контролни технички преглед, без обзира на утврђено стање техничке исправности" />
+			<question-answer correct="true"
+				text="власник, односно корисник возила, само када је на контролном техничком прегледу утврђена техничка неисправност возила" />
+		</question-answers>
+	</question>
+	<question id="mere_29" number="29"
+		text="Возило може бити упућено на мерења осовинског оптерећења када"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="полицијски службеник посумња да возило не испуњава прописане услове у погледу осовинског оптерећења и укупне масе возила" />
+			<question-answer
+				text="је возило искључено из саобраћаја због техничке неисправности" />
+			<question-answer
+				text="је оптерећено теретно возило учествовало у саобраћајној незгоди при чему су оштећени витални склопови и уређаји битни за безбедно учешће возила у саобраћају на путу" />
+		</question-answers>
+	</question>
+	<question id="mere_30" number="30"
+		text="Возач возила које је упућено на мерења осовинског оптерећења дужан је да"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="без одлагања поступи по налогу овлашћеног лица и омогући мерења осовинског оптерећења само ако је возило учествовало у саобраћајној незгоди" />
+			<question-answer correct="true"
+				text="без одлагања поступи по налогу овлашћеног лица и омогући мерења осовинског оптерећења" />
+			<question-answer
+				text="омогући мерења осовинског оптерећења најкасније до истека рока од 24 сата од упућивања" />
+		</question-answers>
+	</question>
+	<question id="mere_31" number="31"
+		text="Да ли је возач дужан да без одлагања поступи по налогу овлашћеног лица и омогући мерења осовинског оптерећења, односно укупне масе возила"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="Да, само уколико се ради о оптерећеном теретном или прикључном возилу" />
+			<question-answer
+				text="Не, уколико возач поседује документ из кога се може утврдити маса терета на возилу" />
+			<question-answer correct="true" text="Да" />
+		</question-answers>
+	</question>
+	<question id="mere_32" number="32"
+		text="Трошкове мерења осовинског оптерећења сноси" points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="власник, односно корисник возила, без обзира на вредности добијене мерењем" />
+			<question-answer
+				text="орган чије је службено лице упутило возило на мерење, без обзира на вредности добијене мерењем" />
+			<question-answer correct="true"
+				text="власник, односно корисник возила, само када је мерењем утврђено да возило не испуњава прописане вредности у погледу осовинског оптерећења, односно укупне масе возила" />
+		</question-answers>
+	</question>
+	<question id="mere_33" number="33"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="код којег је технички неисправан уређај за управљање или уређај за заустављање" />
+			<question-answer
+				text="које је проглашено неисправним на контролном техничком прегледу, без обзира на утврђени степен неисправности возила" />
+			<question-answer correct="true"
+				text="код којег су технички неисправни уређаји и опрема тако да могу угрозити безбедност саобраћаја и животну средину" />
+			<question-answer text="код којег терет у расутом стању није прекривен" />
+		</question-answers>
+	</question>
+	<question id="mere_34" number="34"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="које је оптерећено преко своје носивости за више од 5%" />
+			<question-answer
+				text="које није у прописаном року подвргнуто редовном шестомесечном техничком прегледу" />
+			<question-answer correct="true"
+				text="које има непрописно смештен, обележен или причвршћен терет" />
+			<question-answer text="у чијем простору за превоз терета се превозе лица" />
+		</question-answers>
+	</question>
+	<question id="mere_35" number="35"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="чија се вуча обавља на непрописан начин" />
+			<question-answer
+				text="којим се обавља ванредни превоз ако није означено ротационим, односно трепћућим светлима плаве боје" />
+			<question-answer text="које на непрописан начин вуче друго возило" />
+			<question-answer correct="true"
+				text="којим се ванредни превоз не обавља у складу са условима наведеним у одобрењу о ванредном превозу" />
+		</question-answers>
+	</question>
+	<question id="mere_36" number="36"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="које не испуњава прописане услове у погледу димензија, највеће дозвољене укупне масе или осовинског оптерећења, а нема дозволу за ванредни превоз" />
+			<question-answer
+				text="чија је највећа дозвољена маса већа од највеће дозвољене укупне масе" />
+			<question-answer
+				text="чији терет на предњој страни прелази најудаљенију тачку до 1m, а нема дозволу за ванредни превоз" />
+			<question-answer
+				text="чија је највећа дозвољена маса већа од укупне масе возила" />
+			<question-answer correct="true"
+				text="које са теретом премашује највеће дозвољене димензије (дужина, ширина и висина) за поједине врсте возила, а нема дозволу за ванредни превоз" />
+		</question-answers>
+	</question>
+	<question id="mere_37" number="37"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="које супротно прописима има уграђено жуто ротационо или трепћуће светло" />
+			<question-answer correct="true"
+				text="које супротно прописима има уграђене уређаје за давање посебних светлосних и звучних знакова, а возач уређаје не уклони у року којим му је то одређено наредбом полицијског службеника" />
+			<question-answer correct="true"
+				text="које је уместо регистарским таблицама означено непрописним таблицама" />
+			<question-answer
+				text="на коме регистарске таблице нису постављене на прописан начин" />
+		</question-answers>
+	</question>
+	<question id="mere_38" number="38"
+		text="Ако возач возила које се креће на путу на којем кретање тог возила није дозвољено, не поступи по наредби да без одлагања најкраћим путем напусти тај пут"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="возило ће бити искључено из саобраћаја" />
+			<question-answer text="возач ће бити искључен из саобраћаја" />
+			<question-answer
+				text="возач ће бити доведен надлежном органу за прекршаје" />
+		</question-answers>
+	</question>
+	<question id="mere_39" number="39"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="на коме регистрациона налепница није постављена на прописан начин" />
+			<question-answer correct="true" text="које није уписано у јединствени регистар возила" />
+			<question-answer
+				text="за које постоји обавеза означавања ознакама за дуга, тешка и спора возила, а није означено тим ознакама" />
+			<question-answer correct="true"
+				text="чијој регистрационој налепници, односно потврди о коришћењу таблица за привремено означавање, је истекао рок важења" />
+		</question-answers>
+	</question>
+	<question id="mere_40" number="40"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="које није подвргнуто контролном техничком прегледу на који је упућен" />
+			<question-answer
+				text="које није подвргнуто редовном шестомесечном техничком прегледу" />
+			<question-answer correct="true"
+				text="које није подвргнуто мерењу осовинског оптерећења, односно укупне масе, на које је упућено" />
+			<question-answer
+				text="које не поседује важеће уверење о исправности тахографа" />
+		</question-answers>
+	</question>
+	<question id="mere_41" number="41"
+		text="Из саобраћаја ће бити искључено возило" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="које није у прописаном року подвргнуто периодичном прегледу уређаја за погон возила на гас" />
+			<question-answer correct="true"
+				text="које је појединачно произведено или преправљено, а није извршено испитивање и издато уверење о испитивању" />
+			<question-answer correct="true"
+				text="које учествује у саобраћају за време трајања искључења" />
+			<question-answer
+				text="којим се превози већи број лица од броја колико је означено у саобраћајној дозволи" />
+		</question-answers>
+	</question>
+	<question id="mere_42" number="42"
+		text="Када је возило искључено из саобраћаја трошкове обезбеђења возила и терета и смештаја путника сноси:"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="власник, односно корисник возила" />
+			<question-answer text="орган чији је службеник наложио искључење" />
+			<question-answer
+				text="власник, односно корисник возила, само у случају када искључење траје дуже од 24 часа" />
+		</question-answers>
+	</question>
+	<question id="mere_43" number="43"
+		text="Ако се возило креће на путу на којем кретање тог возила није дозвољено"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="возило ће бити искључено из саобраћаја" />
+			<question-answer correct="true"
+				text="возачу ће бити наређено да без одлагања најкраћим путем напусти тај пут" />
+			<question-answer
+				text="возачу ће бити дозвољено да настави кретање тим путем након санкционисања непрописног поступања" />
+		</question-answers>
+	</question>
+	<question id="mere_44" number="44"
+		text="Ако возач возила не поступи по наредби да употреби зимску опрему, односно ланце за снег"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="возач ће бити искључен из саобраћаја" />
+			<question-answer text="возило ће бити привремено одузето" />
+			<question-answer correct="true"
+				text="возило ће бити искључено из саобраћаја, односно, по могућности, возач ће бити упућен на пут где употреба зимске опреме није неопходна" />
+		</question-answers>
+	</question>
+	<question id="mere_45" number="45"
+		text="Ако се возач возила креће по путу на којем је обавезна употреба зимске опреме, односно ланаца за снег, а исте не употребљава и тиме угрожава или може угрозити несметано и безбедно одвијање саобраћаја"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="возило ће бити искључено из саобраћаја" />
+			<question-answer correct="true"
+				text="возачу ће бити наређено да употреби зимску опрему, односно ланце за снег" />
+			<question-answer
+				text="возачу ће бити дозвољено да настави кретање тим путем након санкционисања непрописног поступања" />
+		</question-answers>
+	</question>
+	<question id="mere_46" number="46"
+		text="Ако је разлог за искључење возила настао на делу пута где ће оно ометати, односно угрожавати безбедност саобраћаја"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="возачу ће бити наређено да возило обележи на прописан начин" />
+			<question-answer correct="true"
+				text="возачу ће бити наређено да одвезе возило, под надзором полицијског службеника, до најближег места где је искључење могуће" />
+			<question-answer
+				text="возачу ће бити дозвољено да настави кретање до места где може отклонити разлоге за искључење из саобраћаја" />
+		</question-answers>
+	</question>
+	<question id="mere_47" number="47"
+		text="Искључење возила из саобраћаја траје" points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="до престанка разлога за искључење" />
+			<question-answer text="најдуже 24 сата" />
+			<question-answer
+				text="колико је, према процени полицијског службеника, потребно да се отклоне разлози за искључење" />
+		</question-answers>
+	</question>
+	<question id="mere_48" number="48"
+		text="Ванредни технички преглед возила, које је искључено из саобраћаја због техничке неисправности утврђене на контролном техничком прегледу, се обавља"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="у објекту за вршење техничког прегледа возила који изабере возач тог возила" />
+			<question-answer correct="true"
+				text="по правилу у објекту за вршење техничког прегледа возила у ком је извршен контролни технички преглед" />
+			<question-answer
+				text="у објекту за вршење техничког прегледа возила који одреди полицијски службеник који је искључио возило" />
+		</question-answers>
+	</question>
+	<question id="mere_49" number="49"
+		text="Ванредни технички преглед возила, које је искључено из саобраћаја због техничке неисправности утврђене на контролном техничком прегледу се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="може извршити и у другом објекту за вршење техничког прегледа возила када то дозволи орган чији је службеник упутио возило на контролни технички преглед" />
+			<question-answer
+				text="мора извршити само у објекту где је извршен контролни технички преглед возила" />
+			<question-answer
+				text="може извршити у било којем објекту за вршење техничког прегледа возила" />
+		</question-answers>
+	</question>
+	<question id="mere_50" number="50"
+		text="Возачу возила које је искључено из саобраћаја" points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="одузеће се саобраћајна дозвола уз издавање потврде о одузимању" />
+			<question-answer
+				text="одузеће се возачка дозвола уз издавање потврде о одузимању" />
+			<question-answer correct="true"
+				text="одузеће се регистарске таблице, уз издавање потврде о одузимању" />
+		</question-answers>
+	</question>
+	<question id="mere_51" number="51"
+		text="Ако возач возила, које је искључено из саобраћаја, полицијском службенику не преда регистарске таблице"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="возач ће бити доведен надлежном органу за прекршаје и биће ангажовано стручно лице, да о трошку возача, скине регистарске таблице" />
+			<question-answer
+				text="власнику, односно кориснику возила ће бити одузети кључеви возила" />
+			<question-answer text="возило ће бити привремено одузето" />
+		</question-answers>
+	</question>
+	<question id="mere_52" number="52"
+		text="Возачу возила које је искључено из саобраћаја ће бити враћене одузете регистарске таблице"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="након 24 часа од момента искључења возила из саобраћаја" />
+			<question-answer correct="true"
+				text="када се утврди да су престали разлози због којих је возило искључено" />
+			<question-answer
+				text="након 24 часа, а најкасније у року од три дана, од момента искључења возила из саобраћаја" />
+		</question-answers>
+	</question>
+	<question id="mere_53" number="53"
+		text="Ако се иза возила или групе возила, због споре вожње створила колона возила"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="возило или група возила ће бити искључена из саобраћаја" />
+			<question-answer correct="true"
+				text="кретање возила или групе возила може бити привремено забрањено, за разумно време, а најдуже 30 минута" />
+			<question-answer
+				text="возила или група возила ће бити искључена из саобраћаја и одузете саобраћајне дозволе док постоје разлози за искључење" />
+		</question-answers>
+	</question>
+	<question id="mere_54" number="54"
+		text="Исправа којом се може документовати прекршај и други деликти се може привремено одузети"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="до окончања поступка" />
+			<question-answer
+				text="само уз сагласност власника, односно корисника возила" />
+			<question-answer correct="true" text="најдуже 24 сата" />
+		</question-answers>
+	</question>
+	<question id="mere_55" number="55"
+		text="Возачу возила које је паркирано или заустављено супротно прописима биће"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="одмах уручено решење о уклањању возила" />
+			<question-answer correct="true"
+				text="наређено да одмах уклони возило, под претњом принудног извршења" />
+			<question-answer
+				text="наређено да уклони возило у року који не може бити дужи од 15 минута, под претњом принудног извршења" />
+		</question-answers>
+	</question>
+	<question id="mere_56" number="56"
+		text="Када је возило паркирано супротно прописима, а возач није присутан"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="возило ће одмах бити уклоњено" />
+			<question-answer
+				text="биће донето решење у писаној форми којим се налаже уклањање возила у року који не може бити краћи од 15 минута и један примерак решења ће бити постављен на видно место на возилу" />
+			<question-answer correct="true"
+				text="биће донето решење у писаној форми којим се налаже уклањање возила у року који не може бити краћи од 3 минута и један примерак решења ће бити постављен на видно место на возилу" />
+		</question-answers>
+	</question>
+	<question id="mere_57" number="57"
+		text="Када се путем видео надзора или фото записа утврди да је возило паркирано супротно прописима биће донето решење у електронској форми којим се налаже уклањање возила"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="у року који не може бити краћи од 15 минута, а полицијски службеник поставља на видно место возила обавештење о донетом решењу" />
+			<question-answer correct="true"
+				text="у року који не може бити краћи од 3 минута, а лице које уклања возило поставља на видно место возила обавештење о донетом решењу" />
+			<question-answer
+				text="у року који не може бити краћи од 10 минута, а полицијски службеник поставља на видно место возила обавештење о донетом решењу" />
+		</question-answers>
+	</question>
+	<question id="mere_58" number="58"
+		text="Ако возач, у року одређеним решењем, не уклони возило које је паркирао или зауставио, супротно прописима"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="возило ће бити уклоњено на за то одређено место, о трошку возача или власника, односно корисника возила" />
+			<question-answer
+				text="возило ће бити уклоњено на за то одређено место, о трошку органа који је наредио уклањање" />
+			<question-answer
+				text="биће онемогућено померање возила док возач не плати новчану казну која је прописана за овај прекршај" />
+		</question-answers>
+	</question>
+	<question id="mere_59" number="59"
+		text="Возило прописно паркирано на паркинг месту" points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="не може бити уклоњено" />
+			<question-answer
+				text="може бити уклоњено ако није измирена накнада за паркирање" />
+			<question-answer correct="true"
+				text="може бити уклоњено ако је видно запуштено и није регистровано" />
+		</question-answers>
+	</question>
+	<question id="mere_60" number="60"
+		text="Одговорност за штете настале од започињања уклањања до преузимања возила сноси"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="орган који је наредио уклањање" />
+			<question-answer text="возач, власник, односно корисник возила" />
+			<question-answer correct="true"
+				text="правно лице, односно предузетник, којем је поверено уклањање возила" />
+		</question-answers>
+	</question>
+	<question id="mere_61" number="61"
+		text="Ако се возач појави на месту са којег се уклања непрописно паркирано возило"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="mere" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="уклањање ће се прекинути ако возач прихвати да уклони возило, при чему он сноси трошкове претходно предузетих радњи" />
+			<question-answer
+				text="уклањање ће се прекинути ако возач прихвати да сноси трошкове као да је возило уклоњено" />
+			<question-answer text="уклањање мора бити извршено" />
+		</question-answers>
+	</question>
+
+</questions>

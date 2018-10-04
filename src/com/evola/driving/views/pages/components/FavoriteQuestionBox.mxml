@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 xmlns:util="com.evola.driving.util.*"
+		 fontSize="11"
+		 useHandCursor="true">
+
+	<mx:HBox width="100%"
+			 visible="{!question.isFavorite}"
+			 includeInLayout="{!question.isFavorite}"
+			 click="toggleClicked()">
+
+		<mx:Image source="@Embed(source='data/images/favorite_inactive.png')"/>
+
+		<mx:Label text="Klikni da označiš kao omiljeno pitanje"/>
+
+	</mx:HBox>
+
+	<mx:HBox width="100%"
+			 visible="{question.isFavorite}"
+			 includeInLayout="{question.isFavorite}"
+			 click="toggleClicked()">
+
+		<mx:Image source="@Embed(source='data/images/favorite_active.png')"/>
+
+		<mx:Label text="Omiljeno pitanje (klikni ako više nije)"/>
+
+	</mx:HBox>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="question/toggleFavorite"
+						   result="onQuestionsFavoriteToggled(event)"
+						   faultFunction="onFault"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.EDTAlert;
+			import com.evola.driving.model.Question;
+
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+
+			[Bindable]
+			public var question:Question;
+
+			private var _isInProgress:Boolean=false;
+
+			private function toggleClicked():void
+			{
+				if (_isInProgress)
+					return;
+
+				_isInProgress=true;
+
+				service.send({questionId: question.id});
+			}
+
+			protected function onQuestionsFavoriteToggled(event:ResultEvent):void
+			{
+
+				_isInProgress=false;
+
+				var result:XML=XML(event.result);
+
+				question.isFavorite=!question.isFavorite;
+			}
+
+			private function onFault(event:FaultEvent):void
+			{
+
+				_isInProgress=false;
+
+				EDTAlert.show("Greška :(. Pokušaj ponovo ili osveži stranicu u svom pregledaču.", event.toString());
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

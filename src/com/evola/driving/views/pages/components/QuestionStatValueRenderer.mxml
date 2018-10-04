@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 paddingLeft="10"
+		 verticalAlign="middle"
+		 xmlns:controls="com.evola.driving.controls.*">
+
+	<mx:Label text="{data.value}"
+			  color="{selected ? 0xFFFFFF : 0x000000}"/>
+
+	<mx:Spacer width="100%"/>
+
+	<controls:BoxProgressBar width="500"
+							 height="6"
+							 horizontalAlign="right"
+							 showHrule="false"
+							 progress="{data.percentValue}"
+							 progressColor="{selected ? 0xFFFFFF : 0x00a300}"
+							 progressAlpha="0.5"/>
+
+	<mx:Boolean id="selected"/>
+
+</mx:HBox>

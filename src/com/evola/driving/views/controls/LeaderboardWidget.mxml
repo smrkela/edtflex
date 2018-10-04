@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="300"
+		 addedToStage="onAddedToStage(event)"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:util="com.evola.driving.util.*"
+		 xmlns:controls1="com.evola.driving.views.controls.*">
+
+	<controls:SectionTitle label="Top lista"/>
+
+	<mx:LinkBar dataProvider="{vs}"
+				itemClick="onItemClick(event)"/>
+
+	<mx:ViewStack id="vs"
+				  resizeToContent="true"
+				  width="100%">
+
+		<mx:VBox width="100%"
+				 label="Ove nedelje">
+
+			<mx:Repeater id="rptWeek"
+						 recycleChildren="true"
+						 dataProvider="{weekResults}">
+
+				<controls1:LeaderboardRenderer data="{rptWeek.currentItem}"/>
+
+			</mx:Repeater>
+
+		</mx:VBox>
+
+		<mx:VBox width="100%"
+				 label="Ovog meseca">
+
+			<mx:Repeater id="rptMonth"
+						 recycleChildren="true"
+						 dataProvider="{monthResults}">
+
+				<controls1:LeaderboardRenderer data="{rptMonth.currentItem}"/>
+
+			</mx:Repeater>
+
+		</mx:VBox>
+
+		<mx:VBox width="100%"
+				 label="Oduvek">
+
+			<mx:Repeater id="rptAll"
+						 recycleChildren="true"
+						 dataProvider="{allResults}">
+
+				<controls1:LeaderboardRenderer data="{rptAll.currentItem}"/>
+
+			</mx:Repeater>
+
+		</mx:VBox>
+
+	</mx:ViewStack>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="statistics/loadLeaderboard"
+						   result="onLoadProgressResult(event)"
+						   faultFunction="onFaultEvent"/>
+
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.ItemClickEvent;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+
+			[Bindable]
+			private var weekResults:XMLList;
+
+			[Bindable]
+			private var monthResults:XMLList;
+
+			[Bindable]
+			private var allResults:XMLList;
+
+			[Bindable]
+			private var selectedIndex:int=0;
+
+			private var _isLoading:Boolean;
+
+			protected function onAddedToStage(event:Event):void
+			{
+
+				load();
+			}
+
+			private function onLoadProgressResult(event:ResultEvent):void
+			{
+
+				_isLoading=true;
+
+				var result:XML=XML(event.result);
+
+				if (selectedIndex == 0)
+					weekResults=result.children();
+				else if (selectedIndex == 1)
+					monthResults=result.children();
+				else if (selectedIndex == 2)
+					allResults=result.children();
+			}
+
+			private function onFaultEvent(event:FaultEvent):void
+			{
+
+				_isLoading=true;
+			}
+
+			protected function onItemClick(event:ItemClickEvent):void
+			{
+
+				//ako jos uvek traje ucitavanje onda ne dozvoljavamo novo kliktanje
+				if (_isLoading)
+				{
+
+					event.stopImmediatePropagation();
+					event.preventDefault();
+				}
+
+				selectedIndex=event.index;
+
+				load();
+			}
+
+			private function load():void
+			{
+
+				_isLoading=false
+
+				service.send({typeId: selectedIndex + 1});
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

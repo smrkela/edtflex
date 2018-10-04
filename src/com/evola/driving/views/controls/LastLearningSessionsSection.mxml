@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:util="com.evola.driving.util.*"
+		 addedToStage="onAddedToStage(event)">
+
+	<controls:SectionTitle label="Moje prethodno učenje"/>
+
+	<mx:HBox>
+		<mx:Label id="lbl"
+				  text=""/>
+		<controls:LinkLabel text="vidi sve"
+							click="onSeeAllLearningSessions(event)"/>
+	</mx:HBox>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="statistics/loadRecentLearningSessions"
+						   result="onCountLoaded(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DateUtils;
+			import com.evola.driving.util.FormattingUtils;
+			import com.evola.driving.util.PageManager;
+			
+			import mx.rpc.events.ResultEvent;
+
+			private var _sessions:XMLList;
+
+			protected function onCountLoaded(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				var learningSessions:XMLList=result.child("learning-session");
+
+				if (learningSessions.length() == 0)
+				{
+
+					lbl.text="Još uvek nije počelo učenje.";
+				}
+				else
+				{
+
+					var session:XML=learningSessions[0];
+
+					var timeString:String=session.attribute("start");
+					var date : Date= FormattingUtils.parseJavaDateString(timeString);
+					var timeExpression : String = DateUtils.getPrettyTimeAgoText(date);
+					var numOfQuestions:int=session.attribute("number-of-questions");
+
+					lbl.text="Poslednji put si učio " + numOfQuestions + " pitanja " + timeExpression + ".";
+				}
+
+			}
+
+			protected function onAddedToStage(event:Event):void
+			{
+				service.send({userId: Settings.userId});
+			}
+
+			protected function onSeeAllLearningSessions(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("AllLearningSessions");
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

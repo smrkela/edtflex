@@ -1,0 +1,2487 @@
+﻿<questions>
+
+	<question id="bezbednost_1" number="1"
+		text="Непосредно регулисање саобраћаја на путевима врше" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="униформисани комунални полицајци" />
+			<question-answer text="униформисани полицијски службеници" correct="true" />
+			<question-answer text="инспектори за друмски саобраћај" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_2" number="2"
+		text="Контролу над возачима и возилима у саобраћају на путевима ради примене прописа о безбедности саобраћаја врше"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="униформисани комунални полицајци" />
+			<question-answer text="униформисани полицијски службеници" correct="true" />
+			<question-answer text="службеници надлежног органа за саобраћај" />
+			<question-answer text="полицијски службеници у грађанском оделу" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_3" number="3"
+		text="Непосредно регулисање саобраћаја у зони школе могу вршити"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="школске саобраћајне патроле и саобраћајне патроле грађана" correct="true" />
+			<question-answer text="униформисани полицијски службеници" correct="true" />
+			<question-answer text="учитељи, наставници и професори" />
+			<question-answer text="родитељи ученика" />
+			<question-answer text="ученици" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_4" number="4"
+		text="На делу пута на коме се изводе радови непосредно регулисање саобраћаја могу вршити"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="радници извођача радова, односно управљача пута" correct="true" />
+			<question-answer text="униформисани комунални полицајци" />
+			<question-answer text="униформисани полицијски службеници" correct="true" />
+			<question-answer text="службеници надлежног органа за саобраћај" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_5" number="5"
+		text="Сваки учесник у саобраћају дужан је да се понаша" points="1"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="на начин који ће му омогућити да што пре безбедно стигне на одредиште" />
+			<question-answer
+				text="на начин којим неће ометати, угрозити или повредити друге учеснике" correct="true" />
+			<question-answer
+				text="на начин којим може ометати, али не и повредити или угрозити друге учеснике у саобраћају" />
+			<question-answer
+				text="тако да предузме све потребне мере ради избегавања или отклањања опасних ситуација насталих понашањем других учесника у саобраћају, ако себе или другог тиме не доводи у опасност" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_6" number="6"
+		text="Делатност одржавања, поправљања или преправљања возила, може вршити"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="физичко лице са одговарајућом школском спремом" />
+			<question-answer
+				text="правно лице и предузетник који поседују дозволу надлежног органа" correct="true" />
+			<question-answer
+				text="свако физичко лице, правно лице или предузетник који поседују средства и простор за обављање тих послова." />
+		</question-answers>
+	</question>
+	<question id="bezbednost_7" number="7"
+		text="Свако физичко лице власник, односно корисник возила" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="није дужан да обезбеди да његова возила у саобраћају на путевима буду технички исправна" />
+			<question-answer
+				text="дужан је да обезбеди да његова возила у саобраћају на путевима буду технички исправна" correct="true" />
+			<question-answer
+				text="дужан је да обезбеди да његова возила у саобраћају на путевима буду технички исправна, само када лично управља возилом" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_8" number="8"
+		text="У циљу безбедног учешћа деце у саобраћају породица има одговорност за"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="стицање знања, вештина и навика деце, неопходних за безбедно учешће у саобраћају" correct="true" />
+			<question-answer
+				text="доношење програма саобраћајног васпитања и образовања деце у предшколским и школским установама" />
+			<question-answer
+				text="формирање школских саобраћајних патрола и саобраћајних патрола грађана" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_9" number="9"
+		text="У циљу безбедног учешћа деце у саобраћају породица има одговорност за"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="доношење програма саобраћајног васпитања и образовања деце у предшколским и школским установама" />
+			<question-answer
+				text="унапређивање и учвршћивање позитивних ставова и понашања деце, значајних за безбедно учешће у саобраћају" correct="true" />
+			<question-answer
+				text="формирање школских саобраћајних патрола и саобраћајних патрола грађана" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_10" number="10"
+		text="Шта се од набројаног сматра саобраћајем" points="1"
+		remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="Кретање возила тркачком стазом" />
+			<question-answer text="Кретање возила улицом" correct="true" />
+			<question-answer text="Кретање трактора њивом" />
+			<question-answer
+				text="Кретање возила површинама намењеним за кретање само возила и лица којима је власник те површине то омогућио" />
+			<question-answer text="Кретање пешака тротоаром" correct="true" />
+			<question-answer text="Кретање запрежног возила земљаним путем" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_11" number="11"
+		text="Шта се од набројаног сматра саобраћајем" points="1"
+		remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="Кретање возила полигоном за пробне вожње или спортске приредбе" />
+			<question-answer text="Кретање бицикла бициклистичком стазом" correct="true" />
+			<question-answer text="Кретање мотокултиватора земљаним путем" correct="true" />
+			<question-answer
+				text="Гурање возила по платоу намењеном кретању и окупљању лица" />
+			<question-answer text="Кретање лица по тргу" />
+			<question-answer text="Гурање бицикла пешачком стазом" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_12" number="12" text="Возач је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="лице које на путу управља возилом" correct="true" />
+			<question-answer text="свако лице које има возачку дозволу" />
+			<question-answer
+				text="лице које по путу сопственом снагом гура или вуче возило" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_13" number="13" text="Пешак је лице које"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="управља бициклом по путу" />
+			<question-answer text="се креће по путу" correct="true" />
+			<question-answer
+				text="сопственом снагом по путу вуче или гура возило, ручна колица, дечје превозно средство или колица за немоћна лица" correct="true" />
+			<question-answer text="управља мотокултиватором по путу" />
+			<question-answer
+				text="се креће по путу у дечјем превозном средству или у колицима за немоћна лица које покреће сопственом снагом или снагом мотора" correct="true" />
+			<question-answer text="управља запрежним возилом по путу" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_14" number="14" text="Пешак је лице које"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="по путу клизи клизаљкама, скијама, санкама или се вози на котураљкама, скејтборду и сл" correct="true" />
+			<question-answer text="управља бициклом по путу" />
+			<question-answer text="управља запрежним возилом по путу" />
+			<question-answer text="гура бицикл по путу" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_15" number="15"
+		text="Пешак је приказан на сликама број" points="1"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_15_1.png" text="1" />
+			<question-image url="osnove_a_15_2.png" text="2" />
+			<question-image url="osnove_a_15_3.png" text="3" />
+			<question-image url="osnove_a_15_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_16" number="16"
+		text="Означити неопходне услове који морају бити истовремено испуњени да би се сматрало да је возило заустављено"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="прекид кретања возила на путу траје до три минута" correct="true" />
+			<question-answer text="возач није напустио возило" correct="true" />
+			<question-answer text="мотор возила је искључен" />
+			<question-answer
+				text="возач је изашао из возила али се од истог није удаљио више од 5m" />
+			<question-answer
+				text="прекид кретања возила није наступио услед поступања по знаку или правилу, којим се регулише саобраћај" correct="true" />
+			<question-answer text="у возилу нема ниједног лица" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_17" number="17"
+		text="Прекид кретања возила од два минута, при чему возач није напустио возило је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="паркирање" />
+			<question-answer text="мимоилажење" />
+			<question-answer text="заустављање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_18" number="18"
+		text="Прекид кретања возила од два минута, при чему је возач напустио возило је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="заустављање" correct="true" />
+			<question-answer text="паркирање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_19" number="19"
+		text="Возило приказано на слици је" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_19_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="паркирано" correct="true" />
+			<question-answer text="заустављено" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_20" number="20"
+		text="Пролажење учесника у саобраћају поред другог учесника у саобраћају који долази из супротног смера је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мимоилажење" correct="true" />
+			<question-answer text="обилажење" />
+			<question-answer text="претицање" />
+			<question-answer text="пропуштање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_21" number="21"
+		text="У ситуацији приказаној на слици пролажење возила бр. 1 поред возила бр. 2 које се креће из супротног смера је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_21_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="мимоилажење" correct="true" />
+			<question-answer text="обилажење" />
+			<question-answer text="претицање" />
+			<question-answer text="пропуштање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_22" number="22"
+		text="Пролажење учесника у саобраћају поред другог учесника у саобраћају који се креће коловозом у истом смеру је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" />
+			<question-answer text="претицање" correct="true" />
+			<question-answer text="пропуштање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_23" number="23"
+		text="У ситуацији приказаној на слици пролажење путничког возила поред теретног возила које се креће у истом смеру је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_23_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" />
+			<question-answer text="претицање" correct="true" />
+			<question-answer text="пропуштање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_24" number="24"
+		text="Пролажење учесника у саобраћају поред другог учесника у саобраћају који се не помера, објекта или препреке на коловозу је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" correct="true" />
+			<question-answer text="претицање" />
+			<question-answer text="пропуштање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_25" number="25"
+		text="У ситуацији приказаној на слици пролажење теретног возила поред заустављеног путничког возила је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_25_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" correct="true" />
+			<question-answer text="претицање" />
+			<question-answer text="пропуштање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_26" number="26"
+		text="Радња коју предузимате у ситуацији приказаној на слици пролажењем возила поред паркираног возила је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_26_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" correct="true" />
+			<question-answer text="претицање" />
+			<question-answer text="пропуштање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_27" number="27"
+		text="Одстојање на коме учесник у саобраћају може јасно видети коловоз је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="видљивост" correct="true" />
+			<question-answer text="прегледност" />
+			<question-answer text="дужина прегледности" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_28" number="28"
+		text="Пролажењем возила поред препреке на путу, у ситуацији приказаној на слици, вршите"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_28_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" correct="true" />
+			<question-answer text="претицање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_29" number="29"
+		text="Пролажењем возила поред препреке на путу, у ситуацији приказаној на слици, вршите"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_29_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" correct="true" />
+			<question-answer text="претицање" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_30" number="30"
+		text="Радња коју учесник у саобраћају предузима како би омогућио кретање другог учесника у саобраћају који има првенство пролаза, тако да не дође до промене дотадашњег начина кретања учесника у саобраћају који има првенство пролаза, односно до њиховог контакта је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мимоилажење" />
+			<question-answer text="обилажење" />
+			<question-answer text="претицање" />
+			<question-answer text="пропуштање" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_31" number="31"
+		text="Услови смањене видљивости на путу изван насеља су услови у којима је видљивост мања од"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="100m" />
+			<question-answer text="150m" />
+			<question-answer text="200m" correct="true" />
+			<question-answer text="250m" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_32" number="32"
+		text="У ситуацији приказаној на слици радња коју сте дужни да предузмете у односу на возила из супротног смера је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_32_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="обилажење" />
+			<question-answer text="претицање" />
+			<question-answer text="пропуштање" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_33" number="33"
+		text="Који од набројаних услова морају бити истовремено испуњени да би се сматрало да је на путу колона возила"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="низ од најмање три возила" correct="true" />
+			<question-answer text="низ од најмање два возила" />
+			<question-answer text="возила су заустављена у истој саобраћајној траци" correct="true" />
+			<question-answer text="возила су паркирана у истој саобраћајној траци" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_34" number="34"
+		text="Који од набројаних услова морају бити истовремено испуњени да би се сматрало да је на путу колона возила"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="низ од најмање три возила" correct="true" />
+			<question-answer text="низ од најмање два возила" />
+			<question-answer
+				text="возила се крећу једно иза другог истом саобраћајном траком у истом смеру" correct="true" />
+			<question-answer
+				text="начин кретања возила је међусобно условљен и између њих не може без ометања ући друго возило" correct="true" />
+			<question-answer text="возила су паркирана у истој саобраћајној траци" />
+			<question-answer
+				text="возила се крећу на растојању које омогућава улазак другог возила без ометања осталих возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_35" number="35"
+		text="Незгода у којој је повређено лице које је управљало трактором при извођељу радова на њиви"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="је саобраћајна незгода јер је повређен возач" />
+			<question-answer
+				text="није саобраћајна незгода јер се није догодила на путу" correct="true" />
+			<question-answer text="није саобраћајна незгода јер нема погинулих лица" />
+			<question-answer
+				text="је саобраћајна незгода уколико је трактор регистрован" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_36" number="36"
+		text="У ситуацији приказаној на слици паркирана возила" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_36_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="су колона возила" />
+			<question-answer text="нису колона возила" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_37" number="37"
+		text="У ситуацији приказаној на слици заустављена возила" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_37_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="су колона возила" correct="true" />
+			<question-answer text="нису колона возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_38" number="38"
+		text="Услови смањене видљивости на путу у насељу су услови у којима је видљивост мања од"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="100m" correct="true" />
+			<question-answer text="150m" />
+			<question-answer text="200m" />
+			<question-answer text="250m" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_39" number="39"
+		text="Одстојање на коме учесник у саобраћају, с обзиром на физичке препреке, може у условима нормалне видљивости јасно видети другог учесника у саобраћају, односно другу могућу препреку на путу, je"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="видљивост" />
+			<question-answer text="прегледност" correct="true" />
+			<question-answer text="дужина видљивости" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_40" number="40"
+		text="Простор без седишта са доступним елементима за монтажу седишта у возилу представља"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="место за седење само ако има и сигурносне појасеве" />
+			<question-answer
+				text="место за седење само ако има и доступне прикључке сигурносних појасева" />
+			<question-answer text="место за седење" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_41" number="41"
+		text="Незгода у којој је порушена дворишна ограда при излетању возила са пута"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="је саобраћајна незгода јер је начињена материјална штета" correct="true" />
+			<question-answer
+				text="није саобраћајна незгода јер у незгоди учествовало само једно возило" />
+			<question-answer
+				text="није саобраћајна незгода јер нема погинулих или повређених лица" />
+			<question-answer
+				text="није саобраћајна незгода јер је материјална штета начињена ван пута" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_42" number="42"
+		text="Незгода у којој је начињена материјална штета на возилу и повређено лице које је управљало спортским аутомобилом на тркачкој стази за возила"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="је саобраћајна незгода јер је повређен возач и начињена материјална штета" />
+			<question-answer
+				text="није саобраћајна незгода јер се није догодила на путу" correct="true" />
+			<question-answer text="није саобраћајна незгода јер нема погинулих лица" />
+			<question-answer
+				text="није саобраћајна незгода јер у незгоди учествовало само једно возило" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_43" number="43"
+		text="Означена удаљеност између возила приказаних на слици је" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_43_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="растојање" />
+			<question-answer text="одстојање" correct="true" />
+			<question-answer text="предњи, односно задњи препуст возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_44" number="44"
+		text="Одстојање између возила приказаних на слици је означено бројем"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_44_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_45" number="45"
+		text="Маса празног возила са свим пуним резервоарима и прописаном опремом је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="највећа дозвољена маса возила" />
+			<question-answer text="укупна маса возила" />
+			<question-answer text="маса возила" correct="true" />
+			<question-answer text="највећа дозвољена укупна маса возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_46" number="46"
+		text="Означена удаљеност између возила приказаних на слици је" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_46_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="растојање" correct="true" />
+			<question-answer text="одстојање" />
+			<question-answer text="најмања дозвољена бочна удаљеност између возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_47" number="47"
+		text="Растојање између возила приказаних на слици је означено бројем"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_47_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_48" number="48"
+		text="Одбачено возило је возило које" points="1"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="је видно запуштено и налази се ван пута" />
+			<question-answer text="је видно запуштено и налази се на путу" correct="true" />
+			<question-answer text="није регистровано" correct="true" />
+			<question-answer text="је регистровано" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_49" number="49"
+		text="Простор без седишта са доступним прикључцима сигурносних појасева у возилу представља"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="место за седење само ако има и доступне елементе за монтажу седишта" />
+			<question-answer
+				text="место за седење само ако има и доступне елементе за монтажу седишта и сигурносне појасеве" />
+			<question-answer text="место за седење" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_50" number="50"
+		text="Средња(просечна) брзина кретања возила на деоници дужине 300km, коју возило пређе за 2 сата, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="100km/h" />
+			<question-answer text="120km/h" />
+			<question-answer text="150km/h" correct="true" />
+			<question-answer text="200km/h" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_51" number="51"
+		text="Маса којом се возило може највише оптеретити према декларацији произвођача је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="носивост возила" correct="true" />
+			<question-answer text="највећа дозвољена маса возила" />
+			<question-answer text="укупна маса возила" />
+			<question-answer text="највећа дозвољена укупна маса возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_52" number="52"
+		text="Збир масе возила и носивости возила је" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="највећа дозвољена укупна маса возила" />
+			<question-answer text="укупна маса возила" />
+			<question-answer text="осовинско оптерећење возила" />
+			<question-answer text="највећа дозвољена маса возила" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_53" number="53"
+		text="Маса возила и маса којом је возило оптерећено(лица и терет) је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="највећа дозвољена укупна маса возила" />
+			<question-answer text="укупна маса возила" correct="true" />
+			<question-answer text="осовинско оптерећење возила" />
+			<question-answer text="највећа дозвољена маса возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_54" number="54"
+		text="Збир највећих дозвољених маса возила која чине скуп, умањен за вертикално оптерећење које возило прима од прикључног возила је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="укупна маса скупа возила" />
+			<question-answer text="највећа дозвољена укупна маса скупа возила" correct="true" />
+			<question-answer text="осовинско оптерећење скупа возила" />
+			<question-answer text="највећа дозвољена маса скупа возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_55" number="55"
+		text="Највећа маса оптерећеног возила, односно скупа возила, коју је надлежни државни орган прописао као највећу дозвољену је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="највећа дозвољена укупна маса возила" correct="true" />
+			<question-answer text="осовинско оптерећење возила" />
+			<question-answer text="највећа дозвољена маса возила" />
+			<question-answer text="укупна маса скупа возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_56" number="56"
+		text="Маса оптерећеног скупа возила(лица и терет) је" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="укупна маса скупа возила" correct="true" />
+			<question-answer text="највећа дозвољена укупна маса скупа возила" />
+			<question-answer text="осовинско оптерећење скупа возила" />
+			<question-answer text="највећа дозвољена маса скупа возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_57" number="57"
+		text="Део укупне масе возила у хоризонталном положају којим његова осовина оптерећује коловоз у стању мировања возила је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="маса возила" />
+			<question-answer text="осовинско оптерећење" correct="true" />
+			<question-answer text="носивост возила" />
+			<question-answer text="највећа дозвољена маса возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_58" number="58"
+		text="Возило је регистровано ако испуњава истовремено следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="уписано је у јединствени регистар возила" correct="true" />
+			<question-answer text="за њега су издате таблице за привремено означавање" />
+			<question-answer text="за њега је издата саобраћајна дозвола" correct="true" />
+			<question-answer
+				text="за њега су издате регистарске таблице и регистрациона налепница" correct="true" />
+			<question-answer text="учествује у саобраћају на путу" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_59" number="59"
+		text="Јавна исправа (решење) која са регистрационом налепницом даје право на коришћење возила у саобраћају за време важења регистрационе налепнице је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="регистарска таблица" />
+			<question-answer text="саобраћајна дозвола" correct="true" />
+			<question-answer text="возачка дозвола" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_60" number="60"
+		text="Ознака на возилу којом се означава да је возило уписано у јединствени регистар возила је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="регистарска таблица" correct="true" />
+			<question-answer text="таблица за привремено означавање" />
+			<question-answer text="саобраћајна дозвола" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_61" number="61"
+		text="Ознака на возилу којом се одређује да возило може да учествује у саобраћају у одређеном временском року је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="регистарска таблица" />
+			<question-answer text="регистрациона налепница" correct="true" />
+			<question-answer text="саобраћајна дозвола" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_62" number="62"
+		text="Јавна исправа (решење) надлежног органа којим се неком лицу даје право да у саобраћају на путу управља возилом одређене категорије на одређено време је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="уверење о положеном возачком испиту" />
+			<question-answer text="саобраћајна дозвола" />
+			<question-answer text="возачка дозвола" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_63" number="63"
+		text="Довођење возила, односно уређаја и склопова возила у исправно стање је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="преправка возила" />
+			<question-answer text="поправка возила" correct="true" />
+			<question-answer text="технички преглед возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_64" number="64"
+		text="Промена конструктивних карактеристика возила којим се мења намена или врста возила или декларисане техничке карактеристике возила или декларисане карактеристике уређаја и склопова возила је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="преправка возила" correct="true" />
+			<question-answer text="поправка возила" />
+			<question-answer text="одржавање возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_65" number="65"
+		text="Возило је приказано на сликама означеним бројевима" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_65_1.png" text="1" />
+			<question-image url="osnove_a_65_2.png" text="2" />
+			<question-image url="osnove_a_65_3.png" text="3" />
+			<question-image url="osnove_a_65_4.png" text="4" />
+			<question-image url="osnove_a_65_5.png" text="5" />
+			<question-image url="osnove_a_65_6.png" text="6" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1, 2, 4 и 5" />
+			<question-answer text="1, 2, 3 и 6" />
+			<question-answer text="1, 3, 4 и 6" correct="true" />
+			<question-answer text="2, 3, 5 и 6" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_66" number="66"
+		text="Возило је бицикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" />
+			<question-answer text="има најмање два точка" correct="true" />
+			<question-answer text="има два точка" />
+			<question-answer
+				text="покреће се снагом возача, односно путника, која се помоћу педала или ручица преноси на точак, односно точкове" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_67" number="67"
+		text="Бицикл је приказан на сликама означеним бројевима" points="1"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_67_1.png" text="1" />
+			<question-image url="osnove_a_67_2.png" text="2" />
+			<question-image url="osnove_a_67_3.png" text="3" />
+			<question-image url="osnove_a_67_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_68" number="68"
+		text="Моторно возилоје приказано на сликама означеним бројевима"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_68_1.png" text="1" />
+			<question-image url="osnove_a_68_2.png" text="2" />
+			<question-image url="osnove_a_68_3.png" text="3" />
+			<question-image url="osnove_a_68_4.png" text="4" />
+			<question-image url="osnove_a_68_5.png" text="5" />
+			<question-image url="osnove_a_68_6.png" text="6" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1, 4 и 6" />
+			<question-answer text="2, 5 и 6" correct="true" />
+			<question-answer text="2, 3 и 5" />
+			<question-answer text="3, 5 и 6" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_69" number="69"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном на бензин, је мопед ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" />
+			<question-answer text="има најмање два точка" />
+			<question-answer text="има два точка" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 50cm3" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 125cm3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_70" number="70"
+		text="Моторно возило, са електричним погоном, је мопед ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" correct="true" />
+			<question-answer text="има најмање два точка" />
+			<question-answer text="има два точка" correct="true" />
+			<question-answer text="радна запремина мотора не прелази 50cm3" />
+			<question-answer text="његова највећа трајна номинална снага прелази 4kW" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_71" number="71"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, је мопед ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" />
+			<question-answer text="има најмање два точка" />
+			<question-answer text="има два точка" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 50cm3" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 125cm3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_72" number="72"
+		text="Моторно возило чија је највећа конструктивна брзина 40km/h и које има два точка и мотор са унутрашњим сагоревањем са погоном на бензин, чија је радна запремина 45cm3, а највећа ефективна снага 5kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" correct="true" />
+			<question-answer text="бицикл" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_73" number="73"
+		text="Моторно возило чија је највећа конструктивна брзина 40km/h и које има два точка и мотор са унутрашњим сагоревањем са погоном који није на бензин, чија је радна запремина 45cm3, а највећа ефективна снага 5kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" correct="true" />
+			<question-answer text="бицикл" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_74" number="74"
+		text="Моторно возило са електричним погоном, највеће трајне номиналне снаге 4kW, највеће конструктивне брзине 40km/h, које има два точка, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" correct="true" />
+			<question-answer text="бицикл" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_75" number="75"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном на бензин, је лаки трицикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага не прелази 4kW" />
+			<question-answer text="има најмање три точка" />
+			<question-answer text="има три точка" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 50cm3" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 125cm3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_76" number="76"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, је лаки трицикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага не прелази 4kW" correct="true" />
+			<question-answer text="има најмање три точка" />
+			<question-answer text="има три точка" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 50cm3" />
+			<question-answer text="радна запремина његовог мотора не прелази 125cm3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_77" number="77"
+		text="Моторно возило, са електричним погоном, је лаки трицикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" correct="true" />
+			<question-answer text="има најмање три точка" />
+			<question-answer text="има три точка" correct="true" />
+			<question-answer text="радна запремина мотора не прелази 50cm3" />
+			<question-answer text="његова највећа трајна номинална снага прелази 4kW" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_78" number="78"
+		text="Моторно возило чија је највећа конструктивна брзина 40km/h и које има три точка и мотор са унутрашњим сагоревањем са погоном на бензин, чија је радна запремина 45cm3, а највећа ефективна снага 4kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="бицикл" />
+			<question-answer text="лаки трицикл" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_79" number="79"
+		text="Моторно возило чија је највећа конструктивна брзина 40km/h и које има три точка и мотор са унутрашњим сагоревањем са погоном који није на бензин, чија је радна запремина 55cm3, а највећа ефективна снага 4kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="бицикл" />
+			<question-answer text="лаки трицикл" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_80" number="80"
+		text="Моторно возило са електричним погоном, највеће трајне номиналне снага 4kW, највеће конструктивне брзине 40km/h и које има три точка, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="бицикл" />
+			<question-answer text="лаки трицикл" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_81" number="81"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном на бензин, је мотоцикл ако истовремено испуњава најмање следеће услове"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага не прелази 4kW" />
+			<question-answer text="има најмање два точка" />
+			<question-answer
+				text="има два или три точка асиметрично распоређена у односу на средњу подужну раван возила" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 50cm3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_82" number="82"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, је мотоцикл ако истовремено испуњава најмање следеће услове"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага не прелази 4kW" />
+			<question-answer text="има најмање два точка" />
+			<question-answer
+				text="има два или три точка асиметрично распоређена у односу на средњу подужну раван возила" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 50cm3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_83" number="83"
+		text="Моторно возило, са електричним погоном, је мотоцикл ако истовремено испуњава најмање следеће услове"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" />
+			<question-answer text="има најмање два точка" />
+			<question-answer
+				text="има два или три точка асиметрично распоређена у односу на средњу подужну раван возила" correct="true" />
+			<question-answer text="радна запремина мотора прелази 50cm3" />
+			<question-answer text="његова највећа трајна номинална снага прелази 4kW" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_84" number="84"
+		text="Моторно возило чија је највећа конструктивна брзина 50km/h и које има три точка асиметрично распоређена у односу на средњу подужну раван возила и мотор са унутрашњим сагоревањем са погоном на бензин чија је највећа ефективна снага 4kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" correct="true" />
+			<question-answer text="мопед" />
+			<question-answer text="тешки трицикл" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_85" number="85"
+		text="Моторно возило чија је највећа конструктивна брзина 50km/h и које има три точка асиметрично распоређена у односу на средњу подужну раван возила и мотор са унутрашњим сагоревањем са погоном који није на бензин чија је радна запремина 45cm3, је:"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" correct="true" />
+			<question-answer text="мопед" />
+			<question-answer text="тешки трицикл" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_86" number="86"
+		text="Моторно возило са електричним погоном, највеће трајне номиналне снаге 5kW, највеће конструктивне брзине 45km/h и које има три точка асиметрично распоређена у односу на средњу подужну раван возила, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" correct="true" />
+			<question-answer text="мопед" />
+			<question-answer text="тешки трицикл" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_87" number="87"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном на бензин, је тешки трицикл ако истовремено испуњава најмање следеће услове"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага не прелази 4kW" />
+			<question-answer
+				text="има три точка, симетрично распоређених у односу на средњу подужну раван возила" correct="true" />
+			<question-answer text="радна запремина мотора не прелази 50cm3" />
+			<question-answer text="његова највећа ефективна снага прелази 4kW" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_88" number="88"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, је тешки трицикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага прелази 4kW" correct="true" />
+			<question-answer text="има најмање три точка" />
+			<question-answer
+				text="има три точка, симетрично распоређених у односу на средњу подужну раван возила" correct="true" />
+			<question-answer text="радна запремина његовог мотора прелази 50cm3" />
+			<question-answer text="радна запремина његовог мотора не прелази 125cm3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_89" number="89"
+		text="Моторно возило са електричним погоном, највеће трајне номиналне снаге 5kW, највеће конструктивне брзине 50km/h и које има три точка симетрично распоређена у односу на средњу подужну раван возила, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="тешки трицикл" correct="true" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_90" number="90"
+		text="Моторно возило, са електричним погоном, је тешки трицикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа трајна номинална снага прелази 4kW" correct="true" />
+			<question-answer text="има најмање три точка" />
+			<question-answer
+				text="има три точка, симетрично распоређених у односу на средњу подужну раван возила" correct="true" />
+			<question-answer text="радна запремина мотора прелази 50cm3" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_91" number="91"
+		text="Моторно возило чија је највећа конструктивна брзина 50km/h и које има три точка симетрично распоређена у односу на средњу подужну раван возила и мотор са унутрашњим сагоревањем са погоном на бензин чија је највећа ефективна снага 5kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="тешки трицикл" correct="true" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_92" number="92"
+		text="Моторно возило чија је највећа конструктивна брзина 50km/h и које има три точка симетрично распоређена у односу на средњу подужну раван возила и мотор са унутрашњим сагоревањем са погоном који није на бензин чија је највећа ефективна снага 5kW, је:"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="тешки трицикл" correct="true" />
+			<question-answer text="лаки трицикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_93" number="93"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном на бензин, је лаки четвороцикл ако истовремено испуњава најмање следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага не прелази 4kW" />
+			<question-answer text="има четири точка и његова маса не прелази 350kg" correct="true" />
+			<question-answer text="радна запремина мотора не прелази 50cm3" correct="true" />
+			<question-answer text="његова највећа ефективна снага прелази 4kW" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_94" number="94"
+		text="Моторно возило намењено за превоз терета, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, четири точка, највећу ефективну снагу 12kW и чија је маса 500kg, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="лаки четвороцикл" />
+			<question-answer text="тешки четвороцикл" correct="true" />
+			<question-answer text="путничко возило" />
+			<question-answer text="теретно возило" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_95" number="95"
+		text="Моторно возило, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, је лаки четвороцикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer text="његова највећа ефективна снага не прелази 4kW" correct="true" />
+			<question-answer text="има четири точка и његова маса не прелази 350kg" correct="true" />
+			<question-answer text="радна запремина његовог мотора не прелази 50cm3" />
+			<question-answer text="његова највећа ефективна снага прелази 4kW" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_96" number="96"
+		text="Моторно возило, са електричним погоном, је лаки четвороцикл ако истовремено испуњава следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="његова највећа конструктивна брзина, без обзира на начин преноса, не прелази 45km/h" correct="true" />
+			<question-answer
+				text="његова највећа трајна номинална снага не прелази 4kW" correct="true" />
+			<question-answer
+				text="има четири точка и његова маса не прелази 350kg, што не укључује масу батерија возила" correct="true" />
+			<question-answer text="радна запремина мотора прелази 50cm3" />
+			<question-answer text="његова највећа трајна номинална снага прелази 4kW" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_97" number="97"
+		text="Моторно возило чија је највећа конструктивна брзина 40km/h и које има четири точка, масу 300kg и мотор са унутрашњим сагоревањем са погоном на бензин чија је радна запремина 45cm3, а највећа ефективна снага 5kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="лаки четвороцикл" correct="true" />
+			<question-answer text="тешки четвороцикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_98" number="98"
+		text="Моторно возило чија је највећа конструктивна брзина 40km/h и које има четири точка, масу 300kg и мотор са унутрашњим сагоревањем са погоном који није на бензин чија је радна запремина 55cm3 а највећа ефективна снага 4kW, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="лаки четвороцикл" correct="true" />
+			<question-answer text="тешки четвороцикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_99" number="99"
+		text="Моторно возило са електричним погоном, највеће трајне номиналне снаге 4kW, највеће конструктивне брзине 40km/h и које има четири точка и масу 300kg, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="мотоцикл" />
+			<question-answer text="мопед" />
+			<question-answer text="лаки четвороцикл" correct="true" />
+			<question-answer text="тешки четвороцикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_100" number="100"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном на бензин, четири точка, највећу ефективну снагу 4kW и чија је маса 400kg, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="лаки четвороцикл" />
+			<question-answer text="тешки четвороцикл" correct="true" />
+			<question-answer text="путничко возило" />
+			<question-answer text="мопед" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_101" number="101"
+		text="Моторно возило, намењено за превоз терета, са електричним погоном, са четири точка, највеће трајне номиналне снаге 4kW и чија маса износи 500kg, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="лаки четвороцикл" />
+			<question-answer text="тешки четвороцикл" correct="true" />
+			<question-answer text="путничко возило" />
+			<question-answer text="теретно возило" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_102" number="102"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном на бензин, четири точка, највећу ефективну снагу 12kW, чија је маса 400kg и које има 5 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="тешки четвороцикл" correct="true" />
+			<question-answer text="путничко возило" />
+			<question-answer text="лаки четвороцикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_103" number="103"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном који није на бензин, четири точка, највећу ефективну снагу 12kW, чија је маса 380kg и које има 5 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="тешки четвороцикл" correct="true" />
+			<question-answer text="путничко возило" />
+			<question-answer text="лаки четвороцикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_104" number="104"
+		text="Моторно возило, са електричним погоном, четири точка, највеће трајне номиналне снаге 10kW, чија маса 400kg и које има 5 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="тешки четвороцикл" correct="true" />
+			<question-answer text="путничко возило" />
+			<question-answer text="лаки четвороцикл" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_105" number="105"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном на бензин, четири точка, највећу ефективну снагу 22kW, чија је маса 500kg и које има 5 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="тешки четвороцикл" />
+			<question-answer text="путничко возило" correct="true" />
+			<question-answer text="аутобус" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_106" number="106"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном који није на бензин, четири точка, највећу ефективну снагу 20kW, чија је маса 500kg и које има 5 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="тешки четвороцикл" />
+			<question-answer text="путничко возило" correct="true" />
+			<question-answer text="аутобус" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_107" number="107"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном који није на бензин, четири точка, највећу ефективну снагу 120kW, чија је маса 2.000kg и које има 8 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="тешки четвороцикл" />
+			<question-answer text="путничко возило" correct="true" />
+			<question-answer text="аутобус" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_108" number="108"
+		text="Моторно возило, са електричним погоном, четири точка, највеће трајне номиналне снаге 18kW, чија је маса 500kg и које има 5 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="тешки четвороцикл" />
+			<question-answer text="путничко возило" correct="true" />
+			<question-answer text="аутобус" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_109" number="109"
+		text="Путничко возило је приказано на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_109_1.png" text="1" />
+			<question-image url="osnove_a_109_2.png" text="2" />
+			<question-image url="osnove_a_109_3.png" text="3" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_110" number="110"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном на бензин, четири точка, највећу ефективну снагу 120kW, чија је маса 2.000kg и које има 10 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="туристички воз" />
+			<question-answer text="путничко возило" />
+			<question-answer text="аутобус" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_111" number="111"
+		text="Моторно возило које има мотор са унутрашњим сагоревањем са погоном који није на бензин, четири точка, највећу ефективну снагу 120kW, чија је маса 2.000kg и које има 16 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="туристички воз" />
+			<question-answer text="путничко возило" />
+			<question-answer text="аутобус" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_112" number="112"
+		text="Моторно возило, са електричним погоном, четири точка, највеће трајне номиналне снаге 120kW, чија је маса 2.000kg и које има 20 места за седење укључујући и место за седење возача, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="туристички воз" />
+			<question-answer text="путничко возило" />
+			<question-answer text="аутобус" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_113" number="113"
+		text="Аутобус је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_113_1.png" text="1" />
+			<question-image url="osnove_a_113_2.png" text="2" />
+			<question-image url="osnove_a_113_3.png" text="3" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_114" number="114"
+		text="Тролејбус је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_114_1.png" text="1" />
+			<question-image url="osnove_a_114_2.png" text="2" />
+			<question-image url="osnove_a_114_3.png" text="3" />
+			<question-image url="osnove_a_114_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_115" number="115"
+		text="Моторно возило намењено за вршење рада, које има мотор са унутрашњим сагоревањем са погоном на бензин, четири точка, највећу ефективну снагу 20kW, чија је маса 580kg и највећу конструктивну брзину кретања 50km/h, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="теретно возило" correct="true" />
+			<question-answer text="мотокултиватор" />
+			<question-answer text="радна машина" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_116" number="116"
+		text="Моторно возило намењено за вршење рада, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, четири точка, највећу ефективну снагу 120kW, чија је маса 1.500kg и највећу конструктивну брзину кретања 50km/h, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="теретно возило" correct="true" />
+			<question-answer text="мотокултиватор" />
+			<question-answer text="радна машина" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_117" number="117"
+		text="Моторно возило, са електричним погоном, намењено за вршење рада, са четири точка, највеће трајне номиналне снагу 120kW, чија је маса 1.500kg и највећу конструктивну брзину кретања 50km/h, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="теретно возило" correct="true" />
+			<question-answer text="мотокултиватор" />
+			<question-answer text="радна машина" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_118" number="118"
+		text="Моторно возило, са електричним погоном, намењено за извођење одређених радова, са четири точка, највеће трајне номиналне снаге 120kW, чија је маса 1.500kg и највећа конструктивна брзина кретања 40km/h, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="теретно возило" />
+			<question-answer text="мотокултиватор" />
+			<question-answer text="радна машина" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_119" number="119"
+		text="Теретно возило је приказано на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_119_1.png" text="1" />
+			<question-image url="osnove_a_119_2.png" text="2" />
+			<question-image url="osnove_a_119_3.png" text="3" />
+			<question-image url="osnove_a_119_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_120" number="120"
+		text="Скуп возила је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_120_1.png" text="1" />
+			<question-image url="osnove_a_120_2.png" text="2" />
+			<question-image url="osnove_a_120_3.png" text="3" />
+			<question-image url="osnove_a_120_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_121" number="121"
+		text="Туристички воз је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_121_1.png" text="1" />
+			<question-image url="osnove_a_121_2.png" text="2" />
+			<question-image url="osnove_a_121_3.png" text="3" />
+			<question-image url="osnove_a_121_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_122" number="122"
+		text="Моторно возило намењено за извођење одређених радова, које има мотор са унутрашњим сагоревањем са погоном на бензин, четири точка, највећу ефективну снагу 20kW, чија је маса 580kg и највећу конструктивну брзину кретања 40km/h, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="теретно возило" />
+			<question-answer text="мотокултиватор" />
+			<question-answer text="радна машина" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_123" number="123"
+		text="Моторно возило намењено за извођење одређених радова, које има мотор са унутрашњим сагоревањем са погоном који није на бензин, четири точка, највећу ефективну снагу 120kW, чија је маса 1.500kg и највећа конструктивна брзина кретања 40km/h, је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="теретно возило" />
+			<question-answer text="мотокултиватор" />
+			<question-answer text="радна машина" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_124" number="124"
+		text="Радна машина је приказана на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_124_1.png" text="1" />
+			<question-image url="osnove_a_124_2.png" text="2" />
+			<question-image url="osnove_a_124_3.png" text="3" />
+			<question-image url="osnove_a_124_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_125" number="125"
+		text="Трактор је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_125_1.png" text="1" />
+			<question-image url="osnove_a_125_2.png" text="2" />
+			<question-image url="osnove_a_125_3.png" text="3" />
+			<question-image url="osnove_a_125_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_126" number="126"
+		text="Моторно возило је мотокултиватор ако истовремено испуњава најмање следеће услове"
+		points="1" remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="састоји се из погонско-управљачког и товарног дела, који су конструктивно раздвојиви" correct="true" />
+			<question-answer
+				text="има једну осовину и конструисан је да вуче, потискује или носи измењива оруђа за разне радове" />
+			<question-answer text="снага његовог мотора прелази 12kW" />
+			<question-answer
+				text="његова највећа конструктивна брзина није већа од 30km/h" correct="true" />
+			<question-answer text="снага његовог мотора не прелази 12kW" correct="true" />
+			<question-answer
+				text="његова највећа конструктивна брзина није већа од 45km/h" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_127" number="127"
+		text="Возило је прикључно ако истовремено испуњава најмање следеће услове"
+		points="1" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="по конструкцији, уређајима, склоповима и опреми је намењено и оспособљено да буде вучено од другог возила" correct="true" />
+			<question-answer
+				text="има једну осовину и конструисано је да вуче или потискује измењива оруђа за разне радове" />
+			<question-answer
+				text="намењено је за превоз путника, односно ствари, односно за обављање радова" correct="true" />
+			<question-answer
+				text="намењено је за обављање пољопривредних, шумских или других радова, и у сврху извођења тих радова, поставља се на моторно возило" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_128" number="128"
+		text="Мотокултиватор је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_128_1.png" text="1" />
+			<question-image url="osnove_a_128_2.png" text="2" />
+			<question-image url="osnove_a_128_3.png" text="3" />
+			<question-image url="osnove_a_128_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_129" number="129"
+		text="Возило које је по конструкцији, уређајима, склоповима и опреми намењено и оспособљено да буде вучено од другог возила, а служи за превоз путника, односно ствари, односно за обављање радова је"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="прикључно возило" correct="true" />
+			<question-answer text="запрежно возило" />
+			<question-answer text="прикључак за извођење радова" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_130" number="130"
+		text="Прикључно возило је приказано на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_130_1.png" text="1" />
+			<question-image url="osnove_a_130_2.png" text="2" />
+			<question-image url="osnove_a_130_3.png" text="3" />
+			<question-image url="osnove_a_130_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_131" number="131"
+		text="Прикључно возило за трактор је приказано на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_131_1.png" text="1" />
+			<question-image url="osnove_a_131_2.png" text="2" />
+			<question-image url="osnove_a_131_3.png" text="3" />
+			<question-image url="osnove_a_131_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_132" number="132"
+		text="Прикључак за извођење радова је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_132_1.png" text="1" />
+			<question-image url="osnove_a_132_2.png" text="2" />
+			<question-image url="osnove_a_132_3.png" text="3" />
+			<question-image url="osnove_a_132_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_133" number="133"
+		text="Запрежно возило је приказано на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_133_1.png" text="1" />
+			<question-image url="osnove_a_133_2.png" text="2" />
+			<question-image url="osnove_a_133_3.png" text="3" />
+			<question-image url="osnove_a_133_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_134" number="134"
+		text="Трамвај је приказан на слици број" points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_134_1.png" text="1" />
+			<question-image url="osnove_a_134_2.png" text="2" />
+			<question-image url="osnove_a_134_3.png" text="3" />
+			<question-image url="osnove_a_134_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_135" number="135" text="Бициклистичка трака је"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="пут намењен искључиво за кретање бицикала" />
+			<question-answer text="пут намењен искључиво за кретање бицикала и мопеда" />
+			<question-answer
+				text="саобраћајна трака намењена искључиво за саобраћај бицикала, мопеда и лаких трицикала" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_136" number="136"
+		text="Лек који садржи психоактивну супстанцу и који се не сме употребљавати пре и за време вожње, на паковању има ознаку приказану на слици број"
+		points="1">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_136_1.png" text="1" />
+			<question-image url="osnove_a_136_2.png" text="2" />
+			<question-image url="osnove_a_136_3.png" text="3" />
+			<question-image url="osnove_a_136_4.png" text="4" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_137" number="137"
+		text="Која од набројаних површина је пут" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="Улица" correct="true" />
+			<question-answer text="Полигон за пробне вожње или спортске приредбе" />
+			<question-answer text="Пешачка стаза" correct="true" />
+			<question-answer
+				text="Саобраћајна површина намењена за кретање само возила и лица којима је власник те површине то омогућио" />
+			<question-answer text="Спортски терен на којем се паркирају возила" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_138" number="138"
+		text="Која од набројаних површина је пут" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="Земљани пут" correct="true" />
+			<question-answer text="Тркачка стаза за возила" />
+			<question-answer text="Плато намењен кретању и окупљању лица" />
+			<question-answer text="Травњаци и паркови" />
+			<question-answer text="Бициклистичка стаза" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_139" number="139"
+		text="Које од наведених услова мора испуњавати аутопут" points="2"
+		remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="Пут који има најмање три саобраћајне траке по смеру" />
+			<question-answer
+				text="Пут код којег су коловозне траке за саобраћај из супротних смерова физички одвојене" correct="true" />
+			<question-answer
+				text="Пут код којег коловозне траке за саобраћај из супротних смерова не морају бити физички одвојене" />
+			<question-answer
+				text="Пут који има најмање две саобраћајне траке по смеру и једну зауставну траку за сваки смер" correct="true" />
+			<question-answer
+				text="Државни пут код кога сва укрштања са другим путевима и железничким или трамвајским пругама нису изведена у истом нивоу" correct="true" />
+			<question-answer
+				text="Државни пут код кога укрштања у нивоу са другим путевима морају бити изведена као раскрснице са кружним током или регулисана семафорима" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_140" number="140"
+		text="Пут без изграђеног коловозног застора, па и када на прикључку на други пут има изграђен коловозни застор је"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="некатегорисани пут намењен искључиво за саобраћај трактора, мотокултиватора и запрежних возила" />
+			<question-answer text="земљани пут" correct="true" />
+			<question-answer text="макадамски пут" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_141" number="141"
+		text="Које од наведених услова мора испуњавати аутопут" points="2"
+		remark="Заокружити три тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="пут који је као такав обележен прописаним саобраћајним знаком" correct="true" />
+			<question-answer
+				text="пут код којег коловозне траке за саобраћај из супротних смерова не морају бити физички одвојене" />
+			<question-answer
+				text="државни пут намењен искључиво за саобраћај мотоцикала, путничких возила, теретних возила и аутобуса, са или без прикључних возила" correct="true" />
+			<question-answer text="државни пут намењен за саобраћај моторних возила" />
+			<question-answer text="пут обележен прописаном ознаком на коловозу" />
+			<question-answer
+				text="пут са потпуном контролом приступа, на који се може укључити или искључити само одређеним и посебно изграђеним јавним путем" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_142" number="142"
+		text="Које од наведених услова мора испуњавати мотопут:" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="пут код којег коловозне траке за саобраћај из супротних смерова морају бити физички одвојене" />
+			<question-answer
+				text="пут који мора имати најмање две саобраћајне траке по смеру и једну зауставну траку за сваки смер" />
+			<question-answer
+				text="државни пут намењен искључиво за саобраћај мотоцикала, путничких возила, теретних возила и аутобуса, са или без прикључних возила" correct="true" />
+			<question-answer
+				text="државни пут намењен за саобраћај свих моторних возила" />
+			<question-answer
+				text="пут који је као такав обележен прописаним саобраћајним знаком" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_143" number="143"
+		text="Које од наведених услова мора испуњавати мотопут" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="државни пут који мора имати потпуну контролу приступа, на који се може укључити или искључити само одређеним и посебно изграђеним јавним путем" />
+			<question-answer text="пут обележен прописаном ознаком на коловозу" />
+			<question-answer
+				text="пут који је као такав обележен прописаним саобраћајним знаком" correct="true" />
+			<question-answer text="пут који мора имати зауставну траку за сваки смер" />
+			<question-answer
+				text="државни пут намењен искључиво за саобраћај мотоцикала, путничких возила, теретних возила и аутобуса, са или без прикључних возила" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_144" number="144"
+		text="Коловоз је на слици означен бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_144_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_145" number="145"
+		text="Коловозна трака је на слици означена бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_145_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_146" number="146"
+		text="Саобраћајнe тракe, на аутопуту, су на слици означене бројевима"
+		points="2" remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_146_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1 и 3" />
+			<question-answer text="2 и 3" correct="true" />
+			<question-answer text="4, 5 и 6" />
+			<question-answer text="4 и 5" correct="true" />
+			<question-answer text="7 и 8" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_147" number="147"
+		text="Саобраћајна трака је на слици означена бројевима" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_147_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="5 и 6" correct="true" />
+			<question-answer text="2 и 3" />
+			<question-answer text="8 и 9" />
+			<question-answer text="4 и 7" correct="true" />
+			<question-answer text="1 и 8" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_149" number="149"
+		text="Саобраћајнe тракe на слици су означене бројевима" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_149_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1 и 2" />
+			<question-answer text="2 и 3" correct="true" />
+			<question-answer text="1 и 3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_150" number="150"
+		text="Саобраћајна трака је на слици означена бројевима" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_150_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="6 и 7" correct="true" />
+			<question-answer text="2 и 3" />
+			<question-answer text="1 и 3" />
+			<question-answer text="4 и 5" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_151" number="151"
+		text="Бициклистичка трака је на слици означена бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_151_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_152" number="152"
+		text="Саобраћајна трака за спора возила је на слици означена бројем"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_152_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+			<question-answer text="5" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_153" number="153"
+		text="Зауставна трака је на слици означена бројевима" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_153_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1 и 6" correct="true" />
+			<question-answer text="2 и 3" />
+			<question-answer text="4 и 5" />
+			<question-answer text="7 и 8" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_154" number="154"
+		text="Саобраћајна трака за укључивање је на слици означена бројем"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_154_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_155" number="155"
+		text="Саобраћајна трака за искључивање је на слици означена бројем"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_155_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_156" number="156"
+		text="Саобраћајна трака за возила јавног превоза путника на слици је означена бројевима"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_156_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="2 и 3" />
+			<question-answer text="4 и 9" correct="true" />
+			<question-answer text="8 и 5" />
+			<question-answer text="1, 4 и 9" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_157" number="157" text="Раскрсница је"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="део коловоза на коме се укрштају, спајају или раздвајају путеви у истом нивоу" correct="true" />
+			<question-answer
+				text="део пута који мора бити означен прописаним ознакама на коловозу и саобраћајним знаком" />
+			<question-answer
+				text="место на којем се у истом нивоу укрштају пут и железничка пруга" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_158" number="158"
+		text="Трамвајска баштица је на слици означена бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_158_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_159" number="159"
+		text="Тротоар је на слици означен бројевима" points="2"
+		remark="Заокружити два тачна одговора">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_159_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+			<question-answer text="5" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_160" number="160"
+		text="Паркиралиште је на слици означено бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_160_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_161" number="161"
+		text="Паркинг место је на слици означено бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_161_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_162" number="162"
+		text="Пешачки прелаз је на слици означен бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_162_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" correct="true" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_163" number="163"
+		text="Пешачки прелаз на слици је означен бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_163_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" />
+			<question-answer text="4" correct="true" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_164" number="164"
+		text="Пешачка стаза на слици је означена бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_164_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_165" number="165" text="Бициклистичка стаза је"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="пут намењен искључиво за кретање бицикала" correct="true" />
+			<question-answer text="пут намењен искључиво за кретање бицикала и мопеда" />
+			<question-answer
+				text="саобраћајна трака намењена искључиво за саобраћај бицикала" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_166" number="166"
+		text="Бициклистичка стаза на слици је означена бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_166_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" correct="true" />
+			<question-answer text="3" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_167" number="167" text="Слика приказује"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_167_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="трамвајску баштицу" />
+			<question-answer text="раскрсницу" />
+			<question-answer text="прелаз пута преко железничке пруге" correct="true" />
+			<question-answer text="паркиралиште" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_168" number="168"
+		text="Пешачко острво је на слици означено бројем" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_168_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="1" />
+			<question-answer text="2" />
+			<question-answer text="3" correct="true" />
+			<question-answer text="4" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_169" number="169"
+		text="Од саобраћајног знака приказаног на слици почиње" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_169_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="насељено место" />
+			<question-answer text="насеље" correct="true" />
+			<question-answer text="зона успореног саобраћаја" />
+			<question-answer text="туристичко одредиште" />
+		</question-answers>
+	</question>
+	<question id="bezbednost_170" number="170"
+		text="Од саобраћајног знака приказаног на слици се завршава" points="2">
+		<question-category-refs>
+			<question-category-ref value="bezbednost" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="osnove_a_170_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="насељено место" />
+			<question-answer text="насеље" correct="true" />
+			<question-answer text="зона успореног саобраћаја" />
+			<question-answer text="туристичко одредиште" />
+		</question-answers>
+	</question>
+
+</questions>

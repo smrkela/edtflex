@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper styleName="contentWrapper">
+
+		<controls1:PageTitle label="Zašto da koristim ovu aplikaciju?"/>
+
+		<mx:Text width="100%"
+				 text="Zato što će ti pomoći da bolje organizuješ i isplaniraš spremanje teorijskog ispita, da to radiš na jednostavan i zabavan način i zato što će aplikacija za tebe pamtiti tačno šta radiš, koliko učiš i kako ti ide."/>
+
+		<controls1:PageTitle label="Kako su organizovana pitanja?"/>
+
+		<mx:Text width="100%"
+				 text="Pitanja su podeljena na grupe odnosno oblasti onako kako su organizovana od strane MUP-a. Dakle, podeljena su na 7 grupa. Svaka grupa je dalje podeljena na lekcije tako da svaka lekcija ima 20 pitanja (osim poslednje lekcije u grupi koja može imati manje). Na ovaj način jednostavno je zapamtiti i videti šta si spremao a svaka lekcija ne bi trebalo da ti oduzme više od desetak minuta."/>
+
+		<controls1:PageTitle label="Šta je učenje a šta provera?"/>
+
+		<mx:Text width="100%"
+				 text="Učenje je ništa drugo do čitanje pitanja. Dakle, svaki put kad pročitaš pitanje to je jedno učenje pitanja. Provera predstavlja proveravanje naučenog odnosno predstavlja način da kroz aplikaciju odgovaraš na pitanja a aplikacija će ti reći kako si prošao pa čak i zapamtiti kako si prošao da bi mogao još bolje da spremiš oblasti koje ti možda slabije idu."/>
+
+		<controls1:PageTitle label="Čemu služe poeni?"/>
+
+		<mx:Text width="100%"
+				 text="Da bi na jednostavan način znao koliko napreduješ. Što više učiš, proveravaš se i napreduješ to više poena imaš. Za svakih 100 poena koje sakupiš takođe raste i tvoj trenutni nivo."/>
+
+		<controls1:PageTitle label="Šta tačno predstavlja jedan poen?"/>
+
+		<mx:Text width="100%"
+				 text="Jedan poen predstavlja jedno učeno pitanje ili jedno provereno pitanje kod kojeg si dao tačan odgovor. Jedno isto pitanje naravno možeš učiti i proveravati više puta a svaku put ćeš dobiti po jedan poen."/>
+
+		<controls1:PageTitle label="Šta tačno pokazuje procentualni iznos kod svake oblasti?"/>
+
+		<mx:Text width="100%"
+				 text="Pokazuje dokle si stigao sa tom oblašću. Ako oblast ima, na primer, 100 pitanja ukupno i ti naučiš i proveriš 30 pitanja onda si ukupno stigao do 30%. Da bi rešio oblast u potpunosti odnosno 100%, treba da pročitaš sva pitanja iz te oblasti barem jednom i da ih uspešno proveriš barem jednom. Ako naučiš sva pitanja ali ne proveriš svoje znanje iz tih pitanja onda nemaš 100% nego 50%."/>
+
+		<controls1:PageTitle label="Šta tačno pokazuje procentualni iznos kod svake lekcije?"/>
+
+		<mx:Text width="100%"
+				 text="Isto što pokazuje kod oblasti samo što se kod lekcija odnosi samo na pitanja koja pripadaju toj lekciji. Dakle, to je pokazatelj napretka na tačno određenoj lekciji."/>
+
+		<controls1:PageTitle label="Šta znači 'Koji put učiš i proveravaš'?"/>
+
+		<mx:Text width="100%"
+				 text="Možete pratiti svoj napredak učenja i proveravanja do tri puta ukupno. To znači da se posebno evidentira i prikazuje vaš napredak kada učite i spremate prvi put, drugi put odnosno treći put. Nakon što završite sa učenjem prvi put, izaberite 'drugi krug' učenja i provere i možete proći opet kroz obuku a aplikacija će vam prikazivati napredak za drugi krug obuke."/>
+
+		<controls1:PageTitle label="Spremam se za B kategoriju. Kako da učim samo pitanja za tu kategoriju?"/>
+
+		<mx:Text width="100%"
+				 text="U svom profilu odaberi kategoriju za koju se spremaš i aplikacija će za tebe pripremiti samo ona pitanja koja tebi trebaju odnosno neće ti suvišna pitanja prikazivati niti ih uzimati ubzir u tvom napretku."/>
+
+		<controls1:PageTitle label="Čemu služe omiljena pitanja?"/>
+
+		<mx:Text width="100%"
+				 text="Ukoliko ti neka pitanja uporno prave problem i teško ti je da ih savladaš, možeš da ih označiš kao omiljena da bi mogao da obratiš pažnju na njih i posvetiš im više pažnje. Dovoljno je da takva pitanja obeležiš kao omiljena kad naiđeš na njih u toku učenja ili proveravanja i aplikacija će ih za tebe zapamtiti. Kasnije možeš da pokreneš učenje ili proveru samo tih pitanja i savladaš ih bez smetnje ostalih pitanja."/>
+
+		<controls1:PageTitle label="O aplikaciji"/>
+
+		<mx:Label fontSize="20"
+				  text="Evola Software"/>
+
+		<mx:Text text="Cilj ove aplikacije je da vam pomogne u procesu učenja i spremanja za teorijski ispit za polaganje vožnje."/>
+
+		<mx:Text width="100%"
+				 htmlText="{getMessage()}"/>
+
+
+	</pages:PageContentWrapper>
+
+	<pages:PageFooter/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PresenterProvider;
+
+			private function getMessage():String
+			{
+
+				var message:String="Ukoliko imate pitanja, predloga ili komentara, možete nam se obratiti na e-mail adresu <font color='#0000FF'> <a href='mailto:" + Settings.EMAIL + "' target='_blank'>" + Settings.EMAIL + "</a></font>.";
+
+				return message;
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 height="10"
+		 verticalAlign="middle">
+
+	<mx:HRule strokeWidth="1"
+			  visible="{showHrule}"
+			  width="100%"/>
+
+	<mx:HBox id="boxInner"
+			 includeInLayout="false"
+			 backgroundAlpha="{progressAlpha}"
+			 backgroundColor="{progressColor}"
+			 height="100%"/>
+
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			public var progressColor:uint=0x2D89EF;
+			
+			[Bindable]
+			public var progressAlpha : Number = 1;
+
+			[Bindable]
+			public var showHrule : Boolean = true;
+			
+			private var _progress:Number;
+
+			public function set progress(value:Number):void
+			{
+
+				if (value == _progress)
+					return;
+
+				_progress=value;
+
+				invalidateDisplayList();
+			}
+
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+			{
+
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+
+				if (boxInner)
+				{
+
+					var progressValue:Number=_progress;
+
+					if (isNaN(_progress))
+						progressValue=0;
+
+					var newWidth:Number=unscaledWidth * _progress;
+
+					newWidth=Math.min(unscaledWidth, newWidth);
+
+					boxInner.setActualSize(newWidth, unscaledHeight);
+
+					var ha:String=getStyle("horizontalAlign");
+
+					if (ha == "right")
+					{
+
+						boxInner.move(unscaledWidth - newWidth, 0);
+					}
+					else
+					{
+
+						boxInner.move(0, 0);
+					}
+				}
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

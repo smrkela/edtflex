@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*"
+					xmlns:discussions="com.evola.driving.views.pages.discussions.*"
+					xmlns:components="com.evola.driving.views.pages.discussions.components.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper styleName="contentWrapper"
+							  height="100%">
+
+		<controls1:PageTitle label="Diskusije - {presenter.model.totalMessages} pitanja u diskusijama"/>
+
+		<mx:HBox width="100%"
+				 verticalAlign="middle">
+
+			<controls1:BoxButton label="Moje diskusije"
+								 primaryColor="{ThemeColors.ORANGE}"
+								 click="presenter.linkClicked(0)"
+								 emphasized="{presenter.model.mode == 'my'}"/>
+			<controls1:BoxButton label="Sve diskusije"
+								 primaryColor="{ThemeColors.ORANGE}"
+								 click="presenter.linkClicked(1)"
+								 emphasized="{presenter.model.mode == 'all'}"/>
+
+			<mx:Spacer width="100%"/>
+
+			<mx:Label text="Pretraži tekstom ili brojem pitanja:"/>
+			<mx:TextInput id="tiSearch"
+						  enter="{presenter.searchClicked(tiSearch.text)}"
+						  width="150"
+						  text="{presenter.model.searchText}"/>
+			<controls1:BoxButton label="Pretraži"
+								 primaryColor="{ThemeColors.GREEN}"
+								 click="presenter.searchClicked(tiSearch.text)"/>
+			<controls1:BoxButton label="Poništi"
+								 primaryColor="{ThemeColors.YELLOW}"
+								 visible="{presenter.model.searchText != null &amp;&amp; presenter.model.searchText.length > 0}"
+								 click="presenter.resetSearchClicked()"/>
+
+			<mx:Spacer width="100%"/>
+
+			<controls1:LinkLabel text="Ponovo učitaj"
+								 click="presenter.refresh()"/>
+
+		</mx:HBox>
+
+		<components:MyDiscussionsPage id="my"
+									  presenter="{presenter}"
+									  visible="{presenter.model.mode == 'my'}"
+									  includeInLayout="{presenter.model.mode == 'my'}"
+									  data="my"/>
+		<components:AllDiscussionsPage id="all"
+									   presenter="{presenter}"
+									   visible="{presenter.model.mode == 'all'}"
+									   includeInLayout="{presenter.model.mode == 'all'}"
+									   data="all"/>
+
+	</pages:PageContentWrapper>
+
+	<pages:PageFooter/>
+
+	<discussions:DiscussionsPresenter id="presenter"
+									  view="{this}"/>
+
+	<util:EvolaHttpService id="serviceLoadMyDiscussions"
+						   restUrl="question/getMyQuestionMessages"
+						   result="presenter.onMyDiscussionsLoaded(event)"
+						   fault="presenter.onFault(event)"/>
+
+	<util:EvolaHttpService id="serviceLoadAllDiscussions"
+						   restUrl="question/getAllQuestionMessages"
+						   result="presenter.onAllDiscussionsLoaded(event)"
+						   fault="presenter.onFault(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.ThemeColors;
+			
+			import mx.rpc.events.ResultEvent;
+			import mx.utils.StringUtil;
+
+			override protected function displayPage():void
+			{
+
+				presenter.initialize();
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

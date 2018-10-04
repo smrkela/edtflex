@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+				layout="vertical"
+				width="100%"
+				height="100%"
+				name="edt"
+				verticalScrollPolicy="on"
+				horizontalScrollPolicy="off"
+				historyManagementEnabled="true"
+				pageTitle="Pripremanje za polaganje ispita - Vozači Srbije"
+				initialize="onInitialize(event)"
+				xmlns:views="com.evola.driving.views.*"
+				xmlns:controls="com.evola.driving.controls.*"
+				xmlns:navigation="com.evola.driving.views.navigation.*"
+				xmlns:questions="com.evola.driving.views.questions.*"
+				xmlns:login="com.evola.driving.views.login.*"
+				xmlns:pages="com.evola.driving.views.pages.*"
+				xmlns:util="com.evola.driving.util.*"
+				backgroundAttachment="fixed"
+				backgroundImage="background.jpg"
+				xmlns:grouplessons="com.evola.driving.views.pages.grouplessons.*"
+				xmlns:discussions="com.evola.driving.views.pages.discussions.*" xmlns:debugger="com.demonsters.debugger.*" xmlns:sessions="com.evola.driving.views.pages.sessions.*">
+
+	<mx:Style source="EDTFlex.css"/>
+
+	<mx:transitions>
+
+		<mx:Transition toState="*"
+					   autoReverse="true">
+			<mx:Parallel targets="{[pageAbout, pageHome, pageLogin, pageUserProfile, pageLearnedPerCategory, pageTestedPerCategory, pageActiveUsers, pageAllLearningSessions, pageAllTestingSessions, pageRegister, pagePasswordReset, pageGroupSessions, pageLearningSession, pageTestingSession, pageDiscussions]}">
+				<mx:Fade duration="300"/>
+			</mx:Parallel>
+		</mx:Transition>
+
+	</mx:transitions>
+
+	<mx:states>
+
+		<!--
+		<mx:State name="stateQuestions">
+
+			<mx:AddChild>
+				<questions:QuestionsPage id="pageQuestions"/>
+			</mx:AddChild>
+
+		</mx:State>
+		-->
+
+		<mx:State name="stateLogin">
+
+			<mx:AddChild>
+				<pages:LoginPage id="pageLogin"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateHomePage">
+
+			<mx:AddChild>
+				<pages:HomePage id="pageHome"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<!--
+		<mx:State name="stateLearnSetup">
+
+			<mx:AddChild>
+				<pages:LearningSetupPage id="pageLearningSetup"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateTestSetup">
+
+			<mx:AddChild>
+				<pages:TestingSetupPage id="pageTestingSetup"/>
+			</mx:AddChild>
+
+		</mx:State>
+		-->
+
+		<mx:State name="stateAbout">
+
+			<mx:AddChild>
+				<pages:AboutPage id="pageAbout"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<!--
+		<mx:State name="stateQuestionsList">
+
+			<mx:AddChild>
+				<pages:QuestionsListPage id="pageQuestionsList"/>
+			</mx:AddChild>
+
+		</mx:State>
+		-->
+
+		<mx:State name="stateUserProfile">
+
+			<mx:AddChild>
+				<pages:UserProfilePage id="pageUserProfile"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateLearningDetails">
+
+			<mx:AddChild>
+				<pages:LearnedPerCategoryPage id="pageLearnedPerCategory"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateTestingDetails">
+
+			<mx:AddChild>
+				<pages:TestedPerCategoryPage id="pageTestedPerCategory"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateActiveUsers">
+
+			<mx:AddChild>
+				<pages:CurrentlyActiveUsersPage id="pageActiveUsers"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateAllLearningSessions">
+
+			<mx:AddChild>
+				<sessions:LearningSessionsPage id="pageAllLearningSessions"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateAllTestingSessions">
+
+			<mx:AddChild>
+				<sessions:TestingSessionsPage id="pageAllTestingSessions"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateRegister">
+
+			<mx:AddChild>
+				<pages:RegisterPage id="pageRegister"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="statePasswordReset">
+
+			<mx:AddChild>
+				<pages:PasswordResetPage id="pagePasswordReset"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateGroupSessions">
+
+			<mx:AddChild>
+				<grouplessons:GroupLessonsPage id="pageGroupSessions"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateLearningSession">
+
+			<mx:AddChild>
+				<pages:LearningLessionPage id="pageLearningSession"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateTestingSession">
+
+			<mx:AddChild>
+				<pages:LearningLessionPage id="pageTestingSession"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateDiscussions">
+
+			<mx:AddChild>
+				<discussions:DiscussionsPage id="pageDiscussions"/>
+			</mx:AddChild>
+
+		</mx:State>
+
+	</mx:states>
+
+	<!-- Servisi -->
+
+	<util:EvolaHttpService id="serviceGetAllQuestions"
+						   restUrl="question/getAllQuestions"
+						   result="onGetAllQuestionsResult(event)"/>
+
+	<util:EvolaHttpService id="serviceSaveLearning"
+						   restUrl="statistics/saveLearning"
+						   result="onLearningSaveResult(event)"/>
+
+	<util:EvolaHttpService id="serviceSaveTesting"
+						   restUrl="statistics/saveTesting"
+						   result="onTestingSaveResult(event)"/>
+
+	<util:EvolaHttpService id="serviceGetUser"
+						   skipError401="true"
+						   restUrl="user/getUser"
+						   faultFunction="onGetUserFault"
+						   result="onGetUserResult(event)"/>
+	
+	
+	
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.Session;
+			import com.evola.driving.model.User;
+			import com.evola.driving.util.ModelParser;
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.util.PresenterProvider;
+
+			import flash.utils.setTimeout;
+
+			import mx.events.BrowserChangeEvent;
+			import mx.events.FlexEvent;
+			import mx.managers.BrowserManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.events.ResultEvent;
+			import mx.utils.URLUtil;
+
+			public function initializeMainPage():void
+			{
+
+				serviceGetUser.send();
+			}
+
+			protected function onGetAllQuestionsResult(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				PresenterProvider.mainPresenter.questionsLoadingDialog.changeState();
+
+				setTimeout(parseModel, 200, result);
+			}
+
+			private function parseModel(result:XML):void
+			{
+
+				ModelParser.createModel(PresenterProvider.mainPresenter.model, result);
+
+				PresenterProvider.mainPresenter.model.isLoadingQuestions=false;
+
+				PresenterProvider.mainPresenter.questionsLoadingDialog.stop();
+
+				PopUpManager.removePopUp(PresenterProvider.mainPresenter.questionsLoadingDialog);
+			}
+
+			protected function onLearningSaveResult(event:ResultEvent):void
+			{
+
+			}
+
+			protected function onTestingSaveResult(event:ResultEvent):void
+			{
+
+			}
+
+			protected function onInitialize(event:FlexEvent):void
+			{
+
+				PresenterProvider.mainPresenter=new MainPresenter(this);
+
+				PresenterProvider.mainPresenter.browserManager=BrowserManager.getInstance();
+				PresenterProvider.mainPresenter.browserManager.addEventListener(BrowserChangeEvent.BROWSER_URL_CHANGE, onBrowserUrlChange);
+				PresenterProvider.mainPresenter.browserManager.init("");
+
+				var request:URLRequest=new URLRequest("settings.xml");
+				var loader:URLLoader=new URLLoader();
+				loader.addEventListener(Event.COMPLETE, onSettingsLoaded);
+
+				loader.load(request);
+			}
+
+			protected function onSettingsLoaded(event:Event):void
+			{
+
+				var settingsXML:XML=XML(event.target.data);
+				Settings.configure(settingsXML);
+
+				initializeMainPage();
+			}
+
+			protected function onGetUserResult(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				var user:User=User.createFromXML(result);
+
+				PresenterProvider.mainPresenter.loginUser(user);
+			}
+
+			private function onGetUserFault(event:Event):void
+			{
+
+				//nije vec ulogovan user, idemo na login
+				PageManager.selectPage("Login");
+			}
+
+			private function onBrowserUrlChange(event:BrowserChangeEvent):void
+			{
+
+				var o:Object=URLUtil.stringToObject(PresenterProvider.mainPresenter.browserManager.fragment);
+				var pageCode:String=o ? o.pc : null;
+
+				PageManager.selectPage(pageCode);
+			}
+		]]>
+	</mx:Script>
+
+</mx:Application>

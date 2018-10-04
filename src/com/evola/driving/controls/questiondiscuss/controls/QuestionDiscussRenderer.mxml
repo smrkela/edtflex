@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 width="100%"
+		 borderColor="{ThemeColors.FORUM_HEADER}"
+		 borderStyle="solid"
+		 verticalGap="0">
+
+	<mx:HBox width="100%"
+			 backgroundColor="{ThemeColors.FORUM_HEADER}"
+			 color="#FFFFFF"
+			 fontSize="11"
+			 verticalAlign="middle">
+
+		<mx:Label width="30"
+				  color="#FFFFFF"
+				  text="{getMessageNumber(presenter.model.messages.getItemIndex(message))}"/>
+
+		<mx:Label text="{DateUtils.formatDateExtended(FormattingUtils.parseJavaDateString(message.attribute('report-date')))}"/>
+
+		<mx:Spacer width="100%"/>
+
+		<controls:LinkLabel visible="{isDeleteVisible(message, Settings.userId, presenter.model.isAdministrator)}"
+							click="presenter.deleteMessageClicked(message)"
+							color="#FFFFFF"
+							enabled="{presenter.model.deletedMessage == null}"
+							text="obriši poruku"/>
+
+		<controls:LinkLabel click="presenter.replyMessageClicked(message)"
+							color="#FFFFFF"
+							text="odgovori"/>
+
+	</mx:HBox>
+
+	<mx:HBox width="100%"
+			 horizontalGap="0">
+
+		<mx:HBox width="200"
+				 height="100%"
+				 backgroundColor="{ThemeColors.FORUM_DETAILS}">
+
+			<mx:VBox height="100%">
+
+				<mx:Image width="50"
+						  height="50"
+						  source="{URLUtils.smallProfileImage(Settings.SERVER_URL, message.attribute('user-id'))}"/>
+
+			</mx:VBox>
+
+			<mx:VBox width="120"
+					 verticalGap="-1">
+
+				<mx:Label width="100%"
+						  fontWeight="bold"
+						  text="{message.attribute('user-name')}"/>
+
+				<mx:Label fontSize="11"
+						  text="{message.attribute('user-level')}. nivo"/>
+
+
+			</mx:VBox>
+
+		</mx:HBox>
+
+		<mx:VBox width="100%"
+				 height="100%"
+				 backgroundColor="{ThemeColors.FORUM_MESSAGE}"
+				 paddingBottom="4"
+				 paddingLeft="4"
+				 paddingRight="4"
+				 paddingTop="4">
+
+			<mx:VBox visible="{hasReplyMessage(message)}"
+					 width="100%"
+					 backgroundColor="#FFFFFF"
+					 borderStyle="solid"
+					 includeInLayout="{hasReplyMessage(message)}">
+
+				<mx:Label text="{getRepliedMessage(message)}"
+						  fontStyle="italic"/>
+
+				<mx:Text width="100%"
+						 text="{message.attribute('parent-message-text')}"/>
+
+			</mx:VBox>
+
+			<mx:Text width="100%"
+					 text="{message.attribute('message-text')}"/>
+
+
+		</mx:VBox>
+
+	</mx:HBox>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.questiondiscuss.QuestionDiscussPresenter;
+			import com.evola.driving.util.DateUtils;
+			import com.evola.driving.util.FormattingUtils;
+			import com.evola.driving.util.ThemeColors;
+			import com.evola.driving.util.URLUtils;
+
+			[Bindable]
+			public var message:XML;
+
+			[Bindable]
+			public var presenter:QuestionDiscussPresenter;
+
+			[Bindable]
+			public var index:int=-1;
+
+			private function isDeleteVisible(message:XML, userId:String, isAdministrator:Boolean):Boolean
+			{
+
+				var result:Boolean=false;
+
+				var messageUserId:String=message.attribute('user-id');
+
+				//ako je korisnik administrator ili ako je on i napisao poruku onda dozvoljavamo brisanje
+				if (isAdministrator || userId == messageUserId)
+					result=true;
+
+				return result;
+			}
+
+			private function getMessageNumber(index:int):String
+			{
+
+				var messageNumber:int=index + 1 + presenter.model.pageSize * presenter.model.currentPageIndex;
+
+				return "#" + messageNumber;
+			}
+
+			private static function hasReplyMessage(message:XML):Object
+			{
+
+				var attribute:XMLList=message.attribute('parent-message-id');
+
+				return attribute && attribute.length() > 0;
+			}
+
+			private static function getRepliedMessage(message:XML):Object
+			{
+
+				var isMale:Boolean=message.attribute('parent-message-user-is-male') == "true";
+
+				var text:String=message.attribute('parent-message-user-name');
+
+				if (isMale)
+					text+=" je rekao ";
+				else
+					text+=" je rekla ";
+
+				text+=DateUtils.getPrettyTimeAgoText(FormattingUtils.parseJavaDateString(message.attribute('parent-message-date')));
+
+				text+=":";
+
+				return text;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

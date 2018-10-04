@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+				creationComplete="onCreationComplete(event)"
+				minWidth="955"
+				minHeight="600">
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.XMLLoader;
+			
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			import mx.rpc.events.FaultEvent;
+			import mx.utils.StringUtil;
+			
+			[Bindable]
+			private var _xmlLoaded : Boolean = false;
+			
+			private var _loader : XMLLoader;
+
+			protected function importQuestions(event:MouseEvent):void
+			{
+
+				var totalXml : XML = <questions/>;
+				
+				for each(var q : XML in _loader.loadedQuestionFiles){
+					
+					totalXml.appendChild(q.children());
+				}
+				
+				var req:Object={questionXMLString: totalXml.toString()};
+
+				questionsService.send(req);
+			}
+
+			protected function importDrivingCategories(event:MouseEvent):void
+			{
+				var req:Object={categoriesXMLString: _loader.loadedSettingsXML.toString()};
+
+				drivingCategoriesService.send(req);
+			}
+
+			protected function importQuestionCategories(event:MouseEvent):void
+			{
+				var req:Object={categoriesXMLString: _loader.loadedSettingsXML.toString()};
+
+				questionCategoriesService.send(req);
+			}
+
+			protected function onFault(event:FaultEvent):void
+			{
+				Alert.show(event.toString());
+			}
+			
+			protected function onCreationComplete(event:FlexEvent):void
+			{
+
+				_loader= new XMLLoader();
+				_loader.addEventListener("xmlLoaded", onXMLLoaded);
+				
+				_loader.load();
+			}
+			
+			protected function onXMLLoaded(event:Event):void
+			{
+
+				_xmlLoaded = true;
+			}
+			
+		]]>
+	</mx:Script>
+
+	<mx:HTTPService id="questionsService"
+					method="POST"
+					fault="onFault(event)"
+					url="http://localhost:8080/EDTService/rest/import/importQuestions"/>
+	<mx:HTTPService id="questionCategoriesService"
+					method="POST"
+					fault="onFault(event)"
+					url="http://localhost:8080/EDTService/rest/import/importQuestionCategories"/>
+	<mx:HTTPService id="drivingCategoriesService"
+					method="POST"
+					fault="onFault(event)"
+					url="http://localhost:8080/EDTService/rest/import/importDrivingCategories"/>
+
+	<mx:HBox enabled="{_xmlLoaded}">
+		<mx:Button label="Questions"
+				   click="importQuestions(event)"/>
+		<mx:Button label="Driving categories"
+				   click="importDrivingCategories(event)"/>
+		<mx:Button label="Question categories"
+				   click="importQuestionCategories(event)"/>
+	</mx:HBox>
+
+</mx:Application>

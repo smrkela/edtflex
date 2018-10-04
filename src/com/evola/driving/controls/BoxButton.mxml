@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 buttonMode="true"
+		 useHandCursor="{isEnabled}"
+		 mouseChildren="false"
+		 rollOver="onRollOver(event)"
+		 rollOut="onRollOut(event)"
+		 implements="mx.core.IButton"
+		 verticalScrollPolicy="off"
+		 horizontalScrollPolicy="off"
+		 backgroundColor="{getBackgroundColor(isRollOver, primaryColor, secondaryColor, isEnabled)}">
+
+	<mx:Label text="{label}"/>
+
+	<mx:Spacer width="100%"/>
+
+	<mx:VBox height="100%"
+			 verticalAlign="middle">
+
+		<mx:Image source="{icon}"
+				  visible="{icon != null}"/>
+
+	</mx:VBox>
+
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			public var primaryColor:uint=0x00A300;
+
+			[Bindable]
+			public var secondaryColor:uint=0x2D89EF;
+
+			[Bindable]
+			public var isRollOver:Boolean=false;
+
+			public var isExternalRollOver:Boolean=false;
+
+			[Bindable]
+			public var isEnabled:Boolean=true;
+
+			private var _emphasized:Boolean=false;
+			private var emphasizedChanged:Boolean=false;
+
+			protected function onRollOver(event:MouseEvent):void
+			{
+				if (!isExternalRollOver)
+					isRollOver=true;
+			}
+
+			protected function onRollOut(event:MouseEvent):void
+			{
+				if (!isExternalRollOver)
+					isRollOver=false;
+			}
+
+			private function getBackgroundColor(_isRollOver:Boolean, primaryColor:uint, secondaryColor:uint, isEnabled:Boolean):uint
+			{
+
+				if (!isEnabled)
+					return 0x888888;
+
+				if (_isRollOver)
+					return secondaryColor;
+				else
+					return primaryColor;
+			}
+
+			public function get emphasized():Boolean
+			{
+				return _emphasized;
+			}
+
+			public function set emphasized(value:Boolean):void
+			{
+				_emphasized=value;
+				emphasizedChanged=true;
+
+				invalidateDisplayList();
+			}
+
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+			{
+
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+
+				var fontWeight:String=getStyle("fontWeight");
+
+				if (emphasized && fontWeight != "bold")
+					setStyle("fontWeight", "bold");
+
+				if (!emphasized && fontWeight == "bold")
+					setStyle("fontWeight", "normal");
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

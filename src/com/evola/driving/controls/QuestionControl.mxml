@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 implements="mx.managers.IFocusManagerComponent"
+		 keyDown="onKeyDown(event)"
+		 xmlns:controls="com.evola.driving.controls.*">
+
+	<mx:HBox width="100%"
+			 backgroundColor="{getTitleColor(PresenterProvider.mainPresenter.model.isTestingMode, PresenterProvider.mainPresenter.model.isUnconfirmed)}">
+
+		<mx:Label text="{question.id}."
+				  fontWeight="bold"
+				  color="#FFFFFF"/>
+
+		<mx:VBox verticalGap="2"
+				 width="100%">
+
+			<mx:Text text="{question.text}"
+					 selectable="false"
+					 fontWeight="bold"
+					 color="#FFFFFF"
+					 width="100%"
+					 minWidth="200"/>
+
+			<mx:Label text="{question.remark}"
+					  visible="{question.remark}"
+					  includeInLayout="{question.remark}"
+					  color="#FFFFFF"
+					  fontStyle="italic"/>
+
+		</mx:VBox>
+
+		<mx:Image source="@Embed(source='/data/images/wrench.png')"
+				  toolTip="Opcije"
+				  click="onShowOptionsClick(event)"
+				  buttonMode="true"
+				  useHandCursor="true"/>
+
+	</mx:HBox>
+
+	<mx:VBox width="100%"
+			 focusEnabled="true"
+			 mouseFocusEnabled="true"
+			 tabFocusEnabled="true"
+			 cornerRadius="3">
+
+		<mx:HBox width="100%">
+
+			<mx:VBox visible="{question.images.length != 0}"
+					 includeInLayout="{question.images.length != 0}"
+					 paddingTop="4"
+					 paddingBottom="4"
+					 width="400">
+
+				<mx:Repeater dataProvider="{question.images}"
+							 id="rptImages"
+							 width="100%">
+
+					<mx:VBox width="100%"
+							 horizontalAlign="center">
+						<controls:ImageControl source="{getImagePath(rptImages.currentItem.url)}"
+											   maxWidth="380"/>
+						<mx:Label text="{rptImages.currentItem.text}"
+								  visible="{rptImages.currentItem.text}"
+								  includeInLayout="{rptImages.currentItem.text}"/>
+					</mx:VBox>
+
+				</mx:Repeater>
+
+			</mx:VBox>
+
+			<mx:VBox width="100%"
+					 paddingTop="5"
+					 paddingBottom="5"
+					 paddingLeft="4"
+					 verticalGap="2">
+
+				<mx:RadioButtonGroup id="rbg"
+									 change="onSelectedAnswerChange(event)"/>
+
+				<mx:Repeater dataProvider="{question.answers}"
+							 id="rptAnswers"
+							 width="100%">
+
+					<mx:HBox width="100%"
+							 useHandCursor="{PresenterProvider.mainPresenter.model.isTestingMode}"
+							 buttonMode="true"
+							 mouseChildren="false"
+							 backgroundColor="{getAnswerBackgroundColor(rptAnswers.currentItem as QuestionAnswer, !PresenterProvider.mainPresenter.model.isUnconfirmed)}"
+							 click="event.currentTarget.getChildAt(0).clickCheckbox()">
+
+						<controls:AnswerCheckControl id="answerCheckControl"
+													 question="{question}"
+													 enabled="{PresenterProvider.mainPresenter.model.isUnconfirmed}"
+													 answer="{rptAnswers.currentItem as QuestionAnswer}"
+													 group="{rbg}"/>
+
+						<mx:Text text="{getAnswerText(rptAnswers.currentItem as QuestionAnswer, rptAnswers.currentIndex)}"
+								 selectable="false"
+								 textAlign="left"
+								 leading="0"
+								 width="100%"
+								 minWidth="200"/>
+
+					</mx:HBox>
+
+				</mx:Repeater>
+
+			</mx:VBox>
+
+			<mx:VBox height="100%"
+					 width="30"
+					 borderStyle="solid"
+					 borderSides="left"
+					 verticalAlign="bottom"
+					 horizontalAlign="center"
+					 verticalGap="2">
+
+				<mx:Repeater dataProvider="{question.drivingCategories}"
+							 id="rptDrivingCategories">
+
+					<mx:Label text="{rptDrivingCategories.currentItem.name}"/>
+
+				</mx:Repeater>
+
+				<mx:Spacer height="100%"/>
+
+				<mx:Label text="{question.points}"/>
+
+			</mx:VBox>
+
+		</mx:HBox>
+
+	</mx:VBox>
+
+	<controls:LinkLabel text="Diskusije o pitanju ({question.discussionCount})"
+						visible="{!PresenterProvider.mainPresenter.model.isTestingMode || !PresenterProvider.mainPresenter.model.isUnconfirmed}"
+						click="onDiscussClicked(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.questiondiscuss.QuestionDiscussPopup;
+			import com.evola.driving.model.Question;
+			import com.evola.driving.model.QuestionAnswer;
+			import com.evola.driving.util.PresenterProvider;
+
+			private var PREFIXES:Array=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"];
+
+			[Bindable]
+			public var question:Question;
+
+			private function getAnswerBackgroundColor(answer:QuestionAnswer, showColor:Boolean):uint
+			{
+
+				showColor=showColor || !PresenterProvider.mainPresenter.model.isTestingMode;
+
+				if (!showColor)
+				{
+					return 0xE8E8E8;
+				}
+				else
+				{
+					if (answer.correct)
+						return 0x91D100;
+					else
+						return 0xE8E8E8;
+				}
+			}
+
+			private function getAnswerText(answer:QuestionAnswer, index:int):String
+			{
+
+				var prefix:String=PREFIXES[index];
+
+				return prefix + ") " + answer.text
+
+			}
+
+			protected function onSelectedAnswerChange(event:Event):void
+			{
+
+				var rbg:RadioButtonGroup=event.target as RadioButtonGroup;
+
+				question.setUserAnswer(rbg.selectedValue as QuestionAnswer);
+			}
+
+			protected function onKeyDown(event:KeyboardEvent):void
+			{
+
+				if (event.keyCode == Keyboard.NUMBER_1)
+					selectAnswer(1);
+
+				if (event.keyCode == Keyboard.NUMBER_2)
+					selectAnswer(2);
+
+				if (event.keyCode == Keyboard.NUMBER_3)
+					selectAnswer(3);
+
+				if (event.keyCode == Keyboard.NUMBER_4)
+					selectAnswer(4);
+
+				if (event.keyCode == Keyboard.NUMBER_5)
+					selectAnswer(5);
+
+				if (event.keyCode == Keyboard.NUMBER_6)
+					selectAnswer(6);
+
+				if (event.keyCode == Keyboard.NUMBER_7)
+					selectAnswer(7);
+
+				if (event.keyCode == Keyboard.NUMBER_8)
+					selectAnswer(8);
+
+				if (event.keyCode == Keyboard.NUMBER_9)
+					selectAnswer(9);
+			}
+
+			private function selectAnswer(answerNum:int):void
+			{
+
+				if (answerNum <= answerCheckControl.length)
+				{
+
+					var ac:AnswerCheckControl=answerCheckControl[answerNum - 1];
+
+					ac.clickCheckbox();
+				}
+			}
+
+			private function getTestintTitleColor(question:Question, isAnswered:Boolean, testFinished:Boolean):uint
+			{
+
+				if (isAnswered && testFinished)
+				{
+
+					if (question.isCorrectlyAnswered())
+					{
+
+						return 0x00FF00;
+					}
+					else
+					{
+
+						return 0xFF0000;
+					}
+				}
+				else
+				{
+
+					return 0xFFFFFF;
+				}
+			}
+
+			protected function onShowOptionsClick(event:MouseEvent):void
+			{
+
+				QuestionOptionsDropdown.show(event, question);
+			}
+
+			private function getImagePath(imageName:String):String
+			{
+
+				return Settings.SERVER_URL + "/image?path=" + imageName;
+			}
+
+			private function getTitleColor(isTestingMode:Boolean, isUnconfirmed:Boolean):uint
+			{
+
+				if (!isTestingMode || isUnconfirmed)
+					return 0xE3A21A;
+
+				if (question.isCorrectlyAnswered())
+					return 0x51A825;
+				else
+					return 0xFF002A;
+			}
+
+			protected function onDiscussClicked(event:MouseEvent):void
+			{
+
+				//pitanje prikazujemo unutar diskusije ako je u toku ucenje ili ako je testiranje
+				//a odgovor je potvrdjen
+				var showLoadedQuestion : Boolean = !PresenterProvider.mainPresenter.model.isTestingMode;
+				
+				showLoadedQuestion = showLoadedQuestion || !PresenterProvider.mainPresenter.model.isUnconfirmed;
+				
+				QuestionDiscussPopup.init(question, showLoadedQuestion);
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

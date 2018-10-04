@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 height="100%"
+		 horizontalAlign="center"
+		 verticalAlign="middle">
+
+	<mx:Label text="{label}"
+			  color="#FFFFFF"/>
+
+	<mx:Script>
+		<![CDATA[
+			
+			import com.evola.driving.model.Question;
+			
+			public var questionsStats:XML;
+			
+			public var valueField:String;
+
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void{
+				
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+				
+				applyValue();
+			}
+
+			private function applyValue():void
+			{
+
+				var item:Question=data as Question;
+
+				if (!item)
+					return;
+
+				var value:String="";
+
+				if (questionsStats)
+				{
+
+					value=questionsStats.questionStat.(@questionId == item.id).attribute(valueField);
+				}
+
+				var intValue:int=0;
+
+				if (value)
+				{
+
+					intValue=parseInt(value);
+
+					if (isNaN(intValue))
+						intValue=0;
+				}
+
+				var backgroundColor:uint=0x000000;
+				var backgroundAlpha:int=0;
+
+				if (intValue)
+				{
+
+					var colors:Array=[0x91D100, 0x7BAD18, 0x199900, 0x128425, 0x2D652B];
+
+					var colorIndex:int=Math.min(intValue, colors.length - 1);
+
+					backgroundColor=colors[colorIndex];
+					backgroundAlpha=1;
+				}
+
+				//sada setujemo vrednosti
+				setStyle("backgroundColor", backgroundColor);
+				setStyle("backgroundAlpha", backgroundAlpha);
+
+				if (intValue)
+					label=intValue + "";
+				else
+					label="";
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

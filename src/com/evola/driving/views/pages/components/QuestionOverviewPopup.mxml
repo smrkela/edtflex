@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="955"
+		 backgroundColor="#FFFFFF"
+		 paddingBottom="15"
+		 paddingLeft="15"
+		 paddingRight="15"
+		 paddingTop="5"
+		 maxHeight="580"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 creationComplete="onCreationComplete(event)">
+
+	<mx:HBox width="100%">
+
+		<mx:Label text="{'Pregled pitanja #' + question.id}"
+				  fontWeight="bold"/>
+
+		<controls:LinkLabel text="zatvori ovaj prikaz"
+							click="onCloseClick(event)"/>
+
+	</mx:HBox>
+
+	<mx:VBox width="100%"
+			 minHeight="0"
+			 backgroundColor="#F1F1F1">
+
+		<mx:HBox width="100%"
+				 backgroundColor="#E3A21A">
+
+			<mx:Label text="{question.globalNumber}."
+					  fontWeight="bold"
+					  color="#FFFFFF"/>
+
+			<mx:VBox verticalGap="2"
+					 width="100%">
+
+				<mx:Text text="{question.text}"
+						 selectable="false"
+						 fontWeight="bold"
+						 color="#FFFFFF"
+						 width="100%"/>
+
+				<mx:Label text="{question.remark}"
+						  visible="{question.remark}"
+						  includeInLayout="{question.remark}"
+						  color="#FFFFFF"
+						  fontStyle="italic"/>
+
+			</mx:VBox>
+
+			<mx:Image source="@Embed(source='/data/images/wrench.png')"
+					  toolTip="Opcije"
+					  click="onShowOptionsClick(event)"
+					  buttonMode="true"
+					  useHandCursor="true"/>
+
+		</mx:HBox>
+
+		<mx:HBox width="100%">
+
+			<mx:VBox visible="{question.images.length != 0}"
+					 includeInLayout="{question.images.length != 0}"
+					 paddingTop="4"
+					 paddingBottom="4"
+					 width="400">
+
+				<mx:Repeater dataProvider="{question.images}"
+							 id="rptImages"
+							 width="100%">
+
+					<mx:VBox width="100%"
+							 horizontalAlign="center">
+						<controls:ImageControl source="{getImagePath(rptImages.currentItem.url)}"
+											   maxWidth="380"/>
+						<mx:Label text="{rptImages.currentItem.text}"
+								  visible="{rptImages.currentItem.text}"
+								  includeInLayout="{rptImages.currentItem.text}"/>
+					</mx:VBox>
+
+				</mx:Repeater>
+
+			</mx:VBox>
+
+			<mx:VBox width="100%"
+					 paddingTop="5"
+					 paddingBottom="5"
+					 paddingLeft="4"
+					 verticalGap="2">
+
+				<mx:Repeater dataProvider="{question.answers}"
+							 id="rptAnswers"
+							 width="100%">
+
+					<mx:HBox width="100%"
+							 backgroundColor="{getAnswerBackgroundColor(rptAnswers.currentItem as QuestionAnswer, question.isAnswered, PresenterProvider.mainPresenter.model.testFinished)}"
+							 backgroundAlpha="0.3">
+
+						<mx:Text text="{getAnswerText(rptAnswers.currentItem as QuestionAnswer, rptAnswers.currentIndex)}"
+								 selectable="false"
+								 textAlign="left"
+								 leading="0"
+								 width="100%"/>
+
+					</mx:HBox>
+
+				</mx:Repeater>
+
+			</mx:VBox>
+
+			<mx:VBox height="100%"
+					 width="30"
+					 borderStyle="solid"
+					 borderSides="left"
+					 verticalAlign="bottom"
+					 horizontalAlign="center"
+					 verticalGap="2">
+
+				<mx:Repeater dataProvider="{question.drivingCategories}"
+							 id="rptDrivingCategories">
+
+					<mx:Label text="{rptDrivingCategories.currentItem.name}"/>
+
+				</mx:Repeater>
+
+				<mx:Spacer height="100%"/>
+
+				<mx:Label text="{question.points}"/>
+
+			</mx:VBox>
+
+		</mx:HBox>
+
+	</mx:VBox>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.QuestionOptionsDropdown;
+			import com.evola.driving.model.Question;
+			import com.evola.driving.model.QuestionAnswer;
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.core.Application;
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			import mx.events.FlexMouseEvent;
+			import mx.events.SandboxMouseEvent;
+			import mx.managers.PopUpManager;
+
+
+			private var PREFIXES:Array=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"];
+
+			private static var _instance:QuestionOverviewPopup;
+
+			[Bindable]
+			public var question:Question;
+
+			public static function show(questionId:String):void
+			{
+
+				var question:Question=PresenterProvider.mainPresenter.model.getQuestion(questionId);
+
+				if (!question)
+					return;
+
+				if (!_instance)
+					_instance=new QuestionOverviewPopup();
+
+				_instance.show(question);
+			}
+
+			public function show(question:Question):void
+			{
+
+				this.question=question;
+
+				PopUpManager.addPopUp(this, FlexGlobals.topLevelApplication as DisplayObject, true);
+
+				validateNow();
+
+				PopUpManager.centerPopUp(this);
+				
+				this.move(this.x, 80);
+			}
+
+			private function getAnswerBackgroundColor(answer:QuestionAnswer, isQuestionAnswered:Boolean, testFinished:Boolean):uint
+			{
+
+				if (answer.correct)
+					return 0x91D100;
+				else
+					return 0xFFFFFF;
+			}
+
+			private function getAnswerText(answer:QuestionAnswer, index:int):String
+			{
+
+				var prefix:String=PREFIXES[index];
+
+				return prefix + ") " + answer.text
+
+			}
+
+			protected function onShowOptionsClick(event:MouseEvent):void
+			{
+
+				QuestionOptionsDropdown.show(event, question);
+			}
+
+			private function getImagePath(imageName:String):String
+			{
+
+				return Settings.SERVER_URL + "/image?path=" + imageName;
+			}
+
+			protected function onCloseClick(event:MouseEvent):void
+			{
+
+				close();
+			}
+
+			protected function onCreationComplete(event:FlexEvent):void
+			{
+
+				addEventListener(FlexMouseEvent.MOUSE_DOWN_OUTSIDE, dropdown_mouseOutsideHandler);
+				addEventListener(FlexMouseEvent.MOUSE_WHEEL_OUTSIDE, dropdown_mouseOutsideHandler);
+				addEventListener(SandboxMouseEvent.MOUSE_DOWN_SOMEWHERE, dropdown_mouseOutsideHandler);
+				addEventListener(SandboxMouseEvent.MOUSE_WHEEL_SOMEWHERE, dropdown_mouseOutsideHandler);
+			}
+
+			private function dropdown_mouseOutsideHandler(event:Event):void
+			{
+				if (event is MouseEvent)
+				{
+					var mouseEvent:MouseEvent=MouseEvent(event);
+					if (mouseEvent.target != this)
+						// the dropdown's items can dispatch a mouseDownOutside
+						// event which then bubbles up to us
+						return;
+
+					if (!hitTestPoint(mouseEvent.stageX, mouseEvent.stageY, true))
+					{
+						close();
+					}
+				}
+				else if (event is SandboxMouseEvent)
+				{
+					close();
+				}
+			}
+
+			private function close():void
+			{
+
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

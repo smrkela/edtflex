@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:ProgressBar xmlns:mx="http://www.adobe.com/2006/mxml" initialize="onInitialize(event)">
+
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.ProgressBarMode;
+			import mx.events.FlexEvent;
+
+			private var _progress:Number;
+			private var _progressFlag:Boolean=false;
+
+			public function set currentProgress(value:Number):void
+			{
+
+				_progress=value;
+				_progressFlag=true;
+
+				invalidateProperties();
+			}
+
+			override protected function commitProperties():void
+			{
+
+				super.commitProperties();
+
+				if (_progressFlag)
+				{
+					
+					_progressFlag=false;
+
+					setProgress(_progress, maximum);
+				}
+			}
+			
+			protected function onInitialize(event:FlexEvent):void
+			{
+
+				mode = ProgressBarMode.MANUAL;
+				minimum = 0;
+				maximum = 100;
+			}
+			
+		]]>
+	</mx:Script>
+
+</mx:ProgressBar>

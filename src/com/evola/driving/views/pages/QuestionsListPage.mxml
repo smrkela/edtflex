@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*"
+					xmlns:components="com.evola.driving.views.pages.components.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper height="100%">
+
+		<controls1:PageTitle label="Lista svih pitanja"
+							 note="(klikni na broj pitanja za detaljniji prikaz)"/>
+
+		<mx:DataGrid id="grid"
+					 width="100%"
+					 height="100%"
+					 headerHeight="44"
+					 wordWrap="true"
+					 variableRowHeight="true"
+					 dataProvider="{PresenterProvider.mainPresenter.model.questions}">
+			<mx:columns>
+				<mx:DataGridColumn headerText="#"
+								   width="40"
+								   dataField="globalNumber">
+					<mx:itemRenderer>
+						<mx:Component>
+							<controls1:LinkLabel text="{'#' + data.globalNumber}"
+												 click="outerDocument.questionClicked(data as Question)">
+								<mx:Script>
+									<![CDATA[
+										import com.evola.driving.model.Question;
+									]]>
+								</mx:Script>
+							</controls1:LinkLabel>
+
+						</mx:Component>
+					</mx:itemRenderer>
+				</mx:DataGridColumn>
+				<mx:DataGridColumn headerText="Oblast"
+								   width="150"
+								   labelFunction="questionCategoryLabelFunction"/>
+				<mx:DataGridColumn headerText="Pitanje"
+								   dataField="text"/>
+				<mx:DataGridColumn headerText="Tačnih odgovora"
+								   width="60"
+								   dataField="numOfCorrectAnswers"/>
+				<mx:DataGridColumn headerText="Slika"
+								   width="50"
+								   labelFunction="imagesLabelFunction"/>
+				<mx:DataGridColumn headerText="Bodova"
+								   width="60"
+								   dataField="points"/>
+				<mx:DataGridColumn headerText="# učenja"
+								   width="100">
+					<mx:itemRenderer>
+						<mx:Component>
+							<components:QuestionStatRenderer valueField="numOfLearns"
+															 questionsStats="{outerDocument.questionsStats}"/>
+						</mx:Component>
+					</mx:itemRenderer>
+				</mx:DataGridColumn>
+				<mx:DataGridColumn headerText="# testiranja"
+								   width="100">
+					<mx:itemRenderer>
+						<mx:Component>
+							<components:QuestionStatRenderer valueField="numOfTests"
+															 questionsStats="{outerDocument.questionsStats}"/>
+						</mx:Component>
+					</mx:itemRenderer>
+				</mx:DataGridColumn>
+			</mx:columns>
+		</mx:DataGrid>
+
+		<pages:PageFooter/>
+
+	</pages:PageContentWrapper>
+
+	<util:EvolaHttpService id="serviceGetQuestionStats"
+						   restUrl="question/getAllQuestionsStats"
+						   result="onGetAllQuestionsStats(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.Question;
+			import com.evola.driving.model.QuestionAnswer;
+			import com.evola.driving.util.PresenterProvider;
+			import com.evola.driving.views.pages.components.QuestionOverviewPopup;
+
+			import mx.collections.ArrayCollection;
+			import mx.events.ListEvent;
+			import mx.rpc.events.ResultEvent;
+
+			[Bindable]
+			public var questionsStats:XML;
+
+			override protected function displayPage():void
+			{
+
+				questionsStats=new XML();
+
+				serviceGetQuestionStats.send();
+			}
+
+			private function questionCategoryLabelFunction(q:Question, col:DataGridColumn):String
+			{
+
+				var text:String=joinObjects(q.questionCategories, 'name');
+
+				return text;
+			}
+
+			private function imagesLabelFunction(q:Question, col:DataGridColumn):String
+			{
+
+				var num:int=0;
+
+				if (q.images)
+					num=q.images.length;
+
+				if (num == 0)
+					return "";
+				else
+					return num + "";
+			}
+
+			public static function joinObjects(objects:ArrayCollection, labelField:String):String
+			{
+
+				var l:String="";
+
+				if (objects)
+				{
+
+					for each (var o:Object in objects)
+					{
+
+						if (l)
+							l+=", ";
+
+						if (labelField)
+							l+=o[labelField];
+						else
+							l+=o;
+					}
+				}
+
+				return l;
+			}
+
+			protected function onGetAllQuestionsStats(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				questionsStats=result;
+
+				var dp:Object=grid.dataProvider;
+				grid.dataProvider=null;
+				grid.dataProvider=dp;
+
+				grid.invalidateList();
+			}
+
+			public function questionClicked(question:Question):void
+			{
+
+				QuestionOverviewPopup.show(question.id);
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

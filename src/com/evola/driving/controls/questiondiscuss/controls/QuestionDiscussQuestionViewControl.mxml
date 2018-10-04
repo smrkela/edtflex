@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 implements="mx.managers.IFocusManagerComponent"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 borderSides="bottom"
+		 borderStyle="solid"
+		 paddingBottom="5">
+
+	<mx:HBox width="100%"
+			 backgroundColor="0xE3A21A">
+
+		<mx:Label text="{question.id}."
+				  fontWeight="bold"
+				  color="#FFFFFF"/>
+
+		<mx:VBox verticalGap="2"
+				 width="100%">
+
+			<mx:Text text="{question.text}"
+					 selectable="false"
+					 fontWeight="bold"
+					 color="#FFFFFF"
+					 width="100%"
+					 minWidth="200"/>
+
+			<mx:Label text="{question.remark}"
+					  visible="{question.remark}"
+					  includeInLayout="{question.remark}"
+					  color="#FFFFFF"
+					  fontStyle="italic"/>
+
+		</mx:VBox>
+
+	</mx:HBox>
+
+	<mx:VBox width="100%"
+			 focusEnabled="true"
+			 mouseFocusEnabled="true"
+			 tabFocusEnabled="true"
+			 cornerRadius="3">
+
+		<mx:HBox width="100%">
+
+			<mx:VBox visible="{question.images.length != 0}"
+					 includeInLayout="{question.images.length != 0}"
+					 paddingTop="4"
+					 paddingBottom="4"
+					 width="240">
+
+				<mx:Repeater dataProvider="{question.images}"
+							 id="rptImages"
+							 width="100%">
+
+					<mx:VBox width="100%"
+							 horizontalAlign="center">
+						<controls:ImageControl source="{getImagePath(rptImages.currentItem.url)}"
+											   maxWidth="220"/>
+						<mx:Label text="{rptImages.currentItem.text}"
+								  visible="{rptImages.currentItem.text}"
+								  includeInLayout="{rptImages.currentItem.text}"/>
+					</mx:VBox>
+
+				</mx:Repeater>
+
+			</mx:VBox>
+
+			<mx:VBox width="100%"
+					 paddingTop="5"
+					 paddingBottom="5"
+					 paddingLeft="4"
+					 verticalGap="2">
+
+				<mx:Repeater dataProvider="{question.answers}"
+							 id="rptAnswers"
+							 width="100%">
+
+					<mx:HBox width="100%"
+							 backgroundColor="{getAnswerBackgroundColor(rptAnswers.currentItem as QuestionAnswer)}">
+
+						<mx:Text text="{getAnswerText(rptAnswers.currentItem as QuestionAnswer, rptAnswers.currentIndex)}"
+								 selectable="false"
+								 textAlign="left"
+								 leading="0"
+								 width="100%"
+								 minWidth="200"/>
+
+					</mx:HBox>
+
+				</mx:Repeater>
+
+			</mx:VBox>
+
+			<mx:VBox height="100%"
+					 width="30"
+					 borderStyle="solid"
+					 borderSides="left"
+					 verticalAlign="bottom"
+					 horizontalAlign="center"
+					 verticalGap="2">
+
+				<mx:Repeater dataProvider="{question.drivingCategories}"
+							 id="rptDrivingCategories">
+
+					<mx:Label text="{rptDrivingCategories.currentItem.name}"/>
+
+				</mx:Repeater>
+
+				<mx:Spacer height="100%"/>
+
+				<mx:Label text="{question.points}"/>
+
+			</mx:VBox>
+
+		</mx:HBox>
+
+	</mx:VBox>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.Question;
+			import com.evola.driving.model.QuestionAnswer;
+
+			private var PREFIXES:Array=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"];
+
+			[Bindable]
+			public var question:Question;
+
+			[Bindable]
+			public var showAnswers:Boolean;
+
+			private function getAnswerBackgroundColor(answer:QuestionAnswer):uint
+			{
+
+				var showColor:Boolean=true;
+
+				if (!showColor)
+				{
+					return 0xFFFFFF;
+				}
+				else
+				{
+					if (answer.correct)
+						return 0x91D100;
+					else
+						return 0xFFFFFF;
+				}
+			}
+
+			private function getAnswerText(answer:QuestionAnswer, index:int):String
+			{
+
+				var prefix:String=PREFIXES[index];
+
+				return prefix + ") " + answer.text
+
+			}
+
+			private function getImagePath(imageName:String):String
+			{
+
+				return Settings.SERVER_URL + "/image?path=" + imageName;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

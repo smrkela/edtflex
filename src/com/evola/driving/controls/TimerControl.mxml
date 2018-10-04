@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 creationComplete="onCreationComplete(event)"
+		 horizontalAlign="right"
+		 verticalAlign="middle"
+		 width="200">
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.events.FlexEvent;
+			private var _ticker:Timer;
+			private var _startTime:Date;
+
+			[Bindable]
+			private var time:String;
+
+			public function start():void
+			{
+
+				if (!_ticker)
+				{
+
+					_ticker=new Timer(500, 0);
+					_ticker.addEventListener(TimerEvent.TIMER, onTimer);
+				}
+
+				if (_ticker.running)
+					_ticker.reset();
+
+				_startTime=new Date();
+
+				setCurrentTime();
+
+				_ticker.start();
+			}
+
+			private function setCurrentTime():void
+			{
+
+				var date:Date=new Date(new Date().time - _startTime.time);
+
+				var seconds:Number=date.seconds;
+				var minutes:Number=date.minutes;
+				var hours:Number=date.hours - 1;
+
+				var secondsString:String=seconds + "";
+				var minutsString:String=minutes + "";
+				var hoursString:String=hours + "";
+
+				if (seconds < 10)
+					secondsString="0" + seconds;
+
+				if (minutes < 10)
+					minutsString="0" + minutes;
+
+				time=hoursString + ":" + minutsString + ":" + secondsString;
+			}
+
+			public function stop():void
+			{
+
+				if (_ticker.running)
+					_ticker.stop();
+			}
+
+			protected function onTimer(event:TimerEvent):void
+			{
+
+				setCurrentTime();
+			}
+
+			protected function onCreationComplete(event:FlexEvent):void
+			{
+
+				PresenterProvider.mainPresenter.timerControl=this;
+
+				if (PresenterProvider.mainPresenter.model.isInProgress)
+					start();
+			}
+		]]>
+	</mx:Script>
+
+	<mx:Image source="@Embed(source='/data/images/clock.png')"/>
+
+	<mx:Label text="{time}"
+			  color="#FFFFFF"
+			  fontSize="14"/>
+
+</mx:HBox>

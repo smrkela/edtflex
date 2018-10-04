@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper height="100%">
+
+		<controls1:PageTitle label="Trenutno aktivni korisnici"/>
+
+		<mx:DataGrid id="grid"
+					 verticalGridLines="false"
+					 height="100%"
+					 width="100%"
+					 headerHeight="0">
+			<mx:columns>
+				<mx:DataGridColumn labelFunction="nameLabelFunction"
+								   width="300"/>
+				<mx:DataGridColumn>
+					<mx:itemRenderer>
+						<mx:Component>
+							<mx:HBox width="100%"
+									 height="100%">
+								<controls1:BoxProgressBar height="100%"
+														  width="100%"
+														  horizontalAlign="right"
+														  progressColor="0x9F00A7"
+														  progress="{data.attribute('completion-percent') / 100}"/>
+							</mx:HBox>
+
+						</mx:Component>
+					</mx:itemRenderer>
+				</mx:DataGridColumn>
+			</mx:columns>
+		</mx:DataGrid>
+
+		<pages:PageFooter/>
+
+	</pages:PageContentWrapper>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="statistics/loadCurrentlyActiveUsers"
+						   result="onUserLoaded(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.DrivingUtils;
+
+			import mx.rpc.events.ResultEvent;
+
+			override protected function displayPage():void
+			{
+
+				service.send({userId: Settings.user.id});
+			}
+
+			protected function onUserLoaded(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				grid.dataProvider=result.child('active-user');
+			}
+
+			private function nameLabelFunction(item:XML, col:DataGridColumn):String
+			{
+
+				var firstName:String=item.attribute("first-name");
+				var lastName:String=item.attribute("last-name");
+
+				return firstName + " " + lastName;
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

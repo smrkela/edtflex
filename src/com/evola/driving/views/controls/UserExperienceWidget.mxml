@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="300"
+		 addedToStage="onAddedToStage(event)"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:util="com.evola.driving.util.*">
+
+	<controls:SectionTitle label="Napredak"/>
+
+	<mx:HBox width="100%"
+			 fontSize="16"
+			 verticalAlign="middle"
+			 borderStyle="solid"
+			 borderColor="#FFFFFF"
+			 cornerRadius="3"
+			 backgroundColor="#FFFFFF">
+		
+		<mx:Label text="{currentLevel}"/>
+		
+		<controls:BoxProgressBar progress="{currentProgress}"
+								 progressColor="0x00A300"
+								 width="100%"/>
+		
+		<mx:Label text="{currentLevel + 1}"/>
+		
+	</mx:HBox>
+	
+	<mx:Spacer height="20"/>
+	
+	<mx:HBox width="100%"
+			 fontSize="20"
+			 horizontalAlign="center"
+			 verticalAlign="middle">
+
+		<mx:HBox paddingLeft="10"
+				 paddingRight="10"
+				 backgroundColor="0x2D89EF"
+				 paddingTop="5"
+				 paddingBottom="5"
+				 cornerRadius="4"
+				 borderColor="#FFFFFF"
+				 borderStyle="solid"
+				 color="#FFFFFF">
+
+			<mx:Label text="{currentLevel}. nivo"/>
+
+		</mx:HBox>
+
+		<mx:Label text="{'('+thisLevelPoints + '/'+nextLevelPoints+')'}"
+				  color="#555555"
+				  fontSize="14"/>
+
+	</mx:HBox>
+	
+	<mx:Spacer height="20"/>
+
+	<mx:VBox width="100%"
+			 fontSize="14">
+
+		<mx:HBox width="100%">
+
+			<mx:Label text="{experiencePoints}"
+					  fontWeight="bold"/>
+			<mx:Label text="ukupno skupljenih poena"
+					  color="#555555"/>
+
+		</mx:HBox>
+
+		<mx:HBox width="100%">
+			
+			<mx:Label text="{learnedQuestions}"
+					  fontWeight="bold"/>
+			<mx:Label text="čitanja pitanja"
+					  color="#555555"/>
+			
+		</mx:HBox>
+
+		<mx:HBox width="100%">
+			
+			<mx:Label text="{testedQuestions}"
+					  fontWeight="bold"/>
+			<mx:Label text="provera pitanja"
+					  color="#555555"/>
+			
+		</mx:HBox>
+
+	</mx:VBox>
+
+	<util:EvolaHttpService id="service"
+						   restUrl="statistics/loadUserExperience"
+						   result="onLoadProgressResult(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PresenterProvider;
+			
+			import mx.controls.Alert;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			[Bindable]
+			private var currentLevel:int=3;
+
+			[Bindable]
+			private var currentProgress:Number=0.30;
+
+			[Bindable]
+			private var experiencePoints:int=756;
+
+			[Bindable]
+			private var learnedQuestions:int=459;
+
+			[Bindable]
+			private var testedQuestions:int=321;
+
+			[Bindable]
+			private var thisLevelPoints:int;
+
+			[Bindable]
+			private var nextLevelPoints:int;
+
+			protected function onAddedToStage(event:Event):void
+			{
+
+				service.send();
+			}
+
+			private function onLoadProgressResult(event:ResultEvent):void
+			{
+
+				var result:XML=XML(event.result);
+
+				currentLevel=result.attribute("current-level");
+				currentProgress=result.attribute("current-progress");
+				experiencePoints=result.attribute("experience-points");
+				learnedQuestions=result.attribute("learned-questions");
+				testedQuestions=result.attribute("tested-questions");
+				thisLevelPoints=result.attribute("current-level-experience-points");
+				nextLevelPoints=result.attribute("next-level-experience-points");
+				
+				//pamtimo nivo u glavnom modelu
+				PresenterProvider.mainPresenter.model.userLevel = currentLevel;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

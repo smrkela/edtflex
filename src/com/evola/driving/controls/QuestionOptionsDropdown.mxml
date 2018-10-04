@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 initialize="onInitialize(event)"
+		 backgroundColor="#FFFFFF"
+		 width="300"
+		 borderColor="#FF981D"
+		 borderStyle="solid"
+		 paddingLeft="5"
+		 paddingRight="5"
+		 paddingTop="10"
+		 paddingBottom="10"
+		 xmlns:util="com.evola.driving.util.*">
+
+	<mx:VBox id="boxLinks"
+			 width="100%">
+		<controls:LinkLabel text="Ne valja tekst pitanja"
+							click="onQuestionProblem(DrivingUtils.INVALID_TEXT)"/>
+		<controls:LinkLabel text="Ne valja odgovor(i)"
+							click="onQuestionProblem(DrivingUtils.INVALID_ANSWER)"/>
+	</mx:VBox>
+
+	<mx:states>
+
+		<mx:State name="stateReportProblem">
+
+			<mx:RemoveChild target="{boxLinks}"/>
+
+			<mx:AddChild>
+				<mx:VBox width="100%">
+					<mx:Label text="Šta tačno nije u redu (nije obavezno)?"/>
+					<mx:TextArea id="taProblem"
+								 width="100%"/>
+					<mx:Button label="Pošalji"
+							   click="onSendProblemReportClick(event)"/>
+				</mx:VBox>
+			</mx:AddChild>
+
+		</mx:State>
+
+		<mx:State name="stateThankYou">
+
+			<mx:RemoveChild target="{boxLinks}"/>
+
+			<mx:AddChild>
+				<mx:VBox width="100%">
+					<mx:Label text="Hvala na prijavljivanju problema!"/>
+					<mx:Spacer height="20"/>
+					<controls:LinkLabel text="zatvori"
+										click="close()"/>
+				</mx:VBox>
+			</mx:AddChild>
+
+		</mx:State>
+
+	</mx:states>
+
+	<util:EvolaHttpService id="serviceProblem"
+						   restUrl="question/reportQuestionProblem"
+						   result="onProblemResult(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.Question;
+			import com.evola.driving.util.DrivingUtils;
+
+			import mx.core.Application;
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			import mx.events.FlexMouseEvent;
+			import mx.events.SandboxMouseEvent;
+			import mx.managers.PopUpManager;
+			import mx.rpc.events.ResultEvent;
+
+			public var question:Question;
+
+			private var problemCategoryId:String;
+
+			public static function show(event:MouseEvent, question:Question):void
+			{
+
+				var qp:QuestionOptionsDropdown=new QuestionOptionsDropdown();
+				qp.question=question;
+
+				qp.x=event.stageX - qp.width;
+				qp.y=event.stageY;
+
+				PopUpManager.addPopUp(qp, FlexGlobals.topLevelApplication as DisplayObject, false);
+			}
+
+			private function close():void
+			{
+
+				PopUpManager.removePopUp(this);
+			}
+
+			protected function onInitialize(event:FlexEvent):void
+			{
+
+				this.addEventListener(FlexMouseEvent.MOUSE_DOWN_OUTSIDE, dropdown_mouseOutsideHandler);
+				this.addEventListener(FlexMouseEvent.MOUSE_WHEEL_OUTSIDE, dropdown_mouseOutsideHandler);
+				this.addEventListener(SandboxMouseEvent.MOUSE_DOWN_SOMEWHERE, dropdown_mouseOutsideHandler);
+				this.addEventListener(SandboxMouseEvent.MOUSE_WHEEL_SOMEWHERE, dropdown_mouseOutsideHandler);
+			}
+
+			private function dropdown_mouseOutsideHandler(event:Event):void
+			{
+
+				if (event is MouseEvent)
+				{
+					var mouseEvent:MouseEvent=MouseEvent(event);
+					if (mouseEvent.target != this)
+						// the dropdown's items can dispatch a mouseDownOutside
+						// event which then bubbles up to us
+						return;
+
+					if (!hitTestPoint(mouseEvent.stageX, mouseEvent.stageY, true))
+					{
+						close();
+					}
+				}
+				else if (event is SandboxMouseEvent)
+				{
+					close();
+				}
+			}
+
+			protected function onQuestionProblem(problemCategoryId:String):void
+			{
+
+				this.problemCategoryId=problemCategoryId;
+
+				currentState="stateReportProblem";
+				
+				taProblem.setFocus();
+			}
+
+			protected function onSendProblemReportClick(event:MouseEvent):void
+			{
+
+				serviceProblem.send({userId: Settings.userId, questionId: question.id, problemCategoryId: problemCategoryId, userComment: taProblem.text});
+			}
+
+			protected function onProblemResult(event:ResultEvent):void
+			{
+
+				currentState="stateThankYou";
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

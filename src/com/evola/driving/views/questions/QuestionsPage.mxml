@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="100%"
+		 height="100%"
+		 paddingBottom="5"
+		 paddingTop="5"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 xmlns:containers="flexlib.containers.*"
+		 xmlns:views="com.evola.driving.views.*"
+		 xmlns:pages="com.evola.driving.views.pages.*"
+		 xmlns:controls1="com.evola.driving.views.controls.*">
+
+	<controls1:UserHeaderControl/>
+
+	<mx:VBox id="questionsBox"
+			 width="100%"
+			 height="100%"
+			 paddingRight="5"
+			 verticalLineScrollSize="10"
+			 minHeight="0"
+			 keyDown="onKeyDown(event)"
+			 horizontalAlign="center"
+			 verticalScrollPosition="{getVerticalScrollPosition(PresenterProvider.mainPresenter.model.currentQuestions)}">
+
+		<pages:PageContentWrapper verticalGap="20">
+
+			<mx:Repeater dataProvider="{PresenterProvider.mainPresenter.model.currentQuestions}"
+						 id="rptQuestions"
+						 repeatEnd="onRepeaterEnd(event)">
+
+				<controls:QuestionControl id="questionControl"
+										  question="{rptQuestions.currentItem}"
+										  click="onClick(event)"/>
+
+			</mx:Repeater>
+
+			<controls:PagingControl/>
+
+			<pages:PageFooter/>
+
+		</pages:PageContentWrapper>
+
+	</mx:VBox>
+
+	<mx:AnimateProperty id="scrollingAnimation"
+						target="{questionsBox}"
+						property="verticalScrollPosition"
+						toValue="{_newScrollingPosition}"
+						easingFunction="{Quadratic.easeOut}"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.Question;
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.collections.ArrayCollection;
+			import mx.core.Container;
+			import mx.effects.easing.Quadratic;
+			import mx.events.FlexEvent;
+
+			[Bindable]
+			private var _newScrollingPosition:Number;
+
+			protected function onBackClick(event:MouseEvent):void
+			{
+
+				PresenterProvider.mainPresenter.back();
+			}
+
+			private function getVerticalScrollPosition(page:ArrayCollection):int
+			{
+
+				return 0;
+			}
+
+			protected function onClick(event:MouseEvent):void
+			{
+				var control:QuestionControl=(event.currentTarget as QuestionControl);
+
+				if (!control)
+					return;
+
+				PresenterProvider.mainPresenter.selectQuestion(control.question);
+
+				scrollToQuestionControl(control);
+			}
+
+			protected function onKeyDown(event:KeyboardEvent):void
+			{
+
+				var isUp:Boolean=event.keyCode == Keyboard.UP;
+				var isDown:Boolean=event.keyCode == Keyboard.DOWN;
+
+				var prevSelectedQuestion:Question=PresenterProvider.mainPresenter.model.selectedQuestion;
+
+				if (isDown)
+				{
+
+					PresenterProvider.mainPresenter.selectNextQuestion();
+					event.preventDefault();
+				}
+
+				if (isUp)
+				{
+
+					PresenterProvider.mainPresenter.selectPreviousQuestion();
+					event.preventDefault();
+				}
+
+				if (event.keyCode == Keyboard.RIGHT)
+				{
+
+					PresenterProvider.mainPresenter.selectNextPage();
+				}
+
+				if (event.keyCode == Keyboard.LEFT)
+				{
+
+					PresenterProvider.mainPresenter.selectPreviousPage();
+				}
+
+				var newSelectedQuestion:Question=PresenterProvider.mainPresenter.model.selectedQuestion;
+
+				if ((isUp || isDown) && prevSelectedQuestion != newSelectedQuestion)
+				{
+
+					var index:int=PresenterProvider.mainPresenter.model.currentQuestions.getItemIndex(newSelectedQuestion);
+
+					var qc:QuestionControl=questionControl[index] as QuestionControl;
+
+					scrollToQuestionControl(qc);
+				}
+			}
+
+			private function scrollToQuestionControl(control:Container):void
+			{
+
+				if (scrollingAnimation.isPlaying)
+					scrollingAnimation.stop();
+
+				//nova kontrola treba da nam bude na sredini
+				_newScrollingPosition=control.y - (height - control.height) / 2;
+
+				scrollingAnimation.play();
+
+				control.setFocus();
+			}
+
+			protected function onRepeaterEnd(event:FlexEvent):void
+			{
+
+				questionsBox.setFocus();
+
+				PresenterProvider.mainPresenter.selectPageFirstQuestion();
+
+				if (questionControl.length > 0)
+					(questionControl[0] as QuestionControl).setFocus();
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

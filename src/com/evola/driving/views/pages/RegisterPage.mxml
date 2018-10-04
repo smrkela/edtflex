@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					width="100%"
+					height="100%"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*">
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper>
+
+		<controls1:PageTitle label="Registracija"/>
+
+		<mx:Label text="Unesi sve informacije i pritisni dugme za registraciju."/>
+
+		<mx:HBox>
+			<mx:Label text="{_errorMessage}"
+					  fontSize="18"
+					  color="0xFF981D"/>
+		</mx:HBox>
+
+		<mx:Form>
+
+			<mx:FormItem label="Ime">
+				<mx:TextInput id="tiFirstName"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Prezime">
+				<mx:TextInput id="tiLastName"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Korisničko ime">
+				<mx:TextInput id="tiUsername"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Šifra">
+				<mx:TextInput id="tiPassword"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Ponovi šifru">
+				<mx:TextInput id="tiPasswordRepeat"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="E-mail">
+				<mx:TextInput id="tiEmail"
+							  width="300"/>
+			</mx:FormItem>
+
+			<mx:FormItem label="Pol"
+						 direction="horizontal">
+				<mx:RadioButtonGroup id="rbgSex"/>
+				<mx:RadioButton value="true"
+								group="{rbgSex}"
+								label="Muški"/>
+				<mx:RadioButton value="false"
+								group="{rbgSex}"
+								label="Ženski"/>
+			</mx:FormItem>
+
+			<mx:FormItem>
+				<controls1:BoxButton label="Registruj se"
+									 primaryColor="0xE3A21A"
+									 secondaryColor="0x00A300"
+									 click="onRegisterUserClick(event)"/>
+			</mx:FormItem>
+
+		</mx:Form>
+		
+		<pages:PageFooter/>
+
+	</pages:PageContentWrapper>
+
+	<util:EvolaHttpService id="serviceRegister"
+						   method="POST"
+						   restUrl="user/registerUser"
+						   result="onUserRegistered(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.DrivingCategory;
+			import com.evola.driving.model.User;
+			import com.evola.driving.util.DrivingUtils;
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.util.PresenterProvider;
+
+			import flashx.textLayout.debug.assert;
+
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.ResultEvent;
+			import mx.utils.StringUtil;
+
+			[Bindable]
+			private var _errorMessage:String;
+
+			override protected function displayPage():void
+			{
+
+			}
+
+			protected function onUserRegistered(event:ResultEvent):void
+			{
+
+				PageManager.selectPage(null);
+			}
+
+			protected function onRegisterUserClick(event:MouseEvent):void
+			{
+
+				_errorMessage=null;
+
+				var firstName:String=tiFirstName.text;
+				var lastName:String=tiLastName.text;
+				var email:String=tiEmail.text;
+				var isMale:Boolean=rbgSex.selectedValue;
+				var username:String=tiUsername.text;
+				var password:String=tiPassword.text;
+				var passwordRepeat:String=tiPasswordRepeat.text;
+
+				firstName=StringUtil.trim(firstName);
+				lastName=StringUtil.trim(lastName);
+				email=StringUtil.trim(email);
+				username=StringUtil.trim(username);
+				password=StringUtil.trim(password);
+				passwordRepeat=StringUtil.trim(passwordRepeat);
+
+				var isValid:Boolean=validate(firstName, lastName, email, isMale, username, password, passwordRepeat);
+
+				if (!isValid)
+					return;
+
+				serviceRegister.send({firstName: firstName, lastName: lastName, email: email, isMale: isMale, username: username, password: password});
+			}
+
+			private function validate(firstName:String, lastName:String, email:String, isMale:Boolean, username:String, password:String, passwordRepeat:String):Boolean
+			{
+
+				if (!firstName || !lastName || !email || !username || !password)
+				{
+
+					_errorMessage="Svi podaci moraju biti unešeni.";
+					return false;
+				}
+
+				if (password != passwordRepeat)
+				{
+
+					_errorMessage="Ponovljena šifra se mora poklapati sa šifrom.";
+					return false;
+				}
+
+				return true;
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Image xmlns:mx="http://www.adobe.com/2006/mxml"
+		  complete="onComplete(event)">
+
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Image;
+
+			protected function onComplete(event:Event):void
+			{
+				var img:Image=event.target as Image;
+
+				// re set the image source to a new Bitamp that is created from the current image
+				// bitmap data, but this time with smoothing enabled
+				img.source=new Bitmap(Bitmap(img.content).bitmapData, "auto", true);
+
+				// Set the scaling of the image to 20px
+				//img.scaleX=img.scaleY=(20 / img.contentHeight);
+			}
+			
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void{
+				
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+
+				if(contentHeight < height)
+					height = contentHeight;
+			}
+			
+		]]>
+	</mx:Script>
+
+</mx:Image>

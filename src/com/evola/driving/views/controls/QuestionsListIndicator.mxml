@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 height="{questionIndex == selectedQuestionIndex ? 14 : 10}"
+		 width="{questionIndex == selectedQuestionIndex ? 14 : 10}"
+		 backgroundColor="{GroupColors.getColor(int(groupId))}"
+		 backgroundAlpha="{questionIndex == selectedQuestionIndex ? 1 : 0.5}"
+		 resizeEffect="{resize}">
+
+	<mx:Resize id="resize"
+			   duration="200"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.GroupColors;
+
+			[Bindable]
+			public var questionIndex:int;
+
+			[Bindable]
+			public var selectedQuestionIndex:int;
+
+			[Bindable]
+			public var groupId:String;
+		]]>
+	</mx:Script>
+
+</mx:HBox>

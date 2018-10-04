@@ -1,0 +1,2789 @@
+﻿<questions>
+
+	<question id="posledice_1" number="1"
+		text="Непрописно поступање возача које је у грубој супротности са правилима саобраћаја (насилничка вожња), као на слици, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_1_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од 30 до 60 дана и 15 казнених поена" correct="true"/>
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_2" number="2"
+		text="За прекршаје из области безбедности саобраћаја може се изрећи заштитна мера забране управљања моторним возилом у трајању од"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="најмање 30 дана до највише једне године" />
+			<question-answer text="најмање 3 месеца до највише једне године" />
+			<question-answer text="најмање 30 дана до шест месеци" />
+		</question-answers>
+	</question>
+	<question id="posledice_3" number="3"
+		text="Ако се у ситуацији приказаној на слици не зауставите док лица улазе, односно излазе из трамваја, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_3_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer text="казном затвора до 30 дана" />
+		</question-answers>
+	</question>
+	<question id="posledice_4" number="4"
+		text="Возач који управља возилом,а нема возачку дозволу за категорију возила којом управља, осим у случају када је возачкој дозволи истекао рок важења, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 15.000 до 30.000 динара и 8 казнених поена" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_5" number="5"
+		text="Возач који управља возилом под дејством алкохола чија је садржина више од 2,00mg/ml, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 6.000 до 20.000 динара и 4 казнена поена" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_6" number="6"
+		text="Возач који одбије да се подвргне утврђивању присуства у организму алкохола и/или психоактивних супстанци помоћу одговарајућих средстава (алкометар, дрога тест и др.), казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 6.000 до 20.000 динара и 4 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_7" number="7"
+		text="Возач који је затечен да управља возилом у саобраћају за време трајања његовог искључења из саобраћаја, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer
+				text="новчаном казном од 15.000 до 30.000 динара и 10 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_8" number="8"
+		text="Возач који је затечен да управља возилом у саобраћају за време трајања искључења возила из саобраћаја, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 15.000 до 30.000 динара и 10 казнених поена" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_9" number="9"
+		text="Возач који је затечен да управља возилом у саобраћају за време трајања заштитне мере, односно мере безбедности, забране управљања моторним возилом, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 30.000 до 50.000 динара и 10 казнених поена" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_10" number="10"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 140km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_10_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 30.000 до 50.000 динара и 10 казнених поена" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_11" number="11"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 170km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_11_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer
+				text="новчаном казном од 30.000 до 50.000 динара и 8 казнених поена" />
+			<question-answer text="новчаном казном од 15.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_12" number="12"
+		text="Ако се у ситуацији приказаној на слици, управљајући теретним возилом чија је највећа дозвољена маса 5.000kg, након саобраћајног знака крећете брзином од 110km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_12_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_13" number="13"
+		text="Возач који се у зони успореног саобраћаја креће брзином од 80km/h, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 20.000 динара" />
+			<question-answer
+				text="новчаном казном од 30.000 до 50.000 динара и 10 казнених поена" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_14" number="14"
+		text="Возач који се у зони школе у насељу, у 14:00 часова креће брзином од 100km/h, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 30.000 до 50.000 динара и 10 казнених поена" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_15" number="15"
+		text="Возач који ноћу управља возилом на неосветљеном делу пута, а нема укључено ниједно светло за осветљавање пута нити предње позиционо светло, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_16" number="16"
+		text="Возач који не заустави возило испред пешачког прелаза на коме се налази најмање један пешак, када му је светлосним саобраћајним знаком или знаком овлашћеног службеног лица пролаз забрањен, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 динара до 20.000 динара" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_18" number="18"
+		text="Ако се, када управљате аутобусом којим се превозе путници, не зауставите пред прелазом пута преко железничке пруге, када се дају светлосни или звучни знаци који упозоравају на наилазак воза, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_18_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 динара до 20.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_19" number="19"
+		text="Возач који је учествовао у саобраћајној незгоди у којој је неко лице задобило телесне повреде, када не заустави возило, односно не обавести полицију, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 15.000 динара до 30.000 динара" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_20" number="20"
+		text="Ако за претицање користите зауставну траку, на мотопуту, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_20_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_21" number="21"
+		text="Возач који се креће зауставном траком аутопута, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true"
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 15.000 динара до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_22" number="22"
+		text="Возач који у саобраћају на путу користи уређај односно средство, којим се може откривати или ометати рад уређаја за мерење брзине кретања возила, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_23" number="23"
+		text="Возач који држи у крилу дете млађе од 12 година, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_24" number="24"
+		text="Ако у ситуацији приказаној на слици вршите претицање на непрописан начин, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_24_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_25" number="25"
+		text="Возач који обилази возило које се зауставило испред пешачког прелаза ради пропуштања пешака, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_26" number="26"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 110km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_26_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 7 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_27" number="27"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 150km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_27_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_28" number="28"
+		text="Возач мопеда који се креће аутопутем, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 3 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_29" number="29"
+		text="Возач трактора који се креће аутопутем, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 3 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_30" number="30"
+		text="Ако се у ситуацији приказаној на слици, управљајући аутобусом који нема места за стајање, након саобраћајног знака крећете брзином од 110km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_30_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_31" number="31"
+		text="Возачу коме ноћу на возилу нису укључена задња позициона светла, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_32" number="32"
+		text="Возач који ноћу на неосветљеном делу пута управља возилом на коме су укључена само позициона светла, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_33" number="33"
+		text="Возач мопеда који се креће левом бициклистичком траком у односу на смер кретања саобраћаја, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_34" number="34"
+		text="Возач радне машине који се креће аутопутем, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 3 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_35" number="35"
+		text="Возач који за укључење на аутопут не користи прилазни пут који је намењен за укључење на тај пут, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_36" number="36"
+		text="Возач који не пропусти возило са првенством пролаза, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_37" number="37"
+		text="Возач који не заустави возило када полицијско возило са првенством пролаза које се креће иза њега, даје истовремено и светлосни знак упозорења, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 8 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_38" number="38"
+		text="Возач који на путу управља возилом које је оптерећено преко носивости уписане у саобраћајну дозволу за више од 20%, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 15.000 динара до 30.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_39" number="39"
+		text="Возач који на путу управља возилом код којег је осовинско оптерећење прописано техничким нормативима за возило премашено за више од 5%, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 15.000 динара до 30.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_40" number="40"
+		text="Возач који на мопеду превози дете млађе од 12 година, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 динара до 30.000 динара и 6 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_41" number="41"
+		text="Ако у ситуацији приказаној на слици наставите кретање након светлосног саобраћајног знака, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_41_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_42" number="42"
+		text="Возач који се у зони школе у насељу, у 11:00 часова креће брзином од 85km/h, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_43" number="43"
+		text="Учесник саобраћајне незгоде, у којој је неко од учесника претрпео материјалну штету и захтева вршење увиђаја, који не остане на месту саобраћајне незгоде до завршетка увиђаја, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 2 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_44" number="44"
+		text="Возач који управља возилом када је његовој возачкој дозволи истекао рок важења више од шест месеци, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 5 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_45" number="45"
+		text="Возач који у исто време користи две возачке дозволе издате од стране две државе, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 10.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_46" number="46"
+		text="Возач који користити образац возачке дозволе чији је нестанак пријавио надлежном органу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 3 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_47" number="47"
+		text="Возач који управља возилом под дејством психоактивне супстанце, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 8 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_48" number="48"
+		text="Возач који управља возилом под дејством алкохола чија је садржина 1,80mg/ml, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 12 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_49" number="49"
+		text="Возач возила у коме је уграђен тахограф који код себе нема кључ тахографа и претходно коришћене носаче података из тахографа свих возила којим је управљао у последњих шест дана, односно од последњег недељног одмора, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 2 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_50" number="50"
+		text="Возач возила у коме је уграђен дигитални тахограф који нема код себе нема возачку картицу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 2 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_51" number="51"
+		text="Власник возила који на захтев полицијског службеника не да податке о идентитету лица коме је дао возило на коришћење, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_52" number="52"
+		text="Возач возила који учествује у саобраћају са возилом које није уписано у јединствени регистар, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_53" number="53"
+		text="Возач возила које је упућено на контролни технички преглед, који не омогући вршење контролног техничког прегледа, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_54" number="54"
+		text="Возач возила које је упућено на мерења оптерећења, односно укупне масе, који не омогући та мерења, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_55" number="55"
+		text="Возач аутобуса који има дневно време управљања дуже од дозвољеног, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_56" number="56"
+		text="Возач теретног возила или скупа возила чија је највећа дозвољена маса већа од 3.500kg, који има дневно време управљања дуже од дозвољеног, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_57" number="57"
+		text="Возач аутобуса који након 4 сата и 30 минута управљања возилом не направи прописану паузу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_58" number="58"
+		text="Возач теретног возила или скупа возила чија је највећа дозвољена маса већа од 3.500kg, који након 4 сата и 30 минута управљања возилом не направи прописану паузу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 15.000 до 30.000 динара и 2 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_59" number="59"
+		text="Возач теретног возила или скупа возила чија је највећа дозвољена маса већа од 3.500kg, који у раздобљу од две узастопне недеље има укупно време управљања дуже од прописаног, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_60" number="60"
+		text="Возач аутобуса који у раздобљу од две узастопне недеље има укупно време управљања дуже од прописаног, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_61" number="61"
+		text="Возач аутобуса који не искористи дневни одмор на прописан начин, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_62" number="62"
+		text="Возач теретног возила или скупа возила чија је највећа дозвољена маса већа од 3.500kg, који не искористи дневни одмор на прописан начин, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_63" number="63"
+		text="Возач аутобуса који благовремено не започне са коришћењем недељног одмора, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_64" number="64"
+		text="Возач теретног возила или скупа возила чија је највећа дозвољена маса већа од 3.500kg, који благовремено не започне са коришћењем недељног одмора, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_65" number="65"
+		text="Возач који се у ситуацији приказаној на слици, не заустави иза возила за организовани превоз деце, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_65_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од6.000 до20.000 динара и 2 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_66" number="66"
+		text="Возач који се укључује у саобраћај тако да се претходно није уверио да неће ометати остале учеснике у саобраћају и о томе није обавестио друге учеснике у саобраћају, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_67" number="67"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 80km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_67_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 4 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_68" number="68"
+		text="Возач возила коме су придодата три прикључна возила, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_69" number="69"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 130km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_69_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 3 казненa поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_70" number="70"
+		text="Возач возила који врши полукружно окретање возила у тунелу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казненa поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_71" number="71"
+		text="Возач који у ситуацији приказаној на слици врши претицање колоне возила, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_71_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_72" number="72"
+		text="Возач возила који се зауставио на мосту, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_73" number="73"
+		text="Возач који на путу који није пут са првенством пролаза претиче друго возило непосредно испред раскрснице, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_74" number="74"
+		text="Возач возила који за време магле не укључи светла за осветљавање пута, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 4 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_75" number="75"
+		text="Возач радне машине који вуче прикључно возило, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_76" number="76"
+		text="Возач мопеда који управља возилом на начин да тако да му је испуштен управљач из руке, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_77" number="77"
+		text="Ако у ситуацији приказаној на слици, не пропустите пешака, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_77_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 3 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_78" number="78"
+		text="Возач мопеда који се креће мотопутем, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 2 казнена поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_79" number="79"
+		text="Возач трактора који се креће мотопутем, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 2 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_80" number="80"
+		text="Возач радне машине који се креће мотопутем, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_81" number="81"
+		text="Возач који је зауставио возило на зауставној траци аутoпута, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 6.000 динара до 20.000 динара" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_82" number="82"
+		text="Возач који се возилом на аутопуту креће уназад, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 3 казнена поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_83" number="83"
+		text="Возач који на путу управља возилом које је оптерећено преко носивости уписане у саобраћајну дозволу за 10%, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 динара до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_84" number="84"
+		text="Возач који ванредни превоз не обавља у складу са условима који су одређени у дозволи за ванредни превоз, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 динара до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_85" number="85"
+		text="Возач који управља моторним возилом и превози више лица него што је означено у саобраћајној дозволи, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 3 казнена поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_86" number="86"
+		text="Возач аутобуса који започне кретање пре него што путници безбедно не уђу, односно изађу из возила и док врата не буду затворена, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_87" number="87"
+		text="Возач који након што прође додатни светлосни саобраћајни знак у облику зелене стрелице(условни знак), не пропусти пешака који прелази преко коловоза, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_88" number="88"
+		text="Возач који након што прође додатни светлосни саобраћајни знак у облику зелене стрелице(условни знак), не пропусти возило које се креће по путу на који улази, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_89" number="89"
+		text="Возач возила који се креће пешачком зоном, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 динара до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_90" number="90"
+		text="Возач који се у зони школе ван насеља, у 11:00 часова креће брзином од 85km/h, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 4 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_91" number="91"
+		text="Возач који се затекне или наиђе на место саобраћајне незгоде у којој има повређених лица а не обавести полицију и/или службу хитне медицинске помоћи, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_92" number="92"
+		text="Возач који након истека пробне возачке дозволе управља возилом у саобраћају пре него што му је издата возачка дозвола, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 5 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_93" number="93"
+		text="Возач који управља возилом када је његовој возачкој дозволи истекао рок важења највише шест месеци, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_94" number="94"
+		text="Возач коме је издата пробна возачка дозвола, који управља возилом у периоду од 23:00 до 05:00 сати, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_95" number="95"
+		text="Возач који након промене пребивалишта не пријави ту промену у прописаном року надлежном органу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_96" number="96"
+		text="Возач који управља возилом у стању средње алкохолисаности, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_97" number="97"
+		text="Кандидат за возача који управља возилом током практичне обуке у стању средње алкохолисаности, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 6 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_98" number="98"
+		text="Возач који управља возилом којем је неисправан уграђени тахограф, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_99" number="99"
+		text="Возач који управља возилом који уграђени тахограф не користи на прoписан начин, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_100" number="100"
+		text="Возач који управља возилом које је технички неисправно у погледу уређаја за заустављање, казниће се:"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_101" number="101"
+		text="Власник неисправног возила у погледу уређаја за заустављање, којим у саобраћају на путу управља друго лице, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_102" number="102"
+		text="Возач преправљеног возила који учествује у саобраћају пре него што је надлежни орган утврдио да возило испуњава прописане услове, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_103" number="103"
+		text="Возач који након истека рока од шест месеци од дана почетка важења регистрационе налепнице, управља возилом пре него што је на редовном шестомесечном техничком прегледу утврђено да је возило технички исправно, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_104" number="104"
+		text="Возач који управља возилом, након истека рока важења регистрационе налепнице, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="новчаном казном од 6.000 до 20.000 динара и 2 казнена поена" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_105" number="105"
+		text="Власник регистрованог возила за које није поднет захтев за издавање нове регистрационе налепнице, који у прописаном року не врати регистарске таблице органу који је исте издао, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_106" number="106"
+		text="Власник возила који у прописаном року не пријави промену било ког податка који се уписује у саобраћајну дозволу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_107" number="107"
+		text="Власник возила којим је учињен прекршај у случају када возач који је управљао возилом приликом извршења прекршаја није идентификован"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true"
+				text="одговоран је што је омогућио да се његовим возилом учини прекршај" />
+			<question-answer
+				text="није одговоран што је његовим возилом учињен прекршај" />
+			<question-answer
+				text="одговоран је за прекршај који је тим возилом учињен" />
+		</question-answers>
+	</question>
+	<question id="posledice_108" number="108"
+		text="Власник возила којим је учињен прекршај у случају када возач који је управљао возилом приликом извршења прекршаја није идентификован, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_109" number="109"
+		text="Возач који управља аутобусом којим се врши организован превоз деце који није обележен посебним знаком, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 30.000 до50.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_110" number="110"
+		text="Возач који у насељу не омогући укључивање у саобраћај аутобусу који се прописно укључује у саобраћај са стајалишта, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_111" number="111"
+		text="Возач који за време вожње користи мобилни телефон на непрописан начин, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_112" number="112"
+		text="Возач возила у којем су уграђени сигурносни појасеви, који у саобраћају на путу не користи сигурносни појас на прописан начин, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_113" number="113"
+		text="Возач који у моторном возилу на предњем седишту превози дете млађе од 12 година, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_114" number="114"
+		text="Возач који у моторном возилу превози дете до три године старости ван безбедносног седишта, односно корпе, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_115" number="115"
+		text="Возач који се креће саобраћајном траком којом није дозвољено кретање оне врсте возила којим управља, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_116" number="116"
+		text="Возач који се у насељу креће брзином која је од 11km/h до 20km/h већа од дозвољене, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_117" number="117"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 110km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_117_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 6.000 до 20.000 динара и 3 казненa поена" />
+			<question-answer text="новчаном казном од 30.000 до50.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_118" number="118"
+		text="Возач који у ситуацији када му је семафором дозвољен пролаз, уђе у раскрсницу тако да се због густине саобраћаја заустави у раскрсници и тиме заустави саобраћај, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_119" number="119"
+		text="Возач који претиче друго возило преко прелаза пута преко железничке пруге, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_120" number="120"
+		text="Возач који на јавном путу на коме се саобраћај одвија у оба смера паркира возило непосредно уз леву ивицу коловоза, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_121" number="121"
+		text="Возач који паркира возило на пешачком прелазу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_122" number="122"
+		text="Возач који паркира возило на раскрсници, казниће се" points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_123" number="123"
+		text="Возач који паркира возило на делу пута где је ширина слободног пролаза од паркираног возила до неиспрекидане уздужне линије на коловозу, мања од три метра, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_124" number="124"
+		text="Возач који паркира возило на стајалишту за возила јавног саобраћаја, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_125" number="125"
+		text="Возач који паркира возило на месту на коме онемогућaва излазак неком већ паркираном возилу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_126" number="126"
+		text="Возач који паркира возило на тротоару, када то није дозвољено саобраћајном сигнализацијом, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_127" number="127"
+		text="Возач који не означи сигурносним троуглом возило које је заустављено на коловозу на таквом месту да возачи возила која се крећу истим смером не могу благовремено да га уоче, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_128" number="128"
+		text="Возач који управља трактором у саобраћају на путу који вуче прикључно возило које није прикључно возило за трактор, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_129" number="129"
+		text="Возач који управља теретним возилом у саобраћају на путу које вуче прикључно возило за трактором, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 30.000 динара до 50.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_130" number="130"
+		text="Возач возила које вуче неисправно возило, када не укључи све показиваче правца на вучном возилу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_131" number="131"
+		text="Возач возила које вуче неисправно возило, када не постави на оба возила сигурносни троугао на прописан начин, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_132" number="132"
+		text="Возач возила који користи дуга светла на путу са осветљеном уличном расветом, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_133" number="133"
+		text="Возач возила који за време магле користи дуга светла, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_134" number="134"
+		text="Возач мопеда, односно мотоцикла, који за време вожње не носи на глави закопчану хомологовану заштитну кацигу, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_135" number="135"
+		text="Возач који када скреће на бочни пут на чијем улазу не постоји пешачки прелаз не пропусти пешака који ступа на коловоз, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_136" number="136"
+		text="Возач који на аутопуту не користи крајњу десну саобраћајну траку, осим приликом претицања, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_137" number="137"
+		text="Возач трактора који на возилу ноћу нема укључено жуто ротационо или трепћуће светло, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_138" number="138"
+		text="Возач који управља теретним возилом на којем терет у расутом стању није прекривен, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_139" number="139"
+		text="Возач возила на којем терет прелази најудаљенију тачку на задњој страни возила, није означен, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_140" number="140"
+		text="Возач који управља трактором који вуче прикључно возило за трактор у којем се превози више од пет лица, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 10.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_141" number="141"
+		text="Возач који поступи супротно постављеном саобраћајном знаку, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_141_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 динара до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_142" number="142"
+		text="Возач мопеда, односно мотоцикла, који управља возилом у стању благе и умерене алкохолисаности, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_143" number="143"
+		text="Возач аутобуса који управља возилом у стању благе и умерене алкохолисаности, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_144" number="144"
+		text="Кандидат за возача који за време практичне обуке нема код себе доказ о здравственој способности за возача, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_145" number="145"
+		text="Возач који управља возилом којем је неисправан показивач правца, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 5.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_146" number="146"
+		text="Возач који управља возилом у саобраћају на путу у којем се не налази одговарајући светлоодбојни прслук, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_147" number="147"
+		text="Возач који се креће уназад возилом супротном страном коловоза у односу на смер којим се до тада кретао, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 10.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_148" number="148"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 57km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_148_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 6.000 до 20.000 динара и 4 казнених поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_149" number="149"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од95km/h, бићете кажњени"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_149_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 15.000 до 30.000 динара и 6 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer
+				text="новчаном казном од 30.000 до 50.000 динара и 10 казнених поена" />
+		</question-answers>
+	</question>
+	<question id="posledice_150" number="150"
+		text="Возач који не помери своје возило ка десној ивици коловоза, док га друго возило претиче, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 10.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_151" number="151"
+		text="Возач који не укључи све показиваче правца када се на јавном путу креће уназад, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+			<driving-category-ref value="f" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 10.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_152" number="152"
+		text="Возач који приликом паркирања заузме два паркинг места, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_153" number="153"
+		text="Возач који дању у саобраћају на путу, не укључи кратка, односно дневна светла, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_154" number="154"
+		text="Возач мопеда, односно мотоцикла, када употребљава на оба ува слушалице за аудио уређаје, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_155" number="155"
+		text="Возач који у ситуацији приказаној на слици (застој саобраћаја), није оставио слободан простор за пролаз возила под пратњом и возила са правом првенством пролаза, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_155_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer
+				text="новчаном казном од 6.000 до 20.000 динара и 4 казнена поена" />
+			<question-answer
+				text="казном затвора од најмање 15 дана или новчаном казном од 100.000 динара до 120.000 динара и 14 казнених поена" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_156" number="156"
+		text="Возач који у саобраћају на путу не поседује зимску опрему, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_157" number="157"
+		text="Возач који не искључи мотор када возило стоји дуже од три минута, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_158" number="158"
+		text="Возач са пробном возачком дозволом, који управља возилом које није означено посебном ознаком „П“, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="b" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_159" number="159"
+		text="Возач који код себе нема возачку дозволу када управља возилом, казниће се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="новчаном казном од 6.000 до 20.000 динара" />
+			<question-answer correct="true" text="новчаном казном од 3.000 динара" />
+			<question-answer text="новчаном казном од 15.000 до 30.000 динара" />
+		</question-answers>
+	</question>
+	<question id="posledice_160" number="160"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 80km/h, заштитна мера забране управљања моторним возилом Вам се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_160_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче" />
+			<question-answer text="не изриче" />
+		</question-answers>
+	</question>
+	<question id="posledice_161" number="161"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 60km/h, заштитна мера забране управљања моторним возилом Вам се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_161_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="изриче" />
+			<question-answer correct="true" text="не изриче" />
+		</question-answers>
+	</question>
+	<question id="posledice_162" number="162"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 140km/h, заштитна мера забране управљања моторним возилом Вам се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_162_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче" />
+			<question-answer text="не изриче" />
+		</question-answers>
+	</question>
+	<question id="posledice_163" number="163"
+		text="Ако се у ситуацији приказаној на слици, након саобраћајног знака, крећете брзином од 110km/h, заштитна мера забране управљања моторним возилом Вам се"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_163_1.png" />
+		</question-images>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="изриче" />
+			<question-answer correct="true" text="не изриче" />
+		</question-answers>
+	</question>
+	<question id="posledice_164" number="164"
+		text="Возачу који управља возилом под дејством алкохола чија је садржина више од 0,50mg/ml до 1,20mg/ml, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_165" number="165"
+		text="Возачу који управља возилом под дејством алкохола чија је садржина више од 0,30mg/ml до 0,50mg/ml, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="изриче се" />
+			<question-answer correct="true" text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_166" number="166"
+		text="Возачу возила који претиче возило испред њега на истој саобраћајној траци чији је возач дао знак за претицање, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="изриче се" />
+			<question-answer correct="true" text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_167" number="167"
+		text="Возачу који претиче возило на начин да прелази возилом преко неиспрекидане уздужне линије при чему користи саобраћајну траку намењену за кретање возила из супротног смера, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_168" number="168"
+		text="Возачу који прође светлосни саобраћајни знак када му је тим знаком забрањен пролаз, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_169" number="169"
+		text="Возачу који поступи супротно постављеном саобраћајном знаку, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-images>
+			<question-image url="propisi_a_169_1.png" />
+		</question-images>
+		<question-answers>
+			<question-answer text="изриче се" />
+			<question-answer correct="true" text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_170" number="170"
+		text="Возачу који не пропусти возило које се креће по путу на који улази након што прође додатни светлосни саобраћајни знак у облику зелене стрелице (условни знак), заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_171" number="171"
+		text="Возачу који паркира возило на пешачком прелазу, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="изриче се" />
+			<question-answer correct="true" text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_172" number="172"
+		text="Возачу који управља возилом које није уписано у јединствени регистар возила, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_173" number="173"
+		text="Возачу који управља возилом када је његовој возачкој дозволи истекао рок важења више од шест месеци, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_174" number="174"
+		text="Возач који је затечен да управља возилом у саобраћају за време трајања искључења возила из саобраћаја, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_175" number="175"
+		text="Возачу, који након истека рока од шест месеци од дана почетка важења регистрационе налепнице управља возилом пре него што је на редовном шестомесечном техничком прегледу утврђено да је возило технички исправно, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="не изриче се" />
+			<question-answer text="изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_176" number="176"
+		text="Возачу аутобуса који има дневно време управљања од 14 сати, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="изриче се" />
+			<question-answer correct="true" text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_177" number="177"
+		text="Возач који ноћу управља возилом на неосветљеном делу пута, а нема укључено ниједно светло за осветљавање пута нити предње позиционо светло, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_178" number="178"
+		text="Возачу који држи у крилу дете млађе од 12 година, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_179" number="179"
+		text="Возачу коме возило са теретом премашује највеће дозвољене димензије за поједине врсте возила (дужина, ширина и висина), заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_180" number="180"
+		text="Возачу који се не заустави пред прелазом пута преко железничке пруге када им је светлосним саобраћајним знаком којим се најављује приближавање воза прелазу пута преко железничке пруге у истом нивоу без браника забрањен пролаз, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer correct="true" text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_181" number="181"
+		text="Возачу који управља возилом након истека рока важења регистрационе налепнице, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<driving-category-refs>
+			<driving-category-ref value="a" />
+			<driving-category-ref value="b" />
+			<driving-category-ref value="c" />
+			<driving-category-ref value="d" />
+		</driving-category-refs>
+		<question-answers>
+			<question-answer text="изриче се" />
+			<question-answer correct="true" text="не изриче се" />
+		</question-answers>
+	</question>
+	<question id="posledice_182" number="182"
+		text="Возачу који управља возилом када је његовој возачкој дозволи истекао рок важења највише шест месеци, заштитна мера забране управљања моторним возилом"
+		points="2">
+		<question-category-refs>
+			<question-category-ref value="posledice" />
+		</question-category-refs>
+		<question-answers>
+			<question-answer text="изриче се" />
+			<question-answer text="не изриче се" />
+		</question-answers>
+	</question>
+
+</questions>

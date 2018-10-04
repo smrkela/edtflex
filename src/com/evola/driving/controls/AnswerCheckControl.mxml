@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 visible="{PresenterProvider.mainPresenter.model.isTestingMode}"
+		 includeInLayout="{PresenterProvider.mainPresenter.model.isTestingMode}">
+
+	<mx:CheckBox id="chb"
+				 useHandCursor="true"
+				 selected="{answer.isUserSelected}"
+				 click="onCheckBoxClick(event)"
+				 visible="{question.isMultiSelect}"
+				 includeInLayout="{question.isMultiSelect}"/>
+
+	<mx:RadioButton useHandCursor="true"
+					selected="{answer.isUserSelected}"
+					visible="{!question.isMultiSelect}"
+					includeInLayout="{!question.isMultiSelect}"
+					value="{answer}"
+					group="{group}"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.model.Question;
+			import com.evola.driving.model.QuestionAnswer;
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.controls.RadioButtonGroup;
+
+			[Bindable]
+			public var question:Question;
+
+			[Bindable]
+			public var answer:QuestionAnswer;
+
+			[Bindable]
+			public var group:RadioButtonGroup;
+
+			protected function onCheckBoxClick(event:MouseEvent):void
+			{
+
+				answer.isUserSelected=event.target.selected
+			}
+
+			public function clickCheckbox():void
+			{
+
+//				if (enabled)
+//					chb.dispatchEvent(new MouseEvent(MouseEvent.CLICK));
+				
+				if (enabled)
+				{
+					
+					if (question.isMultiSelect)
+					{
+						answer.isUserSelected=!answer.isUserSelected;
+					}
+					else
+					{
+						question.setUserAnswer(answer);
+					}
+					
+				}
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					width="100%"
+					height="100%"
+					horizontalAlign="center"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls="com.evola.driving.views.controls.*"
+					xmlns:controls1="com.evola.driving.controls.*"
+					xmlns:util="com.evola.driving.util.*">
+
+	<mx:Style>
+		
+		.optionTitle{
+			
+			paddingTop: 10;
+			color: #888888;
+		}
+		
+		.optionBox{
+			
+			paddingLeft: 10;
+			verticalGap: 0;
+		}
+		
+	</mx:Style>
+
+	<controls:UserHeaderControl/>
+
+	<pages:PageContentWrapper>
+
+		<controls1:PageTitle label="Priprema za testiranje"/>
+
+		<mx:VBox fontSize="12"
+				 verticalGap="2">
+
+			<mx:Label text="Koju kategoriju pitanja želiš da testiraš?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+				<mx:ComboBox id="cmbQuestionCategoryTesting"
+							 dataProvider="{PresenterProvider.mainPresenter.model.questionCategoriesIncludingAll}"
+							 labelField="name"
+							 width="300"
+							 rowCount="10"/>
+			</mx:HBox>
+
+			<mx:Label text="Da li želiš da testiraš samo pitanja koja si već učio?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+
+				<mx:RadioButton value="{false}"
+								label="Ne"
+								group="{chbOnlyLearntQuestions}"/>
+				<mx:RadioButton value="{true}"
+								label="Da"
+								group="{chbOnlyLearntQuestions}"/>
+				<mx:RadioButtonGroup id="chbOnlyLearntQuestions"
+									 selectedValue="{false}"/>
+
+			</mx:HBox>
+
+			<mx:Label text="Da li želiš da testiraš samo pitanja koja nisi testirao?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+
+				<mx:RadioButton value="{false}"
+								label="Ne"
+								group="{chbOnlyNonTestedQuestions}"/>
+				<mx:RadioButton value="{true}"
+								label="Da"
+								group="{chbOnlyNonTestedQuestions}"/>
+				<mx:RadioButtonGroup id="chbOnlyNonTestedQuestions"
+									 selectedValue="{true}"/>
+
+			</mx:HBox>
+
+			<mx:Label text="Koliko želiš pitanja u testu?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+				<mx:ComboBox id="cmbNumberOfQuestions"
+							 dataProvider="{DrivingUtils.getNumberOfQuestionsDataProvider(PresenterProvider.mainPresenter.model.userQuestions.length)}"
+							 labelField="name"
+							 width="300"
+							 rowCount="10"/>
+			</mx:HBox>
+
+			<mx:Label text="Da li da pitanja budu nasumično raspoređena?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+
+				<mx:RadioButton value="{false}"
+								label="Ne"
+								group="{chbRandomizeQuestionsTest}"/>
+				<mx:RadioButton value="{true}"
+								label="Da"
+								group="{chbRandomizeQuestionsTest}"/>
+				<mx:RadioButtonGroup id="chbRandomizeQuestionsTest"
+									 selectedValue="{false}"/>
+
+			</mx:HBox>
+
+			<mx:Label text="Da li da se tačan odgovor prikaže odmah po davanju odgovora na pitanje?"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+
+				<mx:RadioButton value="{false}"
+								label="Ne"
+								group="{chbQuickResponse}"/>
+				<mx:RadioButton value="{true}"
+								label="Da"
+								group="{chbQuickResponse}"/>
+				<mx:RadioButtonGroup id="chbQuickResponse"
+									 selectedValue="{false}"/>
+
+			</mx:HBox>
+
+			<mx:Label text="Napomena"
+					  styleName="optionTitle"/>
+			<mx:HBox styleName="optionBox">
+				<mx:Text width="600"
+						 text="Sa pitanja na pitanje možeš prelaziti korišćenjem strelica (gore i dole) na tastaturi a na sledeću odnosno prethodnu stranicu pitanja možeš prelaziti korišćenjem strelica desno odnosno levo. Odgovore možeš davati korišćenjem brojeva na tastaturi: za odogovor pod a) pritisni broj 1, za odgovor pod b) pritisni 2 itd."/>
+			</mx:HBox>
+
+			<mx:Spacer height="20"/>
+
+			<controls1:BoxButton label="Kreni sa testiranjem"
+								 icon="@Embed(source='/data/images/next.png')"
+								 click="onStartTesting(event)"/>
+
+		</mx:VBox>
+
+		<pages:PageFooter/>
+
+	</pages:PageContentWrapper>
+
+	<util:EvolaHttpService id="serviceGetIds"
+						   restUrl="question/getTestedAndLearntQuestionsIds"
+						   result="onGetIdsResult(event)"/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.controls.spinner.SpinnerUtil;
+			import com.evola.driving.model.DrivingCategory;
+			import com.evola.driving.model.QuestionCategory;
+			import com.evola.driving.util.DrivingUtils;
+			import com.evola.driving.util.PresenterProvider;
+
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.ResultEvent;
+
+			private var learnedQuestionsIds:ArrayCollection;
+			private var testedQuestionsIds:ArrayCollection;
+
+			override protected function displayPage():void
+			{
+
+				SpinnerUtil.showSpinner(this);
+
+				serviceGetIds.send();
+			}
+
+			protected function onStartTesting(event:MouseEvent):void
+			{
+				currentState=null;
+
+				var dc:DrivingCategory=Settings.user.drivingCategory ? Settings.user.drivingCategory : DrivingCategory.CATEGORY_ALL;
+				var qc:QuestionCategory=cmbQuestionCategoryTesting.selectedItem as QuestionCategory;
+				var quickResponse:Boolean=chbQuickResponse.selectedValue;
+				var numOfQuestions:Number=cmbNumberOfQuestions.selectedItem.value;
+				var randomizeQuestions:Boolean=chbRandomizeQuestionsTest.selectedValue;
+				var onlyLearntQuestions:Boolean=chbOnlyLearntQuestions.selectedValue;
+				var onlyNonTestedQuestions:Boolean=chbOnlyNonTestedQuestions.selectedValue;
+
+				PresenterProvider.mainPresenter.startTesting(dc, qc, quickResponse, numOfQuestions, randomizeQuestions, onlyLearntQuestions, learnedQuestionsIds, onlyNonTestedQuestions, testedQuestionsIds);
+			}
+
+			protected function onGetIdsResult(event:ResultEvent):void
+			{
+
+				SpinnerUtil.removeSpinner(this);
+
+				var result:XML=XML(event.result);
+
+				learnedQuestionsIds=new ArrayCollection();
+
+				for each (var idXML:XML in result.child("learnt-question-id"))
+				{
+
+					var id:String=idXML.text();
+
+					learnedQuestionsIds.addItem(id);
+				}
+
+				testedQuestionsIds=new ArrayCollection();
+
+				for each (var idXML:XML in result.child("tested-question-id"))
+				{
+
+					var id:String=idXML.text();
+
+					testedQuestionsIds.addItem(id);
+				}
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

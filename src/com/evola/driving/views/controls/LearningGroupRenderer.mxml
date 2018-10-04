@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 verticalAlign="middle"
+		 horizontalGap="2"
+		 borderStyle="solid"
+		 borderSides="bottom"
+		 backgroundColor="{GroupColors.getAlternateColor(groupId % 2 != 0)}"
+		 borderColor="{isRollOver ? GroupColors.getHoverAlternateColor(groupId % 2 != 0) : GroupColors.getAlternateColor(groupId % 2 != 0)}"
+		 borderThickness="5"
+		 width="100%"
+		 buttonMode="true"
+		 useHandCursor="true"
+		 mouseChildren="false"
+		 click="onClick(event)"
+		 backgroundAlpha="{isRollOver ? 0.9: 0.6}"
+		 rollOver="isRollOver = true"
+		 rollOut="isRollOver = false"
+		 verticalScrollPolicy="off"
+		 xmlns:controls="com.evola.driving.views.controls.*"
+		 xmlns:controls1="com.evola.driving.controls.*"
+		 xmlns:s="library://ns.adobe.com/flex/spark">
+
+	<mx:HBox width="100%"
+			 borderColor="{isRollOver ? GroupColors.getProgressInactiveColor(groupId) : GroupColors.getColor(groupId)}"
+			 borderSides="top"
+			 borderStyle="solid">
+
+		<mx:HBox paddingTop="5"
+				 paddingLeft="5">
+
+			<mx:Image source="{'data/images/categories/'+groupId+'.png'}"/>
+
+		</mx:HBox>
+
+		<mx:VBox width="100%"
+				 verticalGap="2">
+
+			<controls1:LinkText text="{data.@title}"
+								color="{GroupColors.getColor(groupId)}"
+								fontWeight="bold"
+								fontSize="16"
+								width="100%"/>
+
+			<mx:HBox verticalAlign="bottom">
+
+				<mx:Label text="{getProgressValue(data.@learn1, Settings.learningOrderNumber)}"
+						  alpha="0.6"
+						  width="100"
+						  fontWeight="bold"
+						  fontSize="22"/>
+
+				<mx:Label textAlign="left"
+						  alpha="0.6"
+						  text="{data.attribute('number-of-questions')} pitanja"/>
+
+			</mx:HBox>
+
+		</mx:VBox>
+
+		<mx:VBox paddingTop="5">
+
+			<mx:HBox>
+
+				<controls1:BoxProgressBar progressColor="#00A300"
+										  progress="{data.attribute('learn'+Settings.learningOrderNumber) / data.attribute('number-of-questions')}"/>
+
+				<!--
+<controls:LearningGroupProgressControl progress="{data.@learn1 / data.attribute('number-of-questions')}"
+							 progressColor="#00A300"/>
+-->
+
+				<mx:Text text="{data.attribute('learn'+Settings.learningOrderNumber)} naučeno"
+						 width="100"
+						 alpha="0.6"/>
+
+			</mx:HBox>
+
+			<mx:HBox>
+
+				<controls1:BoxProgressBar progressColor="#FFC40D"
+										  progress="{data.attribute('test'+Settings.learningOrderNumber) / data.attribute('number-of-questions')}"/>
+
+
+				<!--
+				<controls:LearningGroupProgressControl progress="{data.@test1 / data.attribute('number-of-questions')}"
+													   progressColor="#FFC40D"/>
+-->
+
+				<mx:Text text="{data.attribute('test'+Settings.learningOrderNumber)} provereno"
+						 width="100"
+						 alpha="0.6"/>
+
+			</mx:HBox>
+
+		</mx:VBox>
+
+	</mx:HBox>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.GroupColors;
+			import com.evola.driving.util.PageManager;
+
+			[Bindable]
+			public var groupId:int;
+
+			[Bindable]
+			public var isRollOver:Boolean=false;
+
+			protected function onClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("GroupSessions", {id: data.@id});
+			}
+
+			private function getProgressValue(learns:int, learnOrderNumber:int):String
+			{
+
+				var learned:int=data.attribute("learn" + Settings.learningOrderNumber);
+				var tested:int=data.attribute("test" + Settings.learningOrderNumber);
+				var total:int=data.attribute("number-of-questions");
+
+				var value:int=(learned + tested) * 100 / (2 * total);
+
+				value=Math.min(value, 100);
+
+				return value + "%";
+			}
+
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+			{
+
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+
+
+			}
+		]]>
+	</mx:Script>
+
+</mx:HBox>

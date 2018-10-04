@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages:AbstractPage xmlns:mx="http://www.adobe.com/2006/mxml"
+					creationComplete="PresenterProvider.mainPresenter.homePage=event.target as HomePage"
+					xmlns:views="com.evola.driving.views.*"
+					xmlns:info="com.evola.driving.views.info.*"
+					xmlns:controls="com.evola.driving.controls.*"
+					xmlns:listquestions="com.evola.driving.views.listquestions.*"
+					xmlns:pages="com.evola.driving.views.pages.*"
+					xmlns:controls1="com.evola.driving.views.controls.*">
+
+	<controls1:UserHeaderControl/>
+
+	<pages:PageContentWrapper direction="horizontal">
+
+		<mx:VBox width="100%"
+				 styleName="contentWrapper">
+
+			<!-- 
+			
+			<mx:VBox width="100%">
+
+				<controls:SectionTitle label="Kreni sa učenjem i testiranjem"/>
+
+				<mx:HBox>
+
+					<controls:BoxButton label="Učenje"
+										height="50"
+										primaryColor="0x00A300"
+										secondaryColor="0x2D89EF"
+										icon="@Embed(source='/data/images/book.png')"
+										width="200"
+										click="onLearnClick(event)"/>
+
+
+					<controls:BoxButton label="Testiranje"
+										height="50"
+										primaryColor="0xFFC40D"
+										secondaryColor="0x2D89EF"
+										icon="@Embed(source='/data/images/pencil.png')"
+										width="200"
+										click="onTestClick(event)"/>
+
+				</mx:HBox>
+
+			</mx:VBox>
+
+			-->
+			
+			<controls1:LearningGroupsSection/>
+
+			<!--
+			<controls1:UserProgressSection/>
+
+			<controls1:LastLearningSessionsSection/>
+
+			<controls1:LastTestingSessionsSection/>
+
+			<controls1:CurrentlyActiveUsersCountSection/>
+
+			-->
+			
+		</mx:VBox>
+
+		<mx:VBox>
+
+			<controls1:UserExperienceWidget styleName="contentWrapper"/>
+
+			<controls1:LeaderboardWidget styleName="contentWrapper"/>
+
+		</mx:VBox>
+
+	</pages:PageContentWrapper>
+
+	<pages:PageFooter/>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PageManager;
+			import com.evola.driving.util.PresenterProvider;
+
+			protected function onLearnClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("LearnSetup");
+			}
+
+			protected function onTestClick(event:MouseEvent):void
+			{
+
+				PageManager.selectPage("TestSetup");
+			}
+		]]>
+	</mx:Script>
+
+</pages:AbstractPage>

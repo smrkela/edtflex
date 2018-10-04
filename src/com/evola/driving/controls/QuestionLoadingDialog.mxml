@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="500"
+		 height="150"
+		 xmlns:controls="com.evola.driving.controls.*"
+		 backgroundColor="#FFFFFF"
+		 borderColor="#FFFFFF"
+		 borderStyle="solid"
+		 cornerRadius="10"
+		 paddingLeft="10"
+		 paddingRight="10"
+		 verticalAlign="middle"
+		 horizontalAlign="center">
+
+	<mx:states>
+
+		<mx:State name="stateLoaded">
+
+			<mx:RemoveChild target="{boxContent}"/>
+
+			<mx:AddChild>
+
+				<mx:Label text="Još koji trenutak..."/>
+
+			</mx:AddChild>
+
+		</mx:State>
+
+	</mx:states>
+
+	<mx:VBox id="boxContent"
+			 width="100%">
+
+		<mx:Label text="Sačekaj par trenutaka da se pripreme pitanja..."/>
+
+		<mx:Spacer height="20"/>
+
+		<controls:BoxProgressBar progress="{progress}"
+								 width="100%"/>
+
+	</mx:VBox>
+
+
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			public var progress:Number;
+
+			public function start():void
+			{
+
+				if (hasEventListener(Event.ENTER_FRAME))
+					removeEventListener(Event.ENTER_FRAME, onTimerEvent);
+
+				addEventListener(Event.ENTER_FRAME, onTimerEvent);
+
+				currentState=null;
+
+				progress=0;
+			}
+
+			public function changeState():void
+			{
+
+				removeEventListener(Event.ENTER_FRAME, onTimerEvent);
+
+				currentState="stateLoaded";
+
+				validateNow();
+			}
+
+			public function stop():void
+			{
+
+
+			}
+
+			protected function onTimerEvent(event:Event):void
+			{
+
+				progress+=1 / 100;
+				
+				if(progress >= 1)
+					progress = 0;
+			}
+		]]>
+	</mx:Script>
+
+</mx:VBox>

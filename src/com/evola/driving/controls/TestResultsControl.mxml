@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+		 width="600"
+		 height="300"
+		 paddingLeft="10"
+		 paddingRight="10"
+		 paddingTop="5"
+		 paddingBottom="10"
+		 borderStyle="solid"
+		 borderColor="#008299"
+		 backgroundColor="#FFFFFF"
+		 cornerRadius="5"
+		 borderThickness="5"
+		 xmlns:controls="com.evola.driving.controls.*">
+
+	<mx:Text text="{descriptiveStatus}"
+			 width="100%"
+			 fontSize="16"
+			 color="#008299"/>
+
+	<mx:HBox width="100%">
+
+		<mx:HBox id="hbProgress"
+				 width="100%"
+				 horizontalGap="0">
+
+			<mx:HBox id="hbCorrect"
+					 backgroundColor="green"
+					 height="10"/>
+			<mx:HBox id="hbIncorrect"
+					 backgroundColor="red"
+					 height="10"/>
+			<mx:HBox id="hbRemaining"
+					 backgroundColor="#EEEEEE"
+					 backgroundAlpha="0.2"
+					 height="10"/>
+
+		</mx:HBox>
+
+	</mx:HBox>
+
+	<mx:Form fontSize="14">
+
+		<mx:FormItem label="Ukupno pitanja">
+			<mx:Label text="{totalTestQuestions}"/>
+		</mx:FormItem>
+
+		<mx:FormItem label="Odgovoreno pitanja">
+			<mx:Label text="{answeredQuestions}"/>
+		</mx:FormItem>
+
+		<mx:FormItem label="Tačnih odgovora">
+			<mx:Label text="{correctAnswers}"/>
+		</mx:FormItem>
+
+		<mx:FormItem label="Netačnih odgovora">
+			<mx:Label text="{incorrectAnswers}"/>
+		</mx:FormItem>
+
+	</mx:Form>
+
+	<mx:Spacer height="100%"/>
+
+	<mx:HBox width="100%"
+			 fontSize="12"
+			 horizontalAlign="center">
+
+		<mx:Button label="Nastavi"
+				   click="onFinishTesting(event)"/>
+
+	</mx:HBox>
+
+	<mx:Script>
+		<![CDATA[
+			import com.evola.driving.util.PresenterProvider;
+			
+			import mx.managers.PopUpManager;
+			
+			public var closeHandler:Function;
+
+			[Bindable]
+			private var descriptiveStatus:String;
+
+			[Bindable]
+			private var descriptiveStatusColor:uint=0x000000;
+
+			[Bindable]
+			private var totalTestQuestions:int;
+
+			[Bindable]
+			private var answeredQuestions:int;
+
+			[Bindable]
+			private var correctAnswers:int;
+
+			[Bindable]
+			private var incorrectAnswers:int;
+
+			public function setData(total:int, answered:int, correct:int, incorrect:int):void
+			{
+
+				totalTestQuestions=total;
+				answeredQuestions=answered;
+				correctAnswers=correct;
+				incorrectAnswers=incorrect;
+
+				setDescriptiveStatus();
+				setProgressWidths();
+			}
+
+			private function setDescriptiveStatus():void
+			{
+
+				//deskriptivni status je u obliku:
+				//Bravo, uspesno si odgovorio na 95% pitanja
+				//Odlicno, uspesno si resio 80% pitanja
+				//Dobro je ali moze i bolje, resio si 65% pitanja
+				//Nije lose za pocetak, resio si 45% pitanja
+				//Moras jos da vezbas, resio si svega 25%
+				//Mozda je bolje da pesacis, nisi dao ni jedan tacan odgovor
+
+				var percent:Number=Math.round(correctAnswers / totalTestQuestions * 100);
+
+				var status:String="";
+				var color:uint=0x000000;
+
+				if (percent > 100)
+					percent=100;
+
+				if (percent == 100)
+				{
+
+					status=getTopMessage();
+					color=0x008A00;
+				}
+				else if (percent > 95)
+				{
+
+					status="Bravo, uspešno odogovoreno na " + percent + "% pitanja!";
+					color=0x008A00;
+				}
+				else if (percent >= 80)
+				{
+
+					status="Odlično, uspešno odgovoreno na " + percent + "% pitanja!";
+					color=0x5133AB;
+				}
+				else if (percent >= 60)
+				{
+
+					status="Dobro je ali može i bolje. Uspešno odgovoreno na " + percent + "% pitanja.";
+					color=0x5133AB;
+				}
+				else if (percent >= 40)
+				{
+
+					status="Nije loše za početak. Uspešno odgovoreno na " + percent + "% pitanja.";
+					color=0xAC193D;
+				}
+				else if (percent > 0)
+				{
+
+					status="Moraš još da vežbaš. Uspešno rešeno svega " + percent + "% pitanja";
+					color=0xAC193D;
+				}
+				else
+				{
+
+					status=getBottomMessage();
+					color=0xAC193D;
+				}
+
+				descriptiveStatus=status;
+				descriptiveStatusColor=color;
+			}
+
+			private function getTopMessage():String
+			{
+
+				var randomIndex:int=Math.round(Math.random() * 5);
+
+				var messages:Array=[];
+
+				messages[0]="Svaka čast! Sve je tačno odgovoreno!";
+				messages[1]="Svaka čast! Sve je tačno odgovoreno!";
+				messages[2]="Svaka čast! Sve je tačno odgovoreno!";
+				messages[3]="Svaka čast! Sve je tačno odgovoreno!";
+				messages[4]="Svaka čast! Sve je tačno odgovoreno!";
+				messages[5]="Svaka čast! Sve je tačno odgovoreno!";
+
+				return messages[randomIndex];
+			}
+
+			private function getBottomMessage():String
+			{
+
+				var randomIndex:int=Math.round(Math.random() * 5);
+
+				var messages:Array=[];
+
+				messages[0]="Ništa nije tačno odgovoreno :(";
+				messages[1]="Ništa nije tačno odgovoreno :(";
+				messages[2]="Ništa nije tačno odgovoreno :(";
+				messages[3]="Ništa nije tačno odgovoreno :(";
+				messages[4]="Ništa nije tačno odgovoreno :(";
+				messages[5]="Ništa nije tačno odgovoreno :(";
+
+				return messages[randomIndex];
+			}
+
+			protected function onShowTestingResults(event:MouseEvent):void
+			{
+
+				PopUpManager.removePopUp(this);
+
+				PresenterProvider.mainPresenter.model.testFinished=true;
+			}
+
+			protected function onFinishTesting(event:MouseEvent):void
+			{
+
+				PopUpManager.removePopUp(this);
+
+				closeHandler();
+			}
+
+			private function setProgressWidths():void
+			{
+
+				var answeredPercent:Number=Math.round(answeredQuestions / totalTestQuestions * 100);
+				var correctPercent:Number=Math.round(correctAnswers / totalTestQuestions * 100);
+				var incorrectPercent:Number=Math.round(incorrectAnswers / totalTestQuestions * 100);
+
+				var totalWidth:Number=hbProgress.width;
+				hbCorrect.width=totalWidth * correctPercent / 100;
+				hbIncorrect.width=totalWidth * incorrectPercent / 100;
+				hbRemaining.width=totalWidth - hbCorrect.width - hbIncorrect.width;
+			}
+		]]>
+	</mx:Script>
+
+
+</mx:VBox>
